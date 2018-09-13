@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$btn-font-weight: 500;
+$headings-font-weight: 600;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.jumbotron {
+    background-image: url("../images/transmitters-sky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
