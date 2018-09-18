@@ -8,6 +8,7 @@
     padding-right: 85px;
     padding-top: 85px;
     padding-bottom: 85px;
+
     p {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -48,16 +49,28 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 5px;
-        }
 
-        .title {
-            text-transform: uppercase;
-            text-align: center;
-            font-size: $font-size-sm;
+            &.active {
+                background: $blue;
+            }
         }
     }
 }
 
+.small-emphasis {
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+}
+
 .section {
     padding-bottom: 5.5rem;
+}
+
+.suburban-case-study {
+    background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url("../images/transmitters-sky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
 }
