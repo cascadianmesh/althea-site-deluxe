@@ -15,6 +15,13 @@
     }
 }
 
+.image-div {
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
 .rounded-button-bar {
     display: flex;
     justify-content: space-between;
@@ -73,4 +80,11 @@
     -webkit-background-size: cover;
     background-size: cover;
     min-height: 500px;
+}
+
+.case-study {
+    .image-div {
+        width: 8rem;
+        height: 4.5rem;
+    }
 }
