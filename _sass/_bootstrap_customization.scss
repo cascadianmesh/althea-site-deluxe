@@ -79,7 +79,7 @@
     label {
         @include small-emphasis;
 
-        margin-bottom: ($spacer * .1);
+        margin-bottom: $spacer * 0.1;
     }
 }
 
@@ -89,6 +89,25 @@
 
 .section {
     padding-bottom: 5.5rem;
+}
+
+h1 {
+    margin-bottom: $spacer * 1.5;
+}
+
+.footer-list {
+    li {
+        a {
+            color: $light;
+        }
+
+        margin-bottom: map-get($spacers, 1);
+    }
+}
+
+.footer-label {
+    color: $white;
+    opacity: .6;
 }
 
 .suburban-case-study {
