@@ -1,7 +1,7 @@
 <div class="section">
     <h1 class="text-center">Althea can be deployed in any environment</h1>
     <div class="row justify-content-center">
-        <div class="col-lg-6 col-md-8 col-12">
+        <div class="col-12 col-md-8 col-lg-6">
             <ul class="nav rounded-button-bar">
                 <li class="item">
                     <div href="#urban-case-study" class="button active show" data-toggle="tab">
@@ -9,12 +9,12 @@
                     </div>
                     <div class="text-center small-emphasis">Urban</div>
                 </li>
-                <li class="item">
+                <!-- <li class="item">
                     <div href="#suburban-case-study" class="button" data-toggle="tab">
                         <i class="material-icons font-size-36">home</i>
                     </div>
                     <div class="text-center small-emphasis">Suburban</div>
-                </li>
+                </li> -->
                 <li class="item">
                     <div href="#rural-case-study" class="button" data-toggle="tab">
                         <i class="material-icons font-size-36">filter_hdr</i>
@@ -26,76 +26,78 @@
                 </div>
             </ul>
         </div>
-        <div class="tab-content">
+        <div class="col-12">
+            <div class="tab-content">
 
-            <div class="tab-pane" id="urban-case-study">
-                <div class="card mt-4 case-study py-3 px-3 d-flex flex-column justify-content-between" style="background-image: url('../images/medellin-graphic.jpg');">
-                    <div class="col-sm-12 col-lg-8">
-                        <h3 class="blurb">A combination of wireless and wired connections can be used to connect nodes in urban areas with varied terrain, like the red_medellin subnet in Medellin, Colombia.</h3>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="d-flex flex-wrap">
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/Litebeam_transparent_500.png);"></div>
-                                <div class="small-emphasis text-center">1</div>
-                            </div>
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/nanobeam.jpg);"></div>
-                                <div class="small-emphasis text-center">10</div>
-                            </div>
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/GLB1300_500.png);"></div>
-                                <div class="small-emphasis text-center">10</div>
-                            </div>
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/Ethernet_500.jpg);"></div>
-                                <div class="small-emphasis text-center">1000'</div>
-                            </div>
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/n750_500.jpg);"></div>
-                                <div class="small-emphasis text-center">40</div>
-                            </div>
+                <div class="tab-pane active show" id="urban-case-study">
+                    <div class="card mt-4 case-study py-3 px-3 d-flex flex-column justify-content-between" style="background-image: url('../images/medellin-graphic.jpg');">
+                        <div class="col-sm-12 col-lg-8">
+                            <h3 class="blurb">A combination of wireless and wired connections can be used to connect nodes in urban areas with varied terrain, like the red_medellin subnet in Medellin, Colombia.</h3>
                         </div>
+                        <div class="col-12 d-sm-flex">
+                            <div class="d-flex flex-wrap">
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/Litebeam_transparent_500.png);"></div>
+                                    <div class="small-emphasis text-center">1</div>
+                                </div>
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/nanobeam.jpg);"></div>
+                                    <div class="small-emphasis text-center">10</div>
+                                </div>
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/GLB1300_500.png);"></div>
+                                    <div class="small-emphasis text-center">10</div>
+                                </div>
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/Ethernet_500.jpg);"></div>
+                                    <div class="small-emphasis text-center">1000'</div>
+                                </div>
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/n750_500.jpg);"></div>
+                                    <div class="small-emphasis text-center">40</div>
+                                </div>
+                            </div>
 
-                        <a class="btn btn-primary align-self-end ml-auto" href="#" role="button">View case study</a>
+                            <a class="btn btn-primary float-right align-self-end ml-auto mt-3" href="#" role="button">View case study</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="tab-pane active show" id="rural-case-study">
-                <div class="card mt-4 case-study py-3 px-3 d-flex flex-column justify-content-between" style="background-image: url('../images/Clatskanie-graphic.jpg');">
-                    <div class="col-sm-12 col-lg-8">
-                        <h3 class="blurb">Legacy ISPs aren’t incentivized to offer quality—or any—internet access to remote, sparsely-populated areas. Althea makes it possible for places like Clatskanie, Oregon to build and and manage their own networks.</h3>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="d-flex flex-wrap">
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/edgerouter_500.png);"></div>
-                                <div class="small-emphasis text-center">2</div>
-                            </div>
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/airmax_500.jpg);"></div>
-                                <div class="small-emphasis text-center">3</div>
-                            </div>
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/airgrid_500.jpg);"></div>
-                                <div class="small-emphasis text-center">10</div>
-                            </div>
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/n750_500.jpg);"></div>
-                                <div class="small-emphasis text-center">5</div>
-                            </div>
-                            <div class="card mr-2 mt-2" style="display: inline-block;">
-                                <div class="equipment-pic" style="background-image: url(./images/portable-solar-panel_500.jpg);"></div>
-                                <div class="small-emphasis text-center">1</div>
-                            </div>
+                <div class="tab-pane" id="rural-case-study">
+                    <div class="card mt-4 case-study py-3 px-3 d-flex flex-column justify-content-between" style="background-image: url('../images/Clatskanie-graphic.jpg');">
+                        <div class="col-sm-12 col-lg-6">
+                            <h3 class="blurb">Legacy ISPs aren’t incentivized to offer quality—or any—internet access to remote, sparsely-populated areas. Althea makes it possible for places like Clatskanie, Oregon to build and and manage their own networks.</h3>
                         </div>
+                        <div class="col-12 d-sm-flex">
+                            <div class="d-flex flex-wrap">
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/edgerouter_500.png);"></div>
+                                    <div class="small-emphasis text-center">2</div>
+                                </div>
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/airmax_500.jpg);"></div>
+                                    <div class="small-emphasis text-center">3</div>
+                                </div>
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/airgrid_500.jpg);"></div>
+                                    <div class="small-emphasis text-center">10</div>
+                                </div>
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/n750_500.jpg);"></div>
+                                    <div class="small-emphasis text-center">5</div>
+                                </div>
+                                <div class="card mr-2 mt-2" style="display: inline-block;">
+                                    <div class="equipment-pic" style="background-image: url(./images/portable-solar-panel_500.jpg);"></div>
+                                    <div class="small-emphasis text-center">1</div>
+                                </div>
+                            </div>
 
-                        <a class="btn btn-primary align-self-end ml-auto" href="#" role="button">View case study</a>
+                            <a class="btn btn-primary float-right align-self-end ml-auto mt-3" href="#" role="button">View case study</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </div>
