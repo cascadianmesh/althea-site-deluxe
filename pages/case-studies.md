@@ -42,13 +42,13 @@ Users access bandwidth through intermediary nodes, or directly from the gateway 
 - [Visit their website]() for regular updates on their progress
 - [Send us an email]() with any questions or to get connected with the Red_medellin subnet
 
-## CASE STUDY: CLATSKANIE
+# CLATSKANIE
 
-### Legacy ISP
+## Legacy ISP
 
 A fiber connection runs through the center of the small town of Clatskanie. But with a population of only 2000, ISPs in the area just aren't motivated to build adequate infrastructure to the outlying areas. Some residents only option is expensive internet access through cell phone companies which can cost upwards of $150 per month.
 
-### Althea
+## Althea
 
 While ISPs aren't motivated to address these access issues, Clatskanie's residents are resourceful. With Althea, they are able to set up a network whose nodes are owned by the local residents who use them to access the internet. Soon, these nodes will pay each other, giving families who host nodes that relay traffic for other houses a small income to offset their payments for internet access.
 
@@ -60,22 +60,22 @@ Some residents are planning to put up towers to reach larger areas as a side hus
 
 Clatskanie was Althea's first deployment, and is being spearheaded by one of Althea's founders, Deborah Simpier. She is joined by 4 other co-organizers: Yvonne owns the local fruit stand, and is a bus driver. Dante is a young game developer. Shaun is a programmer and and tinkerer who design the telescoping tower that ClatskanieCoop is currently using. Clark is a retired Intel project manager.
 
-### Future vision
+## Future vision
 
 An additional 25 houses are currently on the waitlist. After this, there are plans to extend the network to other communities along the Columbia River like Marshland, Woodson, and Kerry. Because of Althea's decentralized structure, it's easy for anyone to buy some equipment and extend the network, but ClatskanieCoop will play a guiding role, as organizers of their subnet DAO.
 
-### Technology / Topology
+## Technology / Topology
 
-#### Gateway nodes
+### Gateway nodes
 
 The backhaul is provided by a commercial internet subscription at Deborah's computer shop. This costs x per month. This is broadcasted out to the town by some sector antennas on the computer shop's roof. ClatskanieCoop has opted to use 2.4ghz radios instead of 5ghz because the lower frequencies go through foliage more easily.
 
 Another idea for a second gateway is to work with the Smoky Waters wireless ISP which is based on a nearby island. Smoky Waters could sell bandwidth into the ClatskanieCoop subnet from their network. Althea's architecture allows multiple gateway nodes to serve a subnet. Individual routers automatically choose the gateway which is faster and cheaper, which tends to be physically near to them.
 
-#### Intermediary nodes
+### Intermediary nodes
 
 Currently, the tower and a couple of homes in Clatskanie are serving as intermediary nodes. Any Althea node can sell bandwidth to other nodes, but we call a node that has better antennas and earns money forwarding packets for other nodes an intermediary node. In the future, another tower over Clatskanie and one covering Marshland will be intermediary nodes. Also, anyone who wants to hook up their neighbor or any other house they have line of sight to can become an intermediary node.
 
-#### User nodes
+### User nodes
 
 Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
