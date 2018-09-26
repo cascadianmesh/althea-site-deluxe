@@ -2,7 +2,17 @@
     <div class="container">
         <a class="navbar-brand" href="#"><img width="120" src="{{ '/images/wordmark.png' | relative_url }}" /></a>
         <div>
-            <a class="btn btn-light border-0 mr-1" href="#" role="button">Resources</a>
+            <div class="dropdown d-inline-block">
+                <a class="btn btn-light mr-1 dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Blog</a>
+                    <a class="dropdown-item" href="#">Glossary</a>
+                    <a class="dropdown-item" href="#">Getting Started Guide</a>
+                    <a class="dropdown-item" href="#">Governance Whitepaper</a>
+                    <a class="dropdown-item" href="#">Network Whitepaper</a>
+                </div>
+            </div>
+
             <a class="shadow btn btn-primary" href="#" role="button">Get Involved</a>
         </div>
     </div>
