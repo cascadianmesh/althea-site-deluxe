@@ -1,37 +1,31 @@
 <div class="section">
     <div class="row">
-        <div class="col-12 col-md-10 col-lg-6 offset-md-1 mb-4">
+        <div class="col-12 col-lg-8 offset-lg-1 mb-4">
             <h1>Get Involved</h1>
             <p>Althea test deployments are launching now in the US and Colombia, with hundreds of other communities ready to get started. Join us: whether you’ve got a little extra time, technical skills, a commitment to open and accessible Internet, or all of the above, we’d love to hear from you.</p>
             <p><strong>Select a role below to learn more and get started. Don’t see what you’re looking for? Send us an email.</strong></p>
         </div>
     </div>
     <ul class="nav row justify-content-center mb-3">
-        <li class="col-4 col-md-2 mb-3">
+        <li class="col-4 col-md col-lg-2 mb-3">
             <div href="#organizer-form" class="card border-0 shadow align-items-center py-4 card-tab active show" data-toggle="tab">
                 <i class="material-icons mb-2 font-size-36">group</i>
                 <div class="small-emphasis">Organizer</div>
             </div>
         </li>
-        <li class="col-4 col-md-2 mb-3">
+        <li class="col-4 col-md col-lg-2 mb-3">
             <div href="#user-form" class="card border-0 shadow align-items-center py-4 card-tab" data-toggle="tab">
                 <i class="material-icons mb-2 font-size-36">person</i>
                 <div class="small-emphasis">User</div>
             </div>
         </li>
-        <li class="col-4 col-md-2 mb-3">
-            <div href="#supporter-form" class="card border-0 shadow align-items-center py-4 card-tab" data-toggle="tab">
-                <i class="material-icons mb-2 font-size-36">thumb_up</i>
-                <div class="small-emphasis">Supporter</div>
-            </div>
-        </li>
-        <li class="col-4 col-md-2 mb-3">
+        <li class="col-4 col-md col-lg-2 mb-3">
             <div href="#developer-form" class="card border-0 shadow align-items-center py-4 card-tab" data-toggle="tab">
                 <i class="material-icons mb-2 font-size-36">code</i>
                 <div class="small-emphasis">Developer</div>
             </div>
         </li>
-        <li class="col-4 col-md-2 mb-3">
+        <li class="col-4 col-md col-lg-2 mb-3">
             <div href="#other-form" class="card border-0 shadow align-items-center py-4 card-tab" data-toggle="tab">
                 <i class="material-icons mb-2 font-size-36">help</i>
                 <div class="small-emphasis">Other</div>
@@ -41,7 +35,7 @@
     <div class="tab-content">
         <div class="tab-pane active show" id="organizer-form">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-lg-10">
                     <div class="card d-flex flex-row flex-wrap" style="overflow: hidden;">
 
                         <div class="d-none d-lg-block col-lg-6 col-12 border-right px-4 py-4">
@@ -60,20 +54,28 @@
 
                         </div>
 
-                        <div class="col-lg-6 col-12 bg-light px-5 py-4">
-                            <form>
+                        <div class="col-lg-6 col-12 bg-light px-3 py-4">
+                            <form action="http://localhost:5000/organizer-submit-eyJpIj" method="post">
+                                <span style="position: absolute; top: 99999px"><input type="text" class="form-control" autocomplete="Honnl3P0t" name="Honnl3P0t"></span>
                                 <div class="form-group">
-                                    <label for="emailInput">Email*</label>
-                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="Name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nameInput">Name</label>
-                                    <input type="text" class="form-control" id="nameInput">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="Email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
                                 <div class="form-group">
-                                    <label for="zipInput">Zip</label>
-                                    <input type="text" class="form-control" id="zipInput">
+                                    <label>City, State/Province, Country</label>
+                                    <input type="text" class="form-control" name="City, State/Province, Country">
                                 </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Why are you excited about Althea?</label>
+                                    <textarea class="form-control" name="Message" rows="3"></textarea>
+                                </div>
+
                                 <button type="submit" class="btn btn-primary mt-3" style="float: right">Submit</button>
                             </form>
                         </div>
@@ -83,7 +85,7 @@
         </div>
         <div class="tab-pane" id="user-form">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-lg-10">
                     <div class="card d-flex flex-row flex-wrap" style="overflow: hidden;">
 
                         <div class="d-none d-lg-block col-lg-6 col-12 border-right px-4 py-4">
@@ -100,60 +102,38 @@
 
                         </div>
 
-                        <div class="col-lg-6 col-12 bg-light px-5 py-4">
-                            <form>
+                        <div class="col-lg-6 col-12 bg-light px-3 py-4">
+                            <form action="http://localhost:5000/user-submit-eyJpIj" method="post">
+                                <span style="position: absolute; top: 99999px"><input type="text" class="form-control" autocomplete="Honnl3P0t" name="Honnl3P0t"></span>
                                 <div class="form-group">
-                                    <label for="emailInput">Email*</label>
-                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nameInput">Name</label>
-                                    <input type="text" class="form-control" id="nameInput">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="email">
+                                    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
                                 <div class="form-group">
-                                    <label for="zipInput">Zip</label>
-                                    <input type="text" class="form-control" id="zipInput">
+                                    <label>City, State/Province, Country</label>
+                                    <input type="text" class="form-control" name="address">
                                 </div>
-                                <button type="submit" class="btn btn-primary mt-3" style="float: right">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="supporter-form">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
-                    <div class="card d-flex flex-row flex-wrap" style="overflow: hidden;">
 
-                        <div class="d-none d-lg-block col-lg-6 col-12 border-right px-4 py-4">
-                            <p>While we’re just getting started, our networks and community are growing quickly—if you’re interested in following along, learning as we go, and hopefully helping us spread the good word, join our newsletter and we’ll keep you posted.</p>
+                                <label>Can we:</label>
 
-                            <div class="text-secondary">Fill in the form to get started<i class="align-middle material-icons">arrow_forward</i></div>
-
-                        </div>
-
-                        <div class="d-block d-lg-none col-lg-6 col-12 border-bottom px-4 py-4">
-                            <p>While we’re just getting started, our networks and community are growing quickly—if you’re interested in following along, learning as we go, and hopefully helping us spread the good word, join our newsletter and we’ll keep you posted.</p>
-
-                            <div class="text-secondary">Fill in the form to get started<i class="align-middle material-icons">arrow_downward</i></div>
-
-                        </div>
-
-                        <div class="col-lg-6 col-12 bg-light px-5 py-4">
-                            <form>
-                                <div class="form-group">
-                                    <label for="emailInput">Email*</label>
-                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" name="newsletter">
+                                    <label class="form-check-label">
+                                        Add you to our newsletter?
+                                    </label>
                                 </div>
-                                <div class="form-group">
-                                    <label for="nameInput">Name</label>
-                                    <input type="text" class="form-control" id="nameInput">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" name=notify>
+                                    <label class="form-check-label">
+                                        Let you know about subnets starting in your area?
+                                    </label>
                                 </div>
-                                <div class="form-group">
-                                    <label for="zipInput">Zip</label>
-                                    <input type="text" class="form-control" id="zipInput">
-                                </div>
+
                                 <button type="submit" class="btn btn-primary mt-3" style="float: right">Submit</button>
                             </form>
                         </div>
@@ -163,7 +143,7 @@
         </div>
         <div class="tab-pane" id="developer-form">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-lg-10">
                     <div class="card d-flex flex-row flex-wrap" style="overflow: hidden;">
 
                         <div class="d-none d-lg-block col-lg-6 col-12 border-right px-4 py-4">
@@ -180,20 +160,23 @@
 
                         </div>
 
-                        <div class="col-lg-6 col-12 bg-light px-5 py-4">
-                            <form>
+                        <div class="col-lg-6 col-12 bg-light px-3 py-4">
+                            <form action="http://localhost:5000/organizer-submit-eyJpIj" method="post">
                                 <div class="form-group">
-                                    <label for="emailInput">Email*</label>
-                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                    <label>Name</label>
+                                    <input type="email" class="form-control" id="emailInput">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nameInput">Name</label>
-                                    <input type="text" class="form-control" id="nameInput">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="emailInput">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="zipInput">Zip</label>
-                                    <input type="text" class="form-control" id="zipInput">
+                                    <label for="exampleFormControlTextarea1">What interests you about Althea?</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
+
                                 <button type="submit" class="btn btn-primary mt-3" style="float: right">Submit</button>
                             </form>
                         </div>
@@ -203,7 +186,7 @@
         </div>
         <div class="tab-pane" id="other-form">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
+                <div class="col-12 col-lg-10">
                     <div class="card d-flex flex-row flex-wrap" style="overflow: hidden;">
 
                         <div class="d-none d-lg-block col-lg-6 col-12 border-right px-4 py-4">
@@ -220,20 +203,23 @@
 
                         </div>
 
-                        <div class="col-lg-6 col-12 bg-light px-5 py-4">
-                            <form>
+                        <div class="col-lg-6 col-12 bg-light px-3 py-4">
+                            <form action="http://localhost:5000/organizer-submit-eyJpIj" method="post">
                                 <div class="form-group">
-                                    <label for="emailInput">Email*</label>
-                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                    <label>Name</label>
+                                    <input type="email" class="form-control" id="emailInput">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nameInput">Name</label>
-                                    <input type="text" class="form-control" id="nameInput">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="emailInput">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="zipInput">Zip</label>
-                                    <input type="text" class="form-control" id="zipInput">
+                                    <label for="exampleFormControlTextarea1">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
+
                                 <button type="submit" class="btn btn-primary mt-3" style="float: right">Submit</button>
                             </form>
                         </div>
