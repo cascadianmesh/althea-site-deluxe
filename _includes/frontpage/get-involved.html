@@ -1,37 +1,39 @@
 <div class="section">
     <div class="row">
         <div class="col-12 col-lg-8 offset-lg-1 mb-4">
-            <h1>Get Involved</h1>
+            <h1 id="get-involved">Get Involved</h1>
             <p>Althea test deployments are launching now in the US and Colombia, with hundreds of other communities ready to get started. Join us: whether you’ve got a little extra time, technical skills, a commitment to open and accessible Internet, or all of the above, we’d love to hear from you.</p>
-            <p><strong>Select a role below to learn more and get started. Don’t see what you’re looking for? Send us an email.</strong></p>
+            <p><strong>Select a role below to learn more and get started. Don’t see what you’re looking for? Send us an email at hello@altheamesh.com.</strong></p>
         </div>
     </div>
-    <ul class="nav row justify-content-center mb-3">
-        <li class="col-4 col-md col-lg-2 mb-3">
-            <div href="#organizer-form" class="card border-0 shadow align-items-center py-4 card-tab active show" data-toggle="tab">
-                <i class="material-icons mb-2 font-size-36">group</i>
-                <div class="small-emphasis">Organizer</div>
-            </div>
-        </li>
-        <li class="col-4 col-md col-lg-2 mb-3">
-            <div href="#user-form" class="card border-0 shadow align-items-center py-4 card-tab" data-toggle="tab">
-                <i class="material-icons mb-2 font-size-36">person</i>
-                <div class="small-emphasis">User</div>
-            </div>
-        </li>
-        <li class="col-4 col-md col-lg-2 mb-3">
-            <div href="#developer-form" class="card border-0 shadow align-items-center py-4 card-tab" data-toggle="tab">
-                <i class="material-icons mb-2 font-size-36">code</i>
-                <div class="small-emphasis">Developer</div>
-            </div>
-        </li>
-        <li class="col-4 col-md col-lg-2 mb-3">
-            <div href="#other-form" class="card border-0 shadow align-items-center py-4 card-tab" data-toggle="tab">
-                <i class="material-icons mb-2 font-size-36">help</i>
-                <div class="small-emphasis">Other</div>
-            </div>
-        </li>
-    </ul>
+    <div class="row mb-3">
+        <ul class="nav col-12 col-lg-10 offset-lg-1">
+            <li class="col-6 col-sm-3 mb-3">
+                <div href="#organizer-form" style="cursor: pointer;" class="card border-0 shadow align-items-center p-sm-4 p-1 card-tab active show" data-toggle="tab">
+                    <i class="material-icons mb-2 font-size-36">group</i>
+                    <div class="small-emphasis">Organizer</div>
+                </div>
+            </li>
+            <li class="col-6 col-sm-3 mb-3">
+                <div href="#user-form" style="cursor: pointer;" class="card border-0 shadow align-items-center p-sm-4 p-1 card-tab" data-toggle="tab">
+                    <i class="material-icons mb-2 font-size-36">person</i>
+                    <div class="small-emphasis">User</div>
+                </div>
+            </li>
+            <li class="col-6 col-sm-3 mb-3">
+                <div href="#developer-form" style="cursor: pointer;" class="card border-0 shadow align-items-center p-sm-4 p-1 card-tab" data-toggle="tab">
+                    <i class="material-icons mb-2 font-size-36">code</i>
+                    <div class="small-emphasis">Developer</div>
+                </div>
+            </li>
+            <li class="col-6 col-sm-3 mb-3">
+                <div href="#other-form" style="cursor: pointer;" class="card border-0 shadow align-items-center p-sm-4 p-1 card-tab" data-toggle="tab">
+                    <i class="material-icons mb-2 font-size-36">help</i>
+                    <div class="small-emphasis">Other</div>
+                </div>
+            </li>
+        </ul>
+    </div>
     <div class="tab-content">
         <div class="tab-pane active show" id="organizer-form">
             {% include get-involved/organizer.html %}

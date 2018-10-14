@@ -111,6 +111,13 @@ h1 {
         text-shadow: 0px 2px 1px $white, 0px -2px 1px $white, 2px 0px 1px $white, -2px 0px 1px $white, -2px -2px 1px $white, 2px -2px 1px $white, -2px 2px 1px $white, 2px 2px 1px $white;
     }
 
+    @include media-breakpoint-down(sm) {
+        .blurb {
+            font-size: 1.4rem;
+        }
+    }
+
+
     .card {
         border: 1px solid #979797 !important;
     }
@@ -124,6 +131,13 @@ h1 {
         height: 4.5rem;
     }
 }
+
+@include media-breakpoint-down(sm) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 
 .page {
     h1, h2, h3, h4 {
@@ -154,6 +168,269 @@ h1 {
 
     p {
         max-width: 50em;
+    }
+}
+
+@font-face {
+    font-family: "cmu_serif";
+    src: url("/fonts/cmunti-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "cmu_serif";
+    src: url("/fonts/cmunrm-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "cmu_serif";
+    src: url("/fonts/cmunbx-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "cmu_mono";
+    src: url("/fonts/cmunbtl-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(/fonts/MaterialIcons-Regular.woff2) format("woff2"), url(/fonts/MaterialIcons-Regular.woff) format("woff"), url(/fonts/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.paper {
+    font-size: 18px;
+    color: #444;
+    font-family: "cmu_serif", serif;
+    font-weight: 300;
+
+    // margin: 0 auto;
+    max-width: 45rem;
+    line-height: 1.45;
+    padding: 0.25rem;
+
+    @media print {
+        *,
+        *:before,
+        *:after {
+            background: transparent !important;
+            color: #000 !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
+
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
+
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+
+        img {
+            max-width: 100% !important;
+        }
+
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
+    }
+
+    pre,
+    code {
+        font-family: "cmu_mono", monospace;
+    }
+
+    pre {
+        padding: 0.5rem;
+        line-height: 1.25;
+        overflow-x: scroll;
+    }
+
+    a,
+    a:visited {
+        color: #3498db;
+        border-bottom: none;
+        text-decoration: underline;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        color: #2980b9;
+    }
+
+    .modest-no-decoration {
+        text-decoration: none;
+    }
+
+    p,
+    .modest-p {
+        font-size: 1rem;
+        margin-bottom: 1.3rem;
+    }
+
+    h1,
+    .modest-h1,
+    h2,
+    .modest-h2,
+    h3,
+    .modest-h3,
+    h4,
+    .modest-h4 {
+        margin-top: 1.414rem;
+        margin-bottom: .5rem;
+        font-weight: inherit;
+        line-height: 1.42;
+    }
+
+    // font-size: 2.827rem;
+
+    h1,
+    .modest-h1 {
+        // margin-top: 0;
+        // font-size: 3.998rem;
+        // font-size: 2.827rem;
+        font-size: 1.999rem;
+    }
+
+    h2,
+    .modest-h2 {
+        // font-size: 2.827rem;
+        // font-size: 1.999rem;
+        font-size: 1.414rem;
+    }
+
+    h3,
+    .modest-h3 {
+        // font-size: 1.999rem;
+        // font-size: 1.414rem;
+        font-size: 1.121rem;
+    }
+
+    h4,
+    .modest-h4 {
+        // font-size: 1.414rem;
+        // font-size: 1.121rem;
+        font-size: 1rem;
+    }
+
+    h5,
+    .modest-h5 {
+        // font-size: 1.121rem;
+        // font-size: 1rem;
+        font-size: 1rem;
+    }
+
+    h6,
+    .modest-h6 {
+        font-size: 0.88rem;
+    }
+
+    small,
+    .modest-small {
+        font-size: 0.707em;
+    }
+
+    /* https://github.com/mrmrs/fluidity */
+
+    img,
+    canvas,
+    iframe,
+    video,
+    svg,
+    select,
+    textarea {
+        max-width: 70%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "cmu_serif", serif;
+        font-weight: 700;
+    }
+
+    blockquote {
+        border-left: 8px solid #fafafa;
+        padding: 1rem;
+    }
+
+    pre,
+    code {
+        background-color: #fafaf9;
+        color: #7d4b62;
     }
 }
 

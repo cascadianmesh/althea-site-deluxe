@@ -1,7 +1,7 @@
 ---
 layout: plain-page
 title: Althea
-permalink: /en/how-it-works
+permalink: /how-it-works
 ---
 
 # The Problem
@@ -19,7 +19,7 @@ This individual ownership is made possible because Althea allows each node to au
 
 Althea also addresses the second barrier: the sheer complexity of centralized network management. Althea nodes manage their own connections to their peers, eliminating most network management (although physical installation wires and aiming of antennas is still necessary). This dramatically reduces the workload of the local groups (see “Subnet DAOs” below) that start, promote, and support the networks.
 
-# Components of Althea
+# Althea's Solution
 
 ### Price aware routing
 
@@ -37,7 +37,7 @@ Althea is designed to use the same professional-grade radio equipment as is used
 
 ### Subnet DAOs
 
-Starting an Althea subnet DAO is a way for one person or a group of people to get paid by bringing faster, cheaper internet to their area, with lower investment and technical know-how than is required to start a traditional ISP. Investment to start a subnet DAO is low, since the equipment cost is spread out among the nodes in the network. Technical know-how required is also low, since Althea's protocols allow the network to configure itself and route packets mostly automatically. The main administration done by the subnet DAO is to add nodes for new users, and remove any nodes which are causing problems on the network or providing bad service.
+Starting an Althea subnet DAO is a way for one person or a group of people to bring faster, cheaper internet to their area, with lower investment and technical know-how than is required to start a traditional ISP. Investment to start a subnet DAO is low, since the equipment cost is spread out among the nodes in the network. Technical know-how required is also low, since Althea's protocols allow the network to configure itself and route packets mostly automatically. The main administration done by the subnet DAO is to add nodes for new users, and remove any nodes which are causing problems on the network or providing bad service.
 
 The subnet DAO collects a fixed per-month fee from every node on the subnet, and holds the money in an on-chain vault. A subnet DAO can have any number of members who manage the network. They can also all vote on what to do with the collected fee, for instance allocating it to promotional activities, or paying themselves or others to provide technical support to the nodes on their subnet. It can be beneficial for the subnet DAO group to also use a legal organization such as an LLC or a nonprofit to get some liability protection and tax benefits. However, a subnet DAO is fully able to earn and store funds, and be governed by its members without legal paperwork.
 
