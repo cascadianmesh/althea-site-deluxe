@@ -1,0 +1,1515 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%APL_DSC_Encoding: UTF8
+%APLProducer: (Version 10.13.4 (Build 17E202) Quartz PS Context)
+%%Title: (Unknown)
+%%Creator: (Unknown)
+%%CreationDate: (Unknown)
+%%For: (Unknown)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox: 0 0 681 681
+%%EndComments
+%%BeginProlog
+%%BeginFile: cg-pdf.ps
+%%Copyright: Copyright 2000-2004 Apple Computer Incorporated.
+%%Copyright: All Rights Reserved.
+currentpacking true setpacking
+/cg_md 141 dict def
+cg_md begin
+/L3? languagelevel 3 ge def
+/bd{bind def}bind def
+/ld{load def}bd
+/xs{exch store}bd
+/xd{exch def}bd
+/cmmtx matrix def
+mark
+/sc/setcolor
+/scs/setcolorspace
+/dr/defineresource
+/fr/findresource
+/T/true
+/F/false
+/d/setdash
+/w/setlinewidth
+/J/setlinecap
+/j/setlinejoin
+/M/setmiterlimit
+/i/setflat
+/rc/rectclip
+/rf/rectfill
+/rs/rectstroke
+/f/fill
+/f*/eofill
+/sf/selectfont
+/s/show
+%/as/ashow
+/xS/xshow
+/yS/yshow
+/xyS/xyshow
+/S/stroke
+/m/moveto
+/l/lineto
+/c/curveto
+/h/closepath
+/n/newpath
+/q/gsave
+/Q/grestore
+counttomark 2 idiv
+%dup (number of ld's = )print == flush	% *** how many 
+{ld}repeat pop
+/SC{	% CSname
+    /ColorSpace fr scs
+}bd
+/sopr /setoverprint where{pop/setoverprint}{/pop}ifelse ld
+/soprm /setoverprintmode where{pop/setoverprintmode}{/pop}ifelse ld
+/cgmtx matrix def
+/sdmtx{cgmtx currentmatrix pop}bd
+/CM {cgmtx setmatrix}bd		% pop the ctm: our gstate ctm on host is now identity
+/cm {cmmtx astore CM concat}bd	% reset the matrix and then concat
+/W{clip newpath}bd
+/W*{eoclip newpath}bd
+
+statusdict begin product end dup (HP) anchorsearch{
+    pop pop pop	% pop off the search results
+    true
+}{
+    pop	% previous search result
+   (hp) anchorsearch{
+	pop pop true
+    }{
+	pop false
+    }ifelse
+}ifelse
+
+{	% HP is the product: we use this method of stroking because of a bug in their clone printers with certain T3 fonts
+    { 
+	{ % charCode Wx Wy
+	    pop pop % charCode
+	    (0)dup 0 4 -1 roll put
+	    F charpath
+	}cshow
+    }
+}{
+    {F charpath}
+}ifelse
+/cply exch bd
+/cps {cply stroke}bd
+/pgsave 0 def
+/bp{/pgsave save store}bd
+/ep{pgsave restore showpage}def		% dont' bind
+/re{4 2 roll m 1 index 0 rlineto 0 exch rlineto neg 0 rlineto h}bd
+
+/scrdict 10 dict def
+/scrmtx matrix def
+/patarray 0 def
+/createpat{patarray 3 1 roll put}bd
+/makepat{
+scrmtx astore pop
+gsave
+initgraphics
+CM 
+patarray exch get
+scrmtx
+makepattern
+grestore
+setpattern
+}bd
+
+/cg_BeginEPSF{
+    userdict save/cg_b4_Inc_state exch put
+    userdict/cg_endepsf/cg_EndEPSF load put
+    count userdict/cg_op_count 3 -1 roll put 
+    countdictstack dup array dictstack userdict/cg_dict_array 3 -1 roll put
+    3 sub{end}repeat
+    /showpage {} def
+    0 setgray 0 setlinecap 1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [] 0 setdash newpath
+    false setstrokeadjust false setoverprint	% don't use F
+}bd
+/cg_EndEPSF{
+  countdictstack 3 sub { end } repeat
+  cg_dict_array 3 1 index length 3 sub getinterval
+  {begin}forall
+  count userdict/cg_op_count get sub{pop}repeat
+  userdict/cg_b4_Inc_state get restore
+  F setpacking
+}bd
+
+/cg_biproc{currentfile/RunLengthDecode filter}bd
+/cg_aiproc{currentfile/ASCII85Decode filter/RunLengthDecode filter}bd
+/ImageDataSource 0 def
+L3?{
+    /cg_mibiproc{pop pop/ImageDataSource{cg_biproc}def}bd
+    /cg_miaiproc{pop pop/ImageDataSource{cg_aiproc}def}bd
+}{
+    /ImageBandMask 0 def
+    /ImageBandData 0 def
+    /cg_mibiproc{
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/RunLengthDecode filter dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+    /cg_miaiproc{	
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/ASCII85Decode filter/RunLengthDecode filter
+	    dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+}ifelse
+/imsave 0 def
+/BI{save/imsave xd mark}bd
+/EI{imsave restore}bd
+/ID{
+counttomark 2 idiv
+dup 2 add	% leave room for imagetype and imagematrix
+dict begin
+{def} repeat
+pop		% remove mark
+/ImageType 1 def
+/ImageMatrix[Width 0 0 Height neg 0 Height]def
+currentdict dup/ImageMask known{ImageMask}{F}ifelse exch
+% currentdict on stack
+L3?{
+    dup/MaskedImage known
+    { 
+	pop
+	<<
+	    /ImageType 3
+	    /InterleaveType 2
+	    /DataDict currentdict
+	    /MaskDict
+	    <<  /ImageType 1
+		/Width Width
+		/Height Height
+		/ImageMatrix ImageMatrix
+		/BitsPerComponent 1
+		/Decode [0 1]
+		currentdict/Interpolate known
+		{/Interpolate Interpolate}if
+	    >>
+	>>
+    }if
+}if
+exch
+{imagemask}{image}ifelse	
+end	% pop imagedict from dict stack
+}bd
+
+/cguidfix{statusdict begin mark version end
+{cvr}stopped{cleartomark 0}{exch pop}ifelse
+2012 lt{dup findfont dup length dict begin
+{1 index/FID ne 2 index/UniqueID ne and
+{def} {pop pop} ifelse}forall
+currentdict end definefont pop
+}{pop}ifelse
+}bd
+/t_array 0 def
+/t_i 0 def
+/t_c 1 string def
+/x_proc{ % x y
+    exch t_array t_i get add exch moveto
+    /t_i t_i 1 add store
+}bd
+/y_proc{ % x y
+    t_array t_i get add moveto
+    /t_i t_i 1 add store
+}bd
+/xy_proc{
+        % x y
+	t_array t_i 2 copy 1 add get 3 1 roll get 
+	4 -1 roll add 3 1 roll add moveto
+	/t_i t_i 2 add store
+}bd
+/sop 0 def		% don't bind sop
+/cp_proc/x_proc ld 	% default moveto proc is for xwidths only
+/base_charpath		% string array
+{
+    /t_array xs
+    /t_i 0 def
+    { % char
+	t_c 0 3 -1 roll put
+        currentpoint
+	t_c cply sop
+        cp_proc
+    }forall
+    /t_array 0 def
+}bd
+/sop/stroke ld		% default sop is stroke. Done here so we don't bind in /base_charpath 
+
+% default sop is stroke
+/nop{}def
+/xsp/base_charpath ld
+/ysp{/cp_proc/y_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xysp{/cp_proc/xy_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xmp{/sop/nop ld /cp_proc/x_proc ld base_charpath/sop/stroke ld}bd
+/ymp{/sop/nop ld /cp_proc/y_proc ld base_charpath/sop/stroke ld}bd
+/xymp{/sop/nop ld /cp_proc/xy_proc ld base_charpath/sop/stroke ld}bd
+/refnt{ % newname encoding fontname
+findfont dup length dict copy dup
+/Encoding 4 -1 roll put 
+definefont pop
+}bd
+/renmfont{ % newname fontname
+findfont dup length dict copy definefont pop
+}bd
+
+L3? dup dup{save exch}if
+
+% languagelevel2 ONLY code goes here
+
+/Range 0 def
+/DataSource 0 def
+/val 0 def
+/nRange 0 def
+/mulRange 0 def
+/d0 0 def
+/r0 0 def
+/di 0 def
+/ri 0 def
+/a0 0 def
+/a1 0 def
+/r1 0 def
+/r2 0 def
+/dx 0 def
+/Nsteps 0 def
+/sh3tp 0 def
+/ymax 0 def
+/ymin 0 def
+/xmax 0 def
+/xmin 0 def
+
+/setupFunEval % funDict -- 	% this calculates and sets up a function dict for evaulation.
+{
+    begin
+	/nRange Range length 2 idiv store
+	/mulRange   % precompute the range data needed to map a sample value from the table to a range value
+		    % this data looks like [ range0mul range0min range1mul range1min ... rangeN-1mul rangeN-1min ]
+	[ 
+	    0 1 nRange 1 sub
+	    { % index
+		    2 mul/nDim2 xd		% 2*dimension# we are dealing with
+		    Range nDim2 get		% ymin
+		    Range nDim2 1 add get	% ymin ymax 
+		    1 index sub			% ymin (ymax-ymin)
+						% xmin = 0, xmax = 255 (2^bitspersample - 1)
+		    255 div			% ymin (ymax-ymin)/(xmax - xmin)
+		    exch			% (ymax-ymin)/(xmax - xmin) ymin
+	    }for
+	]store
+    end
+}bd
+
+/FunEval % val1 fundict -> comp1 comp2 ... compN
+{
+    begin
+	% the value passed in is the base index into the table
+	nRange mul /val xd	% compute the actual index to the table
+				% since there are nRange entries per base index
+	0 1 nRange 1 sub
+	{
+	    dup 2 mul/nDim2 xd % dim
+	    val	% base value to use to do our lookup
+	    add DataSource exch get %  lookedupval
+	    mulRange nDim2 get mul 	% lookedupval*(ymax-ymin)/(xmax-xmin)
+	    mulRange nDim2 1 add get % lookedupval*(ymax-ymin)/(xmax-xmin) ymin
+	    add % interpolated result
+	}for	% comp1 comp2 ... compN
+    end
+}bd
+
+/max % a b -> max(a, b)
+{
+	2 copy lt
+	{exch pop}{pop}ifelse
+}bd
+
+/sh2
+{	% emulation of shading type 2. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 x1 y1
+	3 index 3 index translate	% origin is now at beginning point of shading
+					% x0 y0 x1 y1
+	3 -1 roll sub	% x0 x1 y1-y0
+	3 1 roll exch 	% y1-y0 x1 x0
+	sub				% y1-y0 x1-x0
+	2 copy
+	dup mul exch dup mul add sqrt	% length of segment between two points
+	dup
+	scale  
+	atan	% atan (dy/dx)
+	%dup (rotation angle = )print ==
+	rotate		% now line between 0,0 and 1,0 is the line perpendicular to which the axial lines are drawn					
+	
+	/Function load setupFunEval	% may need to setup function dictionary by calling setupFunEval
+	
+	% this is now specific to axial shadings. Compute the maximum bounds to fill
+	clippath {pathbbox}stopped {0 0 0 0}if newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+	currentdict/Extend known
+	{
+		/Extend load 0 get
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			xmin ymin xmin abs ymax ymin sub rectfill
+		}if
+	}if
+	% paint the rects. The sampling frequency is that of our table
+	/Nsteps/Function load/Size get 0 get 1 sub store
+	/dx 1 Nsteps div store
+	gsave
+		/di ymax ymin sub store
+		/Function load
+		% loop Nsteps + 1 times, incrementing the index by 1 each time
+		0 1 Nsteps
+		{
+			1 index FunEval sc
+			0 ymin dx di rectfill
+			dx 0 translate
+		}for
+		pop	% pop our function
+	grestore	% origin is back to start point
+	currentdict/Extend known
+	{
+		/Extend load 1 get
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			1 ymin xmax 1 sub abs ymax ymin sub rectfill
+		}if
+	}if
+}bd
+
+/shp	% this paints our shape for shading type 3
+{	% x1 r1 x0 r0 -
+	4 copy
+
+	% fill interior arc
+	dup 0 gt{
+		0 exch a1 a0 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a0 a1 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+
+	% fill exterior arc
+	dup 0 gt{
+		0 exch a0 a1 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a1 a0 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+}bd
+
+/calcmaxs
+{	% calculate maximum distance vector from origin to corner points
+	% of bbox
+	xmin dup mul ymin dup mul add sqrt		% (xmin2 + ymin2)
+	xmax dup mul ymin dup mul add sqrt		% (xmax2 + ymin2)
+	xmin dup mul ymax dup mul add sqrt		% (xmin2 + ymax2)
+	xmax dup mul ymax dup mul add sqrt		% (xmax2 + ymax2)
+	max max max								% maximum value
+}bd
+
+/sh3
+{	% emulation of shading type 3. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 r1 x1 y1 r2
+	5 index 5 index translate	% origin is now at first circle origin
+	3 -1 roll 6 -1 roll sub		% y0 r1 y1 r2 dx
+	3 -1 roll 5 -1 roll sub		% r1 r2 dx dy
+	2 copy dup mul exch dup mul add sqrt
+	/dx xs						% r1 r2 dx dy
+	2 copy 0 ne exch 0 ne or
+	{
+		% r1 r2 dx dy
+		exch atan rotate	% we are now rotated so dy is zero and positive values of dx move us as expected
+	}{
+		pop pop
+	}ifelse
+	% r1 r2		
+	/r2 xs
+	/r1 xs
+	/Function load 
+	dup/Size get 0 get 1 sub	% this is the size of our table minus 1
+	/Nsteps xs		% at some point we should optimize this better so NSteps is based on needed steps for the device
+	setupFunEval		% may need to setup function dictionary by calling setupFunEval
+	% determine the case:
+	% case 0: circle1 inside circle2
+	% case 1: circle 2 inside circle 1
+	% case 2: r1 = r2 
+	% case 3: r1 != r2
+	dx r2 add r1 lt{
+		% circle 2 inside of circle 1
+		0 
+	}{
+		dx r1 add r2 le
+		{ % circle 1 inside of circle 2
+			1
+		}{ % circles don't contain each other
+			r1 r2 eq
+			{	% equal
+				2
+			}{ % r1 != r2
+				3
+			}ifelse		
+		}ifelse
+	}ifelse
+	/sh3tp xs		% sh3tp has the number of our different cases
+	clippath {pathbbox}stopped {0 0 0 0}if 
+	newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+
+	% Arc angle atan( sqrt((dx*dx + dy*dy) - dr*dr), dr)
+	dx dup mul r2 r1 sub dup mul sub dup 0 gt
+	{
+		sqrt r2 r1 sub atan
+		/a0 exch 180 exch sub store 
+		/a1 a0 neg store 
+	}{
+		pop
+		/a0 0 store
+		/a1 360 store		
+	}ifelse		
+
+	currentdict/Extend known
+	{
+		/Extend load 0 get r1 0 gt and	% no need to extend if the radius of the first end is 0
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{	% case 0
+					dx 0 r1 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				}
+				{	% case 1
+					r1 0 gt{0 0 r1 0 360 arc fill}if
+				}
+				{	% case 2
+					% r1 == r2, extend 0
+					% r3 = r, x3 = -(abs(minx) + r), x1 = 0
+				
+					% x(i+1) r(i+1) x(i) r(i) shp
+					0 r1 xmin abs r1 add neg r1 shp
+				}
+				{	% case 3
+					% no containment, r1 != r2
+				
+					r2 r1 gt{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1
+						r1 neg r2 r1 sub div dx mul	% this is point of beginning circle
+						0	% point of ending circle
+						shp	% takes x(i+1) r(i+1) x(i) r(i)
+					}{	% the first circle is the bigger of the two
+						% we find a circle on our line which is outside the bbox in the
+						% negative direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1 calcmaxs	% 0 r1 maxs
+						dup
+						% calculating xs: (-(maxs+r2)*x2)/(x2-(r1-r2))
+						r2 add dx mul dx r1 r2 sub sub div
+						neg				% maxs xs'
+						exch 1 index	% xs' maxs xs'
+						abs exch sub
+						shp
+					}ifelse
+				} 
+			}sh3tp get exec	% execute the extend at beginning proc for our shading type
+		}if
+	}if
+
+	% now do the shading
+	/d0 0 store
+	/r0 r1 store
+	/di dx Nsteps div store
+	/ri r2 r1 sub Nsteps div store 
+	/Function load 
+	0 1 Nsteps
+	{	% function t(i)
+		1 index FunEval sc
+		d0 di add r0 ri add d0 r0 shp
+		{
+		% fill interior arc
+		d0 0 r0 a1 a0 arc
+		d0 di add 0 r0 ri add a0 a1 arcn
+		fill
+		
+		% fill exterior arc
+		d0 0 r0 a0 a1 arc
+		d0 di add 0 r0 ri add a1 a0 arcn
+		fill
+		}pop
+		
+		% advance to next
+		/d0 d0 di add store
+		/r0 r0 ri add store
+	}for
+	pop	% pop our function dict
+
+	% handle Extend
+	currentdict/Extend known
+	{
+		/Extend load 1 get r2 0 gt and	% no need to extend if the radius of the last end is 0
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{
+					dx 0 r2 0 360 arc fill
+				} 
+				{
+					dx 0 r2 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				} 
+				{	% r1 == r2, extend 1
+					% r3 = r, x3 = (abs(xmax) + r), x1 = dx
+					% x(i+1) r(i+1) x(i) r(i) shp
+					xmax abs r1 add r1 dx r1 shp
+				}	
+				{	% no containment, r1 != r2
+			
+					r2 r1 gt{
+						% we find a circle on our line which is outside the bbox in the
+						% positive direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						calcmaxs dup	% maxs maxs
+						% calculating xs: ((maxs+r1)*x2)/(x2-(r2-r1))
+						r1 add dx mul dx r2 r1 sub sub div	% maxs xs
+						exch 1 index	% xs maxs xs
+						exch sub
+						dx r2
+						shp
+					}{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						r1 neg r2 r1 sub div dx mul	% this is point of ending circle
+						0		% radius of ending circle
+						dx 		% point of starting circle
+						r2		% radius of starting circle
+						shp
+					}ifelse
+				}
+			}			
+			sh3tp get exec	% execute the extend at end proc for our shading type
+		}if
+	}if
+}bd
+/sh		% emulation of shfill operator for type 2 and type 3 shadings based on type 0 functions
+{	% shadingDict --
+	begin
+		/ShadingType load dup dup 2 eq exch 3 eq or
+		{	% shadingtype
+			gsave
+				newpath
+				/ColorSpace load scs
+				currentdict/BBox known
+				{
+					/BBox load aload pop	% llx lly urx ury
+					2 index sub				% llx lly urx ury-lly
+					3 index					% llx lly urx ury-lly llx
+					3 -1 roll exch sub 
+					exch rectclip
+				}if
+				2 eq
+				{sh2}{sh3}ifelse
+			grestore
+		}{
+			% shadingtype
+			pop 
+			(DEBUG: shading type unimplemented\n)print flush
+		}ifelse
+	end
+}bd
+
+% end of language level 2 ONLY code
+
+{restore}if not dup{save exch}if
+% languagelevel3 ONLY code goes here
+	L3?{	% we do these loads conditionally or else they will fail on a level 2 printer
+		/sh/shfill ld
+		/csq/clipsave ld
+		/csQ/cliprestore ld
+	}if
+{restore}if
+
+%currentdict dup maxlength exch length sub (number of extra slots in md = )print == flush	% *** how many entries are free
+end
+setpacking
+% count 0 ne { pstack(***extras on stack during prolog execution***\n)print flush}if	% *** BARK if anything is left on stack
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 0 0 681 681
+%%BeginPageSetup
+cg_md begin
+bp
+sdmtx
+[ /CIEBasedABC 4 dict dup begin 
+/WhitePoint [ 0.9505 1.0000 1.0891 ] def 
+/DecodeABC [ 
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+] def 
+/MatrixABC [ 0.4124 0.2126 0.0193 0.3576 0.7151 0.1192 0.1805 0.0722 0.9508 ] def 
+/RangeLMN [ 0.0 0.9505 0.0 1.0000 0.0 1.0891 ] def 
+end ] /Cs1 exch/ColorSpace dr pop
+%%EndPageSetup
+0.60000002 i
+/Cs1 SC
+1 1 1 sc
+q
+340.5 0 m
+528.55298 0 681 152.44704 681 340.5 c
+681 528.55298 528.55298 681 340.5 681 c
+152.44704 681 0 528.55298 0 340.5 c
+0 152.44704 152.44704 0 340.5 0 c
+h
+W*
+0 0 681 681 rc
+-5 686 m
+686 686 l
+686 -5 l
+-5 -5 l
+h
+f
+Q
+0 0 0 sc
+q
+130.18098 431.68939 m
+131.9048 437.87381 137.3187 440.42294 141.75395 444.39029 c
+112 438.34952 l
+112.08374 439.9281 112.25157 441.50113 112.50278 443.06186 c
+113.715 448.64276 116.31852 453.82684 120.07146 458.13242 c
+121.34637 459.59549 122.76494 460.97778 123.977 462.4588 c
+129.57045 469.10095 136.54657 473.58893 145.1208 474.98019 c
+150.50777 475.87778 153.64117 478.87573 155.56252 483.65988 c
+156.40291 485.41525 157.15208 487.21283 157.80708 489.04541 c
+160.41078 498.21878 167.00981 503.80182 174.86578 508.28079 c
+175.90726 508.8732 176.98465 509.3938 178.06204 509.9144 c
+182.38957 512.0058 182.36263 511.97885 185.41524 508.04742 c
+186.33975 506.8718 187.37721 505.78952 188.51274 504.81607 c
+205.07149 490.25616 224.52596 479.366 245.59653 472.86188 c
+247.58969 472.2515 249.66368 471.90146 251.70174 471.43469 c
+258.43542 469.88187 263.94809 471.5065 269.46973 476.06625 c
+276.52466 481.84933 284.08136 486.99194 292.05005 491.43301 c
+314.91678 504.4227 338.61029 515.90051 362.9783 525.79279 c
+375.83517 530.93597 389.27563 533.59283 402.97647 535.23541 c
+415.02527 536.67157 427.11899 537.55121 439.23965 536.89594 c
+459.55746 535.79193 479.89322 534.20319 499.16956 527.02246 c
+507.10632 524.07837 514.57623 519.84174 522.18085 516.05389 c
+524.71271 514.78833 524.87433 511.43134 522.4502 509.30405 c
+519.03845 506.15866 515.44067 503.22122 511.67627 500.50766 c
+503.59583 494.87976 495.31787 489.46729 487.01297 484.13559 c
+484.60358 482.65378 482.01886 481.47784 479.3186 480.63501 c
+476.03256 479.54892 473.2493 477.86145 471.69608 474.79169 c
+468.15863 467.73663 462.11627 464.14627 454.78104 461.97409 c
+450.95395 460.70306 447.20633 459.20441 443.5582 457.48615 c
+439.82324 455.87946 437.43503 453.07001 435.69324 449.31808 c
+434.0011 445.84998 431.94232 442.57306 429.55209 439.5433 c
+427.54099 436.93134 426.13138 436.9762 423.67136 439.22018 c
+422.1438 440.68365 420.06027 441.4194 417.95221 441.23975 c
+416.03085 441.11411 414.1095 441.05127 411.81107 440.94354 c
+412.51138 443.03494 414.08255 443.44785 415.53705 443.93253 c
+417.93423 444.74036 420.37631 445.45844 422.7825 446.23935 c
+424.69485 446.85867 426.51746 447.62161 426.45462 450.10794 c
+426.40073 451.957 424.82056 453.30338 421.96548 453.6265 c
+418.55374 454.00348 415.10608 454.13812 411.67639 454.40741 c
+410.52731 454.45499 409.42468 454.87387 408.534 455.6012 c
+409.79492 456.13553 411.09448 456.57361 412.4216 456.91168 c
+417.55716 457.86313 422.69272 458.83252 427.8642 459.53265 c
+435.98953 460.63669 443.3876 463.76929 450.66898 467.26987 c
+452.13245 467.97 453.88321 468.80475 453.12006 470.92307 c
+452.3569 473.04138 450.72284 473.11319 448.69376 472.91571 c
+443.30679 472.39511 437.91986 472.01813 432.59573 471.78476 c
+421.82184 471.33597 411.04791 471.20132 400.27399 470.59995 c
+395.21924 470.32169 390.21835 469.24457 385.18155 468.58035 c
+383.28714 468.32904 381.37476 468.1944 379.47137 468.01489 c
+379.22894 468.91248 l
+380.96118 469.56818 382.74109 470.0903 384.55307 470.47427 c
+394.02512 471.75784 403.48822 473.16705 412.99619 474.06464 c
+429.04932 475.64441 445.23712 476.40735 460.76053 481.31717 c
+468.2933 483.69577 475.62854 486.7027 483.04459 489.48523 c
+484.46317 490.01483 486.12415 490.82266 485.63931 492.59091 c
+485.29813 493.84753 484.18481 495.47217 483.07153 495.81326 c
+480.95697 496.42902 478.73883 496.60617 476.55331 496.33386 c
+468.54471 495.39139 460.58997 493.92831 452.56339 493.18332 c
+443.63901 492.35754 434.66074 491.84592 425.70044 491.67535 c
+412.09137 491.34833 398.55234 489.6188 385.29825 486.51422 c
+383.41452 486.07947 381.49329 485.82697 379.56116 485.76025 c
+385.1546 489.24289 391.04434 492.21393 397.6344 492.80634 c
+411.02997 494.00012 424.46143 494.80795 437.89291 495.6427 c
+452.52747 496.54031 467.12613 497.62637 481.28485 501.82712 c
+481.57214 501.9079 481.87741 501.92584 482.18268 502.01559 c
+485.3161 502.98499 486.4653 504.20572 486.33063 506.44971 c
+486.19595 508.69366 485.10959 509.66309 481.71579 510.3183 c
+470.13385 512.55328 458.56985 514.92297 446.95197 516.95148 c
+436.17807 518.83643 425.24255 518.7467 414.30701 517.84912 c
+402.21912 517.00598 390.21323 515.24158 378.39398 512.57129 c
+362.98087 508.85428 348.07578 503.2814 334.00546 495.97482 c
+316.60559 486.9989 299.34039 477.78964 282.09314 468.53549 c
+275.28763 464.89127 273.76132 461.35477 275.02725 453.88681 c
+275.50311 451.07736 274.73996 449.52451 271.65143 449.30011 c
+267.49316 448.95078 263.30844 449.08328 259.18063 449.69507 c
+250.86676 451.04144 243.1275 454.28174 235.57678 457.94391 c
+224.50659 463.32947 214.24443 469.98059 204.06308 476.7933 c
+198.40445 480.69238 192.49939 484.22131 186.38489 487.35794 c
+177.40663 491.84592 173.03421 491.02011 165.92343 483.83939 c
+163.31761 481.18582 161.16423 478.12338 159.54887 474.77374 c
+157.75322 470.99487 155.25726 468.33801 151.38763 467.00958 c
+148.57658 466.00513 145.70726 465.17184 142.79544 464.51428 c
+138.79042 463.77243 135.13341 461.75388 132.37167 458.76071 c
+129.07664 455.17035 125.75469 451.57999 122.08259 447.57675 c
+124.58752 446.57144 126.26646 447.2536 127.91846 447.57675 c
+133.78127 448.66284 139.59019 449.99127 145.51585 450.84396 c
+150.45079 451.48392 155.46617 451.02725 160.20428 449.50656 c
+154.43126 445.01862 146.63814 443.47476 143.40596 435.79138 c
+144.37772 435.48444 145.38631 435.30936 146.40469 435.27078 c
+152.78824 435.95294 159.2885 436.16837 165.51044 437.64041 c
+173.45619 439.43561 181.21341 438.73547 189.11429 437.9097 c
+201.90831 436.5723 212.82587 431.0611 222.77379 423.28796 c
+228.16074 419.05133 233.5477 414.76981 238.85385 410.36264 c
+241.7269 407.95712 242.99283 406.89795 241.79872 402.88571 c
+240.00307 403.21783 238.20741 403.61276 236.313 403.87308 c
+233.84398 404.21414 233.009 403.6756 232.50621 401.27902 c
+232.27385 399.9545 232.16266 398.61154 232.17403 397.26682 c
+231.78436 383.35782 232.32126 369.43835 233.78113 355.60068 c
+235.21765 342.23553 236.69009 328.87042 238.43187 315.5412 c
+242.71538 281.34375 256.97635 249.16432 279.43558 223.01759 c
+298.28995 200.7753 317.40466 178.74245 336.77972 156.91904 c
+345.01282 147.66489 354.25143 139.28139 362.99625 130.47603 c
+364.2728 128.94543 366.32877 128.30597 368.24854 128.84241 c
+370.125 129.34506 370.6188 130.47603 369.57733 132.19041 c
+368.82303 133.30795 368.00464 134.38087 367.12625 135.40379 c
+299.55588 221.57246 l
+298.81964 222.47006 298.11935 223.45741 297.00604 224.92049 c
+300.06763 224.82175 301.72861 223.28687 303.24594 221.62633 c
+306.97192 217.53331 310.67993 213.42235 314.29819 209.23061 c
+326.02377 195.64108 337.72546 182.03062 349.40317 168.39922 c
+349.98685 167.53085 350.70865 166.76375 351.54001 166.12831 c
+352.33008 165.67055 353.65887 165.33844 354.32327 165.71542 c
+354.98764 166.09241 355.26599 167.38493 355.40964 168.31844 c
+355.43781 169.06824 355.27402 169.81282 354.93378 170.48163 c
+353.3985 174.19765 352.31213 178.21886 350.14838 181.53096 c
+342.22955 193.66638 334.23889 205.7659 324.01266 216.21385 c
+311.7663 228.72627 299.77136 241.48102 287.68661 254.14603 c
+286.52545 255.33418 285.49872 256.64658 284.62503 258.05951 c
+288.08313 256.97574 291.24252 255.10455 293.85468 252.59319 c
+307.45374 239.33878 321.00494 226.02153 334.50824 212.64145 c
+336.30389 210.84627 337.71347 208.70102 339.41037 206.79813 c
+340.26678 205.76888 341.2858 204.88657 342.42706 204.18614 c
+344.07907 203.28856 345.56049 204.35669 345.12054 206.16084 c
+344.70233 207.90114 344.1004 209.59212 343.32489 211.20531 c
+336.26114 225.90942 327.44647 239.7066 317.07245 252.29698 c
+316.21582 253.33594 315.26288 254.29164 314.22635 255.15132 c
+304.35025 263.38223 294.35745 271.48746 282.80243 277.33078 c
+281.32999 278.0668 280.25259 279.60168 278.98666 280.76855 c
+280.6297 282.95868 282.23682 283.00354 284.00552 282.08801 c
+288.24326 279.89789 292.53488 277.79752 296.67386 275.42789 c
+300.43573 273.27368 303.94623 270.68863 307.69916 268.53439 c
+309.38235 267.59619 311.22885 266.98697 313.13998 266.73923 c
+315.18701 266.47891 315.97711 267.51114 315.36658 269.43198 c
+313.50809 275.19452 311.13782 280.4903 305.31094 283.63187 c
+296.62897 288.31729 288.15347 293.3797 279.5972 298.28055 c
+276.42786 300.07571 275.47617 301.47595 276.67029 302.76849 c
+278.36719 304.66241 280.01019 302.957 281.44672 302.19403 c
+290.9906 297.05981 300.53448 291.80893 310.14124 286.64777 c
+311.62265 285.86688 314.01984 284.71796 314.89972 285.31934 c
+316.94675 286.73752 315.1601 288.9097 314.42386 290.51639 c
+311.29047 297.40988 307.11557 303.35193 300.48062 307.57059 c
+292.17575 312.88434 284.25693 318.80844 276.18546 324.49017 c
+274.11148 325.95325 272.0824 327.47018 271.15762 330.63867 c
+272.7019 330.05524 273.92294 329.67825 275.06317 329.14868 c
+282.64084 325.55832 290.19153 321.96796 297.77817 318.45837 c
+299.25958 317.76724 300.84872 317.31842 302.37503 316.70807 c
+303.76575 315.9693 305.49115 316.43188 306.32547 317.76724 c
+307.40286 319.29312 306.21774 320.29843 305.31992 321.24091 c
+303.24594 323.39511 301.18094 325.57626 298.96332 327.56891 c
+293.8457 332.16458 288.62933 336.65253 283.45786 341.20331 c
+282.37149 342.15475 281.32101 343.15109 279.48047 344.79367 c
+284.9469 343.77319 290.14328 341.63406 294.74353 338.51053 c
+297.1048 336.93976 299.43018 335.29718 301.87225 333.85205 c
+302.5097 333.47507 303.98215 333.35837 304.2515 333.71741 c
+304.82236 334.52109 305.02173 335.5307 304.79916 336.49097 c
+304.27917 337.8942 303.47882 339.17688 302.44687 340.26083 c
+298.41562 344.45258 294.27664 348.54559 290.13766 352.64758 c
+288.04575 354.73001 285.39716 356.3277 284.22101 360.03476 c
+285.20758 359.61322 286.16977 359.13675 287.10303 358.6076 c
+291.32281 355.78018 295.52463 352.9079 299.72647 350.05356 c
+300.28436 349.55316 300.91379 349.1387 301.59393 348.82385 c
+302.67133 348.5097 304.15274 347.98013 304.871 348.44687 c
+305.58926 348.9136 305.61618 350.57416 305.41867 351.61536 c
+304.08917 359.19611 300.15491 366.07526 294.29462 371.06613 c
+288.77298 375.78748 282.30862 378.92007 275.80838 381.96289 c
+271.61551 383.91965 267.31494 385.66995 263.1221 387.61771 c
+262.43973 387.93185 262.02673 388.81149 261.48804 389.4129 c
+262.38586 389.79886 263.28369 390.62463 264.06482 390.50797 c
+275.94305 388.71277 287.01324 384.8262 296.06332 376.61325 c
+300.38187 372.70874 304.29639 368.35541 308.3815 364.19061 c
+311.18347 361.26083 313.32632 357.76584 314.66629 353.94012 c
+316.46194 349.04825 318.5 344.22818 320.42136 339.36325 c
+322.7916 333.34042 327.23584 330.02832 333.64633 329.55258 c
+339.75156 329.09482 345.87473 328.655 351.98892 328.655 c
+356.328 328.65302 360.62817 327.83704 364.66623 326.24945 c
+367.1532 325.26212 369.79282 324.65173 372.25284 323.61951 c
+375.58994 322.3302 378.83554 320.81577 381.96732 319.0867 c
+400.28299 308.36047 418.52679 297.54453 436.80655 286.7106 c
+437.83008 286.10025 438.88052 285.52579 439.94894 284.98724 c
+442.31918 283.79343 444.58173 281.97131 447.49066 283.19205 c
+451.15381 284.7359 454.27823 286.97092 456.27142 290.52536 c
+456.8287 291.3494 457.03046 292.3631 456.83112 293.33765 c
+456.63174 294.31216 456.04813 295.16531 455.21198 295.70447 c
+453.30981 297.15237 451.28503 298.43179 449.16064 299.5282 c
+439.17682 304.60855 429.21094 309.75174 419.09244 314.55386 c
+411.0379 318.50412 403.29443 323.05896 395.92853 328.17929 c
+387.84808 333.60971 379.83051 339.07602 371.75006 344.47952 c
+369.56836 345.93362 368.15875 347.63007 368.97577 350.62802 c
+370.60388 351.67313 372.73224 351.48874 374.15625 350.17923 c
+376.17636 348.62637 378.23236 347.12741 380.2435 345.57458 c
+393.93762 334.90958 408.6951 325.68445 424.28186 318.04547 c
+434.2298 313.22543 444.12384 308.27969 454.08969 303.49554 c
+459.1265 301.07205 460.8952 301.70035 463.5079 306.52939 c
+467.46732 313.79987 466.86575 316.13361 459.19833 319.74191 c
+440.9545 328.32889 422.65082 336.79614 404.28729 345.14374 c
+391.91962 350.80777 379.90842 357.21945 368.32037 364.3432 c
+366.99158 365.15103 364.72906 366.00372 365.75259 367.83481 c
+366.77612 369.66589 368.74234 368.08615 370.04419 367.27832 c
+382.91904 359.20001 397.2124 354.21838 411.02997 348.19556 c
+429.79453 340.0155 448.5112 331.73972 467.17999 323.36819 c
+469.95428 322.12054 472.14499 321.96796 474.46136 324.185 c
+476.77777 326.40204 479.57001 328.34982 481.95822 330.59378 c
+483.48724 332.02097 484.81613 333.64841 485.90866 335.43179 c
+487.83899 338.62723 487.14764 340.81735 483.69101 342.19965 c
+480.08368 343.66769 476.39679 344.93228 472.64777 345.98746 c
+454.08969 351.13068 435.48672 356.15717 416.91971 361.24652 c
+412.43057 362.46722 408.02225 363.81363 403.578 365.10614 c
+390.37097 368.95682 379.43546 376.77481 368.81418 385.08652 c
+360.85782 391.21451 353.92947 398.57132 348.28986 406.88 c
+347.70627 407.77759 347.0329 408.5585 346.49423 409.42917 c
+340.49216 418.67603 331.44293 425.5318 320.91516 428.80814 c
+313.54401 431.23163 306.28058 433.98724 298.96332 436.59921 c
+298.11935 436.89542 297.27539 437.20059 296.42245 437.4968 c
+295.37201 437.82892 294.15097 438.29565 294.76147 439.5433 c
+295.03979 440.13571 296.49429 440.54861 297.32925 440.44092 c
+308.57004 438.78036 319.7749 436.91336 330.30643 432.36258 c
+332.90085 431.07083 336.00592 431.37778 338.29706 433.15247 c
+339.19489 433.75385 340.0119 434.36423 340.81995 435.02844 c
+342.45734 436.38129 344.69241 436.75769 346.68277 436.01578 c
+349.26016 435.28183 351.91507 434.854 354.59262 434.74121 c
+369.13739 434.11288 383.57443 435.58493 398.02045 436.96722 c
+400.13773 437.26389 402.29117 437.17572 404.37708 436.70694 c
+399.98669 435.80933 395.63223 434.75916 391.20596 434.18469 c
+379.19305 432.63187 367.16217 431.21368 354.99664 432.16513 c
+352.1575 432.35663 349.30981 432.3866 346.46729 432.25488 c
+343.37875 432.13818 342.22955 430.90851 341.62799 427.49765 c
+341.12521 424.63434 341.55618 423.55722 344.67163 422.4173 c
+347.50803 421.49774 350.39856 420.7543 353.32666 420.19125 c
+360.50928 418.50378 367.79065 417.99216 375.06305 419.90402 c
+378.09769 420.69391 379.84845 419.23083 381.16827 416.58295 c
+379.27383 414.707 376.93951 414.40179 374.5423 414.36591 c
+371.55255 414.36591 368.5538 414.42874 365.56406 414.36591 c
+364.23526 414.36591 362.70895 414.36591 361.62259 413.80939 c
+360.23358 413.06052 359.1037 411.90903 358.38144 410.50626 c
+358.14801 410.0036 359.66531 408.41489 360.65292 407.65192 c
+364.78293 404.45651 369.05658 401.44061 373.2225 398.26312 c
+391.25983 384.45819 410.93118 373.92944 433.43073 369.76465 c
+441.08002 368.40497 448.81946 367.61295 456.58566 367.39499 c
+472.8812 366.82056 489.1947 366.77567 505.49023 366.4256 c
+508.7673 366.35379 512.04437 365.89603 515.30347 365.52802 c
+516.33337 365.36624 517.3363 365.06424 518.28424 364.63043 c
+519.93628 363.9303 520.55579 362.7724 519.57715 361.04007 c
+519.06537 360.14246 518.56256 359.24487 518.05084 358.3024 c
+511.99051 347.42361 504.66425 337.4155 497.08658 327.57788 c
+488.80862 316.94144 480.57556 306.27808 474.0394 294.43884 c
+465.55493 279.09903 460.37448 262.64621 457.58224 245.42145 c
+456.43301 238.34843 455.73273 231.20361 454.88876 224.08572 c
+454.42191 220.30687 453.09311 218.85277 449.29532 219.45416 c
+445.90851 219.97716 442.63556 221.07292 439.61673 222.69446 c
+430.63651 227.63307 423.2847 235.07338 418.45499 244.11096 c
+412.24927 255.55644 404.89081 266.33856 396.49414 276.28958 c
+386.42532 288.16931 375.02618 298.85471 362.52042 308.13608 c
+358.00113 311.62772 352.46582 313.55008 346.75458 313.61139 c
+339.72461 313.70114 332.69464 313.6832 325.66464 313.70114 c
+325.21573 313.70114 324.76682 313.70114 324.3179 313.62933 c
+317.04553 312.92923 314.79199 310.11078 316.30032 302.957 c
+319.55045 287.61716 322.80957 272.28632 326.39188 257.03625 c
+327.63394 252.4299 329.2959 247.94711 331.35687 243.64421 c
+333.29617 239.28192 335.57666 235.05428 337.90201 230.88048 c
+353.16507 203.54886 365.3306 174.81699 376.99338 145.85175 c
+378.48376 142.1447 379.16611 138.12349 380.51285 134.34464 c
+381.56635 131.23212 382.91315 128.22665 384.5351 125.36874 c
+388.21619 119.21127 392.16663 113.22433 396.07217 107.20151 c
+397.93967 104.32024 399.82507 101.43 401.90805 98.701324 c
+403.79349 96.232948 403.99997 93.881264 402.19534 91.17952 c
+399.18762 91 396.87125 92.579758 394.67157 94.383919 c
+385.43292 101.9865 376.14044 109.53524 367.00058 117.25452 c
+355.57123 126.91259 344.39331 136.86687 332.88318 146.42621 c
+322.22598 155.27644 313.25668 165.70645 304.32333 176.16338 c
+298.93637 182.4465 293.34293 188.39754 286.78879 193.39711 c
+283.78375 195.60989 280.57971 197.539 277.21796 199.15964 c
+264.31619 205.66718 264.23538 205.58638 256.5051 217.91928 c
+248.2451 231.08693 240.24548 244.42513 231.82387 257.49405 c
+225.87805 266.82416 221.7023 277.16946 219.50569 288.01212 c
+215.17818 308.26175 212.41287 328.68192 212.9785 349.38037 c
+213.31967 361.94662 214.9178 374.39621 215.95929 386.9086 c
+216.21068 389.88861 216.64163 392.85068 216.78528 395.83963 c
+216.84312 399.1564 215.90491 402.41431 214.0918 405.19254 c
+210.24416 411.67847 204.37457 416.72354 197.38326 419.55399 c
+190.91891 422.24673 184.28398 424.59842 177.68495 426.98602 c
+173.01793 428.63129 168.04921 429.2438 163.12222 428.78122 c
+152.061 427.88361 141.16139 429.27487 130.18098 431.68939 c
+h
+443.10928 266.11987 m
+443.86346 271.50543 441.60992 275.14066 437.09384 277.68982 c
+436.06134 278.27325 435.1366 279.05417 434.12204 279.68246 c
+414.29803 291.90765 394.46506 304.11487 374.62311 316.30417 c
+373.49481 317.00156 372.18726 317.3541 370.86121 317.31842 c
+369.89157 317.25562 368.97577 316.24133 368.04205 315.64893 c
+368.53952 314.81555 369.16003 314.06204 369.8826 313.41391 c
+373.6355 310.99042 377.65778 308.92596 381.24905 306.30499 c
+399.60962 292.84116 415.70764 277.25 426.77783 257.00934 c
+428.16678 254.54251 429.93973 252.3125 432.03012 250.40308 c
+434.57993 248.0424 436.82449 248.44632 438.8446 251.23784 c
+439.73291 252.43437 440.39056 253.78586 440.78391 255.22313 c
+441.6907 258.82248 442.3551 262.48465 443.10928 266.11987 c
+h
+W
+0 0 681 681 rc
+107 542.11639 m
+529.17749 542.11639 l
+529.17749 86.165565 l
+107 86.165565 l
+h
+f
+Q
+q
+130.18098 431.68939 m
+131.9048 437.87381 137.3187 440.42294 141.75395 444.39029 c
+112 438.34952 l
+112.08374 439.9281 112.25157 441.50113 112.50278 443.06186 c
+113.715 448.64276 116.31852 453.82684 120.07146 458.13242 c
+121.34637 459.59549 122.76494 460.97778 123.977 462.4588 c
+129.57045 469.10095 136.54657 473.58893 145.1208 474.98019 c
+150.50777 475.87778 153.64117 478.87573 155.56252 483.65988 c
+156.40291 485.41525 157.15208 487.21283 157.80708 489.04541 c
+160.41078 498.21878 167.00981 503.80182 174.86578 508.28079 c
+175.90726 508.8732 176.98465 509.3938 178.06204 509.9144 c
+182.38957 512.0058 182.36263 511.97885 185.41524 508.04742 c
+186.33975 506.8718 187.37721 505.78952 188.51274 504.81607 c
+205.07149 490.25616 224.52596 479.366 245.59653 472.86188 c
+247.58969 472.2515 249.66368 471.90146 251.70174 471.43469 c
+258.43542 469.88187 263.94809 471.5065 269.46973 476.06625 c
+276.52466 481.84933 284.08136 486.99194 292.05005 491.43301 c
+314.91678 504.4227 338.61029 515.90051 362.9783 525.79279 c
+375.83517 530.93597 389.27563 533.59283 402.97647 535.23541 c
+415.02527 536.67157 427.11899 537.55121 439.23965 536.89594 c
+459.55746 535.79193 479.89322 534.20319 499.16956 527.02246 c
+507.10632 524.07837 514.57623 519.84174 522.18085 516.05389 c
+524.71271 514.78833 524.87433 511.43134 522.4502 509.30405 c
+519.03845 506.15866 515.44067 503.22122 511.67627 500.50766 c
+503.59583 494.87976 495.31787 489.46729 487.01297 484.13559 c
+484.60358 482.65378 482.01886 481.47784 479.3186 480.63501 c
+476.03256 479.54892 473.2493 477.86145 471.69608 474.79169 c
+468.15863 467.73663 462.11627 464.14627 454.78104 461.97409 c
+450.95395 460.70306 447.20633 459.20441 443.5582 457.48615 c
+439.82324 455.87946 437.43503 453.07001 435.69324 449.31808 c
+434.0011 445.84998 431.94232 442.57306 429.55209 439.5433 c
+427.54099 436.93134 426.13138 436.9762 423.67136 439.22018 c
+422.1438 440.68365 420.06027 441.4194 417.95221 441.23975 c
+416.03085 441.11411 414.1095 441.05127 411.81107 440.94354 c
+412.51138 443.03494 414.08255 443.44785 415.53705 443.93253 c
+417.93423 444.74036 420.37631 445.45844 422.7825 446.23935 c
+424.69485 446.85867 426.51746 447.62161 426.45462 450.10794 c
+426.40073 451.957 424.82056 453.30338 421.96548 453.6265 c
+418.55374 454.00348 415.10608 454.13812 411.67639 454.40741 c
+410.52731 454.45499 409.42468 454.87387 408.534 455.6012 c
+409.79492 456.13553 411.09448 456.57361 412.4216 456.91168 c
+417.55716 457.86313 422.69272 458.83252 427.8642 459.53265 c
+435.98953 460.63669 443.3876 463.76929 450.66898 467.26987 c
+452.13245 467.97 453.88321 468.80475 453.12006 470.92307 c
+452.3569 473.04138 450.72284 473.11319 448.69376 472.91571 c
+443.30679 472.39511 437.91986 472.01813 432.59573 471.78476 c
+421.82184 471.33597 411.04791 471.20132 400.27399 470.59995 c
+395.21924 470.32169 390.21835 469.24457 385.18155 468.58035 c
+383.28714 468.32904 381.37476 468.1944 379.47137 468.01489 c
+379.22894 468.91248 l
+380.96118 469.56818 382.74109 470.0903 384.55307 470.47427 c
+394.02512 471.75784 403.48822 473.16705 412.99619 474.06464 c
+429.04932 475.64441 445.23712 476.40735 460.76053 481.31717 c
+468.2933 483.69577 475.62854 486.7027 483.04459 489.48523 c
+484.46317 490.01483 486.12415 490.82266 485.63931 492.59091 c
+485.29813 493.84753 484.18481 495.47217 483.07153 495.81326 c
+480.95697 496.42902 478.73883 496.60617 476.55331 496.33386 c
+468.54471 495.39139 460.58997 493.92831 452.56339 493.18332 c
+443.63901 492.35754 434.66074 491.84592 425.70044 491.67535 c
+412.09137 491.34833 398.55234 489.6188 385.29825 486.51422 c
+383.41452 486.07947 381.49329 485.82697 379.56116 485.76025 c
+385.1546 489.24289 391.04434 492.21393 397.6344 492.80634 c
+411.02997 494.00012 424.46143 494.80795 437.89291 495.6427 c
+452.52747 496.54031 467.12613 497.62637 481.28485 501.82712 c
+481.57214 501.9079 481.87741 501.92584 482.18268 502.01559 c
+485.3161 502.98499 486.4653 504.20572 486.33063 506.44971 c
+486.19595 508.69366 485.10959 509.66309 481.71579 510.3183 c
+470.13385 512.55328 458.56985 514.92297 446.95197 516.95148 c
+436.17807 518.83643 425.24255 518.7467 414.30701 517.84912 c
+402.21912 517.00598 390.21323 515.24158 378.39398 512.57129 c
+362.98087 508.85428 348.07578 503.2814 334.00546 495.97482 c
+316.60559 486.9989 299.34039 477.78964 282.09314 468.53549 c
+275.28763 464.89127 273.76132 461.35477 275.02725 453.88681 c
+275.50311 451.07736 274.73996 449.52451 271.65143 449.30011 c
+267.49316 448.95078 263.30844 449.08328 259.18063 449.69507 c
+250.86676 451.04144 243.1275 454.28174 235.57678 457.94391 c
+224.50659 463.32947 214.24443 469.98059 204.06308 476.7933 c
+198.40445 480.69238 192.49939 484.22131 186.38489 487.35794 c
+177.40663 491.84592 173.03421 491.02011 165.92343 483.83939 c
+163.31761 481.18582 161.16423 478.12338 159.54887 474.77374 c
+157.75322 470.99487 155.25726 468.33801 151.38763 467.00958 c
+148.57658 466.00513 145.70726 465.17184 142.79544 464.51428 c
+138.79042 463.77243 135.13341 461.75388 132.37167 458.76071 c
+129.07664 455.17035 125.75469 451.57999 122.08259 447.57675 c
+124.58752 446.57144 126.26646 447.2536 127.91846 447.57675 c
+133.78127 448.66284 139.59019 449.99127 145.51585 450.84396 c
+150.45079 451.48392 155.46617 451.02725 160.20428 449.50656 c
+154.43126 445.01862 146.63814 443.47476 143.40596 435.79138 c
+144.37772 435.48444 145.38631 435.30936 146.40469 435.27078 c
+152.78824 435.95294 159.2885 436.16837 165.51044 437.64041 c
+173.45619 439.43561 181.21341 438.73547 189.11429 437.9097 c
+201.90831 436.5723 212.82587 431.0611 222.77379 423.28796 c
+228.16074 419.05133 233.5477 414.76981 238.85385 410.36264 c
+241.7269 407.95712 242.99283 406.89795 241.79872 402.88571 c
+240.00307 403.21783 238.20741 403.61276 236.313 403.87308 c
+233.84398 404.21414 233.009 403.6756 232.50621 401.27902 c
+232.27385 399.9545 232.16266 398.61154 232.17403 397.26682 c
+231.78436 383.35782 232.32126 369.43835 233.78113 355.60068 c
+235.21765 342.23553 236.69009 328.87042 238.43187 315.5412 c
+242.71538 281.34375 256.97635 249.16432 279.43558 223.01759 c
+298.28995 200.7753 317.40466 178.74245 336.77972 156.91904 c
+345.01282 147.66489 354.25143 139.28139 362.99625 130.47603 c
+364.2728 128.94543 366.32877 128.30597 368.24854 128.84241 c
+370.125 129.34506 370.6188 130.47603 369.57733 132.19041 c
+368.82303 133.30795 368.00464 134.38087 367.12625 135.40379 c
+299.55588 221.57246 l
+298.81964 222.47006 298.11935 223.45741 297.00604 224.92049 c
+300.06763 224.82175 301.72861 223.28687 303.24594 221.62633 c
+306.97192 217.53331 310.67993 213.42235 314.29819 209.23061 c
+326.02377 195.64108 337.72546 182.03062 349.40317 168.39922 c
+349.98685 167.53085 350.70865 166.76375 351.54001 166.12831 c
+352.33008 165.67055 353.65887 165.33844 354.32327 165.71542 c
+354.98764 166.09241 355.26599 167.38493 355.40964 168.31844 c
+355.43781 169.06824 355.27402 169.81282 354.93378 170.48163 c
+353.3985 174.19765 352.31213 178.21886 350.14838 181.53096 c
+342.22955 193.66638 334.23889 205.7659 324.01266 216.21385 c
+311.7663 228.72627 299.77136 241.48102 287.68661 254.14603 c
+286.52545 255.33418 285.49872 256.64658 284.62503 258.05951 c
+288.08313 256.97574 291.24252 255.10455 293.85468 252.59319 c
+307.45374 239.33878 321.00494 226.02153 334.50824 212.64145 c
+336.30389 210.84627 337.71347 208.70102 339.41037 206.79813 c
+340.26678 205.76888 341.2858 204.88657 342.42706 204.18614 c
+344.07907 203.28856 345.56049 204.35669 345.12054 206.16084 c
+344.70233 207.90114 344.1004 209.59212 343.32489 211.20531 c
+336.26114 225.90942 327.44647 239.7066 317.07245 252.29698 c
+316.21582 253.33594 315.26288 254.29164 314.22635 255.15132 c
+304.35025 263.38223 294.35745 271.48746 282.80243 277.33078 c
+281.32999 278.0668 280.25259 279.60168 278.98666 280.76855 c
+280.6297 282.95868 282.23682 283.00354 284.00552 282.08801 c
+288.24326 279.89789 292.53488 277.79752 296.67386 275.42789 c
+300.43573 273.27368 303.94623 270.68863 307.69916 268.53439 c
+309.38235 267.59619 311.22885 266.98697 313.13998 266.73923 c
+315.18701 266.47891 315.97711 267.51114 315.36658 269.43198 c
+313.50809 275.19452 311.13782 280.4903 305.31094 283.63187 c
+296.62897 288.31729 288.15347 293.3797 279.5972 298.28055 c
+276.42786 300.07571 275.47617 301.47595 276.67029 302.76849 c
+278.36719 304.66241 280.01019 302.957 281.44672 302.19403 c
+290.9906 297.05981 300.53448 291.80893 310.14124 286.64777 c
+311.62265 285.86688 314.01984 284.71796 314.89972 285.31934 c
+316.94675 286.73752 315.1601 288.9097 314.42386 290.51639 c
+311.29047 297.40988 307.11557 303.35193 300.48062 307.57059 c
+292.17575 312.88434 284.25693 318.80844 276.18546 324.49017 c
+274.11148 325.95325 272.0824 327.47018 271.15762 330.63867 c
+272.7019 330.05524 273.92294 329.67825 275.06317 329.14868 c
+282.64084 325.55832 290.19153 321.96796 297.77817 318.45837 c
+299.25958 317.76724 300.84872 317.31842 302.37503 316.70807 c
+303.76575 315.9693 305.49115 316.43188 306.32547 317.76724 c
+307.40286 319.29312 306.21774 320.29843 305.31992 321.24091 c
+303.24594 323.39511 301.18094 325.57626 298.96332 327.56891 c
+293.8457 332.16458 288.62933 336.65253 283.45786 341.20331 c
+282.37149 342.15475 281.32101 343.15109 279.48047 344.79367 c
+284.9469 343.77319 290.14328 341.63406 294.74353 338.51053 c
+297.1048 336.93976 299.43018 335.29718 301.87225 333.85205 c
+302.5097 333.47507 303.98215 333.35837 304.2515 333.71741 c
+304.82236 334.52109 305.02173 335.5307 304.79916 336.49097 c
+304.27917 337.8942 303.47882 339.17688 302.44687 340.26083 c
+298.41562 344.45258 294.27664 348.54559 290.13766 352.64758 c
+288.04575 354.73001 285.39716 356.3277 284.22101 360.03476 c
+285.20758 359.61322 286.16977 359.13675 287.10303 358.6076 c
+291.32281 355.78018 295.52463 352.9079 299.72647 350.05356 c
+300.28436 349.55316 300.91379 349.1387 301.59393 348.82385 c
+302.67133 348.5097 304.15274 347.98013 304.871 348.44687 c
+305.58926 348.9136 305.61618 350.57416 305.41867 351.61536 c
+304.08917 359.19611 300.15491 366.07526 294.29462 371.06613 c
+288.77298 375.78748 282.30862 378.92007 275.80838 381.96289 c
+271.61551 383.91965 267.31494 385.66995 263.1221 387.61771 c
+262.43973 387.93185 262.02673 388.81149 261.48804 389.4129 c
+262.38586 389.79886 263.28369 390.62463 264.06482 390.50797 c
+275.94305 388.71277 287.01324 384.8262 296.06332 376.61325 c
+300.38187 372.70874 304.29639 368.35541 308.3815 364.19061 c
+311.18347 361.26083 313.32632 357.76584 314.66629 353.94012 c
+316.46194 349.04825 318.5 344.22818 320.42136 339.36325 c
+322.7916 333.34042 327.23584 330.02832 333.64633 329.55258 c
+339.75156 329.09482 345.87473 328.655 351.98892 328.655 c
+356.328 328.65302 360.62817 327.83704 364.66623 326.24945 c
+367.1532 325.26212 369.79282 324.65173 372.25284 323.61951 c
+375.58994 322.3302 378.83554 320.81577 381.96732 319.0867 c
+400.28299 308.36047 418.52679 297.54453 436.80655 286.7106 c
+437.83008 286.10025 438.88052 285.52579 439.94894 284.98724 c
+442.31918 283.79343 444.58173 281.97131 447.49066 283.19205 c
+451.15381 284.7359 454.27823 286.97092 456.27142 290.52536 c
+456.8287 291.3494 457.03046 292.3631 456.83112 293.33765 c
+456.63174 294.31216 456.04813 295.16531 455.21198 295.70447 c
+453.30981 297.15237 451.28503 298.43179 449.16064 299.5282 c
+439.17682 304.60855 429.21094 309.75174 419.09244 314.55386 c
+411.0379 318.50412 403.29443 323.05896 395.92853 328.17929 c
+387.84808 333.60971 379.83051 339.07602 371.75006 344.47952 c
+369.56836 345.93362 368.15875 347.63007 368.97577 350.62802 c
+370.60388 351.67313 372.73224 351.48874 374.15625 350.17923 c
+376.17636 348.62637 378.23236 347.12741 380.2435 345.57458 c
+393.93762 334.90958 408.6951 325.68445 424.28186 318.04547 c
+434.2298 313.22543 444.12384 308.27969 454.08969 303.49554 c
+459.1265 301.07205 460.8952 301.70035 463.5079 306.52939 c
+467.46732 313.79987 466.86575 316.13361 459.19833 319.74191 c
+440.9545 328.32889 422.65082 336.79614 404.28729 345.14374 c
+391.91962 350.80777 379.90842 357.21945 368.32037 364.3432 c
+366.99158 365.15103 364.72906 366.00372 365.75259 367.83481 c
+366.77612 369.66589 368.74234 368.08615 370.04419 367.27832 c
+382.91904 359.20001 397.2124 354.21838 411.02997 348.19556 c
+429.79453 340.0155 448.5112 331.73972 467.17999 323.36819 c
+469.95428 322.12054 472.14499 321.96796 474.46136 324.185 c
+476.77777 326.40204 479.57001 328.34982 481.95822 330.59378 c
+483.48724 332.02097 484.81613 333.64841 485.90866 335.43179 c
+487.83899 338.62723 487.14764 340.81735 483.69101 342.19965 c
+480.08368 343.66769 476.39679 344.93228 472.64777 345.98746 c
+454.08969 351.13068 435.48672 356.15717 416.91971 361.24652 c
+412.43057 362.46722 408.02225 363.81363 403.578 365.10614 c
+390.37097 368.95682 379.43546 376.77481 368.81418 385.08652 c
+360.85782 391.21451 353.92947 398.57132 348.28986 406.88 c
+347.70627 407.77759 347.0329 408.5585 346.49423 409.42917 c
+340.49216 418.67603 331.44293 425.5318 320.91516 428.80814 c
+313.54401 431.23163 306.28058 433.98724 298.96332 436.59921 c
+298.11935 436.89542 297.27539 437.20059 296.42245 437.4968 c
+295.37201 437.82892 294.15097 438.29565 294.76147 439.5433 c
+295.03979 440.13571 296.49429 440.54861 297.32925 440.44092 c
+308.57004 438.78036 319.7749 436.91336 330.30643 432.36258 c
+332.90085 431.07083 336.00592 431.37778 338.29706 433.15247 c
+339.19489 433.75385 340.0119 434.36423 340.81995 435.02844 c
+342.45734 436.38129 344.69241 436.75769 346.68277 436.01578 c
+349.26016 435.28183 351.91507 434.854 354.59262 434.74121 c
+369.13739 434.11288 383.57443 435.58493 398.02045 436.96722 c
+400.13773 437.26389 402.29117 437.17572 404.37708 436.70694 c
+399.98669 435.80933 395.63223 434.75916 391.20596 434.18469 c
+379.19305 432.63187 367.16217 431.21368 354.99664 432.16513 c
+352.1575 432.35663 349.30981 432.3866 346.46729 432.25488 c
+343.37875 432.13818 342.22955 430.90851 341.62799 427.49765 c
+341.12521 424.63434 341.55618 423.55722 344.67163 422.4173 c
+347.50803 421.49774 350.39856 420.7543 353.32666 420.19125 c
+360.50928 418.50378 367.79065 417.99216 375.06305 419.90402 c
+378.09769 420.69391 379.84845 419.23083 381.16827 416.58295 c
+379.27383 414.707 376.93951 414.40179 374.5423 414.36591 c
+371.55255 414.36591 368.5538 414.42874 365.56406 414.36591 c
+364.23526 414.36591 362.70895 414.36591 361.62259 413.80939 c
+360.23358 413.06052 359.1037 411.90903 358.38144 410.50626 c
+358.14801 410.0036 359.66531 408.41489 360.65292 407.65192 c
+364.78293 404.45651 369.05658 401.44061 373.2225 398.26312 c
+391.25983 384.45819 410.93118 373.92944 433.43073 369.76465 c
+441.08002 368.40497 448.81946 367.61295 456.58566 367.39499 c
+472.8812 366.82056 489.1947 366.77567 505.49023 366.4256 c
+508.7673 366.35379 512.04437 365.89603 515.30347 365.52802 c
+516.33337 365.36624 517.3363 365.06424 518.28424 364.63043 c
+519.93628 363.9303 520.55579 362.7724 519.57715 361.04007 c
+519.06537 360.14246 518.56256 359.24487 518.05084 358.3024 c
+511.99051 347.42361 504.66425 337.4155 497.08658 327.57788 c
+488.80862 316.94144 480.57556 306.27808 474.0394 294.43884 c
+465.55493 279.09903 460.37448 262.64621 457.58224 245.42145 c
+456.43301 238.34843 455.73273 231.20361 454.88876 224.08572 c
+454.42191 220.30687 453.09311 218.85277 449.29532 219.45416 c
+445.90851 219.97716 442.63556 221.07292 439.61673 222.69446 c
+430.63651 227.63307 423.2847 235.07338 418.45499 244.11096 c
+412.24927 255.55644 404.89081 266.33856 396.49414 276.28958 c
+386.42532 288.16931 375.02618 298.85471 362.52042 308.13608 c
+358.00113 311.62772 352.46582 313.55008 346.75458 313.61139 c
+339.72461 313.70114 332.69464 313.6832 325.66464 313.70114 c
+325.21573 313.70114 324.76682 313.70114 324.3179 313.62933 c
+317.04553 312.92923 314.79199 310.11078 316.30032 302.957 c
+319.55045 287.61716 322.80957 272.28632 326.39188 257.03625 c
+327.63394 252.4299 329.2959 247.94711 331.35687 243.64421 c
+333.29617 239.28192 335.57666 235.05428 337.90201 230.88048 c
+353.16507 203.54886 365.3306 174.81699 376.99338 145.85175 c
+378.48376 142.1447 379.16611 138.12349 380.51285 134.34464 c
+381.56635 131.23212 382.91315 128.22665 384.5351 125.36874 c
+388.21619 119.21127 392.16663 113.22433 396.07217 107.20151 c
+397.93967 104.32024 399.82507 101.43 401.90805 98.701324 c
+403.79349 96.232948 403.99997 93.881264 402.19534 91.17952 c
+399.18762 91 396.87125 92.579758 394.67157 94.383919 c
+385.43292 101.9865 376.14044 109.53524 367.00058 117.25452 c
+355.57123 126.91259 344.39331 136.86687 332.88318 146.42621 c
+322.22598 155.27644 313.25668 165.70645 304.32333 176.16338 c
+298.93637 182.4465 293.34293 188.39754 286.78879 193.39711 c
+283.78375 195.60989 280.57971 197.539 277.21796 199.15964 c
+264.31619 205.66718 264.23538 205.58638 256.5051 217.91928 c
+248.2451 231.08693 240.24548 244.42513 231.82387 257.49405 c
+225.87805 266.82416 221.7023 277.16946 219.50569 288.01212 c
+215.17818 308.26175 212.41287 328.68192 212.9785 349.38037 c
+213.31967 361.94662 214.9178 374.39621 215.95929 386.9086 c
+216.21068 389.88861 216.64163 392.85068 216.78528 395.83963 c
+216.84312 399.1564 215.90491 402.41431 214.0918 405.19254 c
+210.24416 411.67847 204.37457 416.72354 197.38326 419.55399 c
+190.91891 422.24673 184.28398 424.59842 177.68495 426.98602 c
+173.01793 428.63129 168.04921 429.2438 163.12222 428.78122 c
+152.061 427.88361 141.16139 429.27487 130.18098 431.68939 c
+h
+443.10928 266.11987 m
+443.86346 271.50543 441.60992 275.14066 437.09384 277.68982 c
+436.06134 278.27325 435.1366 279.05417 434.12204 279.68246 c
+414.29803 291.90765 394.46506 304.11487 374.62311 316.30417 c
+373.49481 317.00156 372.18726 317.3541 370.86121 317.31842 c
+369.89157 317.25562 368.97577 316.24133 368.04205 315.64893 c
+368.53952 314.81555 369.16003 314.06204 369.8826 313.41391 c
+373.6355 310.99042 377.65778 308.92596 381.24905 306.30499 c
+399.60962 292.84116 415.70764 277.25 426.77783 257.00934 c
+428.16678 254.54251 429.93973 252.3125 432.03012 250.40308 c
+434.57993 248.0424 436.82449 248.44632 438.8446 251.23784 c
+439.73291 252.43437 440.39056 253.78586 440.78391 255.22313 c
+441.6907 258.82248 442.3551 262.48465 443.10928 266.11987 c
+h
+W
+0 0 681 681 rc
+107 542.11639 m
+529.17749 542.11639 l
+529.17749 86.165565 l
+107 86.165565 l
+h
+f
+Q
+q
+180.04623 474.66602 m
+181.32173 474.43103 182.57225 474.07639 183.78119 473.60687 c
+185.92012 472.70508 187.24068 470.53488 187.05826 468.22131 c
+186.94154 464.73868 183.46695 460.69952 179.97441 459.8468 c
+176.48187 458.99411 172.8726 460.68158 170.74477 463.87698 c
+169.55203 465.44293 169.4381 467.57864 170.45746 469.26254 c
+172.35187 472.70929 175.04535 474.71988 180.04623 474.66602 c
+h
+W
+0 0 681 681 rc
+164.76476 479.66708 m
+192.07503 479.66708 l
+192.07503 454.62698 l
+164.76476 454.62698 l
+h
+f
+Q
+q
+359.65634 452.63019 m
+360.97717 453.08093 362.34445 453.38202 363.73248 453.52777 c
+376.44571 453.52777 389.14993 453.52777 401.86316 453.46494 c
+402.84686 453.3627 403.81818 453.16431 404.76312 452.87253 c
+404.76312 452.56735 404.84393 452.26218 404.87985 451.97495 c
+403.77823 451.58508 402.63715 451.3172 401.47708 451.17609 c
+388.90753 450.97861 376.33795 450.84097 363.7684 450.76318 c
+362.36032 450.91177 360.9725 451.21274 359.62943 451.6608 c
+359.65634 452.63019 l
+h
+W
+0 0 681 681 rc
+354.62943 458.52777 m
+409.87985 458.52777 l
+409.87985 445.76318 l
+354.62943 445.76318 l
+h
+f
+Q
+q
+262.31406 370.79688 m
+263.21188 371.11102 264.29825 371.91885 265.00751 371.69446 c
+270.13409 369.72873 275.50311 368.20282 279.76779 364.51373 c
+280.15854 364.01642 280.49841 363.48117 280.78232 362.91602 c
+262.37689 369.49536 l
+262.31406 370.79688 l
+h
+W
+0 0 681 681 rc
+257.31406 376.73328 m
+285.78232 376.73328 l
+285.78232 357.91602 l
+257.31406 357.91602 l
+h
+f
+Q
+q
+279.25601 345.66434 m
+274.42572 346.94791 270.43039 347.99808 266.45303 349.08417 c
+266.0105 349.17709 265.61932 349.43353 265.35767 349.80222 c
+265.01651 350.57416 264.45984 351.59741 264.76511 352.21674 c
+265.27945 352.87924 266.10574 353.22058 266.93784 353.11435 c
+269.34747 352.36197 271.69241 351.41644 273.94986 350.28693 c
+275.70959 349.34445 277.99008 348.98541 279.25601 345.66434 c
+h
+W
+0 0 681 681 rc
+259.67676 358.13348 m
+284.25601 358.13348 l
+284.25601 340.66434 l
+259.67676 340.66434 l
+h
+f
+ep
+end
+%%Trailer
+%%EOF

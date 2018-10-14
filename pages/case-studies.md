@@ -10,7 +10,7 @@ Althea networks can be set up by anyone, anywhere. We work with subnet organizer
 
 Our routing protocol makes it easy to manage these networks once they're up and running. With automated usage monitoring, billing and payments, organizers can focus on growing and improving these networks, instead of drowning in administrative needs. We're excited about our first deployments—if you're interested in starting one in your community, please [get in touch](#get-involved)!
 
-## CASE STUDY: MEDELLIN
+## MEDELLIN
 
 ### Legacy ISP: Slow or No Bandwidth
 
@@ -42,7 +42,7 @@ Users access bandwidth through intermediary nodes, or directly from the gateway 
 - [Visit their website](https://www.redmedellin.com/) for regular updates on their progress
 - [Send us a message](#get-involved) with any questions or to get connected with the Red_medellin subnet
 
-## CASE STUDY: CLATSKANIE
+## CLATSKANIE
 
 ### Legacy ISP
 
