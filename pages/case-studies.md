@@ -1,24 +1,24 @@
 ---
 layout: plain-page
 title: Althea
-permalink: /en/case-studies
+permalink: /case-studies
 ---
 
 # Case Studies
 
-Althea networks can be set up by anyone, anywhere. We work with [subnet organizers]() all over the world to help them set up networks from scratch: from finding the right source of bandwidth, to setting up and optimizing equipment, through finding new users and rallying their community around the cause. No two networks are the same, as each is built from the ground up to meet the unique needs of the area.
+Althea networks can be set up by anyone, anywhere. We work with subnet organizers all over the world to help them set up networks from scratch: from finding the right source of bandwidth, to setting up and optimizing equipment, through finding new users and rallying their community around the cause. No two networks are the same, as each is built from the ground up to meet the unique needs of the area.
 
-Our routing protocol makes it easy to manage these networks once they're up and running. With automated usage monitoring, billing and payments, organizers can focus on growing and improving these networks, instead of drowning in administrative needs. We're excited about our first deployments—if you're interested in starting one in your community, please [get in touch]()!
+Our routing protocol makes it easy to manage these networks once they're up and running. With automated usage monitoring, billing and payments, organizers can focus on growing and improving these networks, instead of drowning in administrative needs. We're excited about our first deployments—if you're interested in starting one in your community, please [get in touch](#get-involved)!
 
 ## CASE STUDY: MEDELLIN
 
 ### Legacy ISP: Slow or No Bandwidth
 
-In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at [red_medellin]() are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses.
+In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at [red_medellin](https://www.redmedellin.com/) are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our [blog post](https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e) about helping them deploy Althea in Medellin.
 
 ### Althea: Faster, Cheaper Internet— Owned by the people using it
 
-The [red_medellin]() [subnet DAO]() is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
+The [red_medellin](https://www.redmedellin.com/) subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
 
 red_medellin was started by 4 young Americans living in Medellin. However, they do not own the network. Althea's decentralized architecture means that each node is owned by the people using it to buy and/or sell internet access. The red_medellin subnet organizers provide technical support and installation services to this network of independently-owned nodes.
 
@@ -38,9 +38,9 @@ Users access bandwidth through intermediary nodes, or directly from the gateway 
 
 ### Learn more
 
-- [Read our interview]() with the Red_medellin team on our blog
-- [Visit their website]() for regular updates on their progress
-- [Send us an email]() with any questions or to get connected with the Red_medellin subnet
+- [Read our story](https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e) about the red_medellin deployment
+- [Visit their website](https://www.redmedellin.com/) for regular updates on their progress
+- [Send us a message](#get-involved) with any questions or to get connected with the Red_medellin subnet
 
 ## CASE STUDY: CLATSKANIE
 
