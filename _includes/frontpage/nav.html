@@ -1,6 +1,12 @@
 <nav class="navbar navbar-light bg-transparent">
     <div class="container">
-        <a class="navbar-brand" href="{{ '/' | relative_url }}"><img width="120" src="{{ '/images/wordmark.png' | relative_url }}" /></a>
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+          <picture>
+            <source srcset="/images/wordmark.webp" type="image/webp">
+            <source srcset="/images/wordmark.png" type="image/png"> 
+            <img width="120" src="/images/wordmark.png" />
+          </picture>
+        </a>
         <div>
             <div class="dropdown d-inline-block">
                 <a class="btn btn-light mr-1 dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
