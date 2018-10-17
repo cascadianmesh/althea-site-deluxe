@@ -12,5 +12,9 @@
     "bootstrap": "4",
     "node-sass": "^4.9.3",
     "sass": "^1.13.4"
+  },
+  "devDependencies": {
+    "imagemin": "^6.0.0",
+    "imagemin-webp": "^4.1.0"
   }
 }
