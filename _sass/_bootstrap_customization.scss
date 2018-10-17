@@ -11,25 +11,33 @@
     background-size: cover;
 }
 
+.airgrid { background-image: url(./images/airgrid_500.webp); }
+.airmax { background-image: url(./images/airmax_500.webp); }
 .clatskanie { background-image: url('../images/Clatskanie-graphic.webp'); }
+.edgerouter { background-image: url(./images/edgerouter_500.webp); }
 .ethernet { background-image: url(../images/Ethernet_500.webp); }
 .glb { background-image: url(../images/GLB1300_500.webp); }
 .litebeam { background-image: url(../images/Litebeam_transparent_500.webp); } 
 .medellin { background-image: url(../images/Medellin-graphic.webp); } 
 .n750 { background-image: url(../images/n750_500.webp); }
 .nanobeam { background-image: url(../images/nanobeam.webp); }
+.solar-panel { background-image: url(./images/portable-solar-panel_500.webp); }
 
 .no-webp, .no-js {
     .jumbotron {
         background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky.jpg);
     }
+    .airgrid { background-image: url(./images/airgrid_500.jpg); }
+    .airmax { background-image: url(./images/airmax_500.jpg); }
     .clatskanie { background-image: url('../images/Clatskanie-graphic.png'); }
+    .edgerouter { background-image: url(./images/edgerouter_500.png); }
     .equipment { background-image: url(../images/Litebeam_transparent_500.png); } 
     .ethernet { background-image: url(../images/Ethernet_500.jpg); }
     .glb { background-image: url(../images/GLB1300_500.png); }
     .medellin { background-image: url(../images/Medellin-graphic.png); } 
     .n750 { background-image: url(../images/n750_500.jpg); }
     .nanobeam { background-image: url(../images/nanobeam.jpg); }
+    .solar-panel { background-image: url(./images/portable-solar-panel_500.jpg); }
 }
 
 .rounded-button-bar {
