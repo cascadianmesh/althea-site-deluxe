@@ -5,8 +5,14 @@
 
     <div class="col-12">
         <picture>
-          <source srcset="/images/basic-diagram.webp" type="image/webp">
-          <source srcset="/images/basic-diagram.png" type="image/jpeg"> 
+          <source media="(min-width: 1024px)" srcset="/images/basic-diagram-1024.webp" type="image/webp">
+          <source media="(min-width: 1366px)" srcset="/images/basic-diagram-1366.webp" type="image/webp">
+          <source media="(min-width: 1600px)" srcset="/images/basic-diagram-1600.webp" type="image/webp">
+          <source media="(min-width: 1920px)" srcset="/images/basic-diagram-1920.webp" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="/images/basic-diagram-1024.png" type="image/png">
+          <source media="(min-width: 1366px)" srcset="/images/basic-diagram-1366.png" type="image/png">
+          <source media="(min-width: 1600px)" srcset="/images/basic-diagram-1600.png" type="image/png">
+          <source media="(min-width: 1920px)" srcset="/images/basic-diagram-1920.png" type="image/png">
           <img class="img-fluid" src="/images/basic-diagram.png" alt="Basic diagram" />
         </picture>
     </div>
