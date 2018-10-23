@@ -4,7 +4,12 @@ title: Althea whitepaper
 permalink: /whitepaper
 ---
 
-# Networking
+
+This whitepaper is in 2 sections. 
+- [Network](#networking) describes the low level functioning of the Althea system. It is a set of network protocols which allow routers to pay each other for bandwidth and verify that they are receiving the quality of service advertised by their neighbors.
+- [Governance](#governance) describes an organizational framework which uses blockchain organization and curation frameworks to help people organize around Althea networks locally, and curate these networks to ensure good quality for end users. 
+
+# <a name="networking"></a>Networking
 
 **Jehan Tremback, Justin Kilpatrick**
 
@@ -213,7 +218,7 @@ User nodes pay their neighbors to forward traffic to the exit node they are usin
 
 -------------
 
-# Governance
+# <a name="governance"></a> Governance
 
 **Jehan Tremback, Justin Kilpatrick, Deborah Simpier**
 
