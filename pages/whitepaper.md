@@ -11,10 +11,11 @@ This whitepaper is in 2 sections.
 
 # <a name="networking"></a>Networking
 
-**Jehan Tremback, Justin Kilpatrick**
+**Jehan Tremback, Justin Kilpatrick, Ben Wang**
 
 - **v0.5** May 2017
 - **v1** May 2018
+- **v1.1** Oct 2018
 
 As the number of connected individuals and devices expands, the "last mile" continues to be the greatest challenge both in the connected and developing worlds, representing a disproportionate portion of the cost and difficulty of connecting the world ("Last mile" refers to the distance between an internet exchange and a user, often less than 10 miles).
 
@@ -158,10 +159,10 @@ As update packets are propagated through the network, each node increases the ro
 Babel’s route selection procedure is extended to take this price field into account. Instead of selecting routes based purely on route metric, an extended metric `m'` is calculated with
 
 ```
-m'= m+pn
+m'= n*log2(m)+log2(p)
 ```
 
-Where `m` is the route metric, `p` is the price, and `n` is a constant multiplier. Routes are then chosen based on `m'`. By adjusting `n`, nodes can determine how much weight to give price in the calculation. A node with a lower value for `n` will tend to prefer expensive but higher quality routes.
+Where `m` is the route metric, `p` is the price, and `n` is a constant multiplier. Routes are then chosen based on `m'`. The log function is chosen for normalization, such that increasing or decreasing the metric or price will change the extended metric by a constant amount, no matter their absolute values. By adjusting `n`, nodes can determine how much weight to give price in the calculation. In other words a node will switch to a connection which is `2*n` times more expensive per byte if its metric is 50% lower.
 
 It would even be possible to populate multiple routing tables with routes selected at different values of `n`, and propagate routes from these tables under different router IDs. This or a similar mechanism could be used to allow neighbors to choose from among a range of price-quality tradeoffs.
 
