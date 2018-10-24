@@ -1,8 +1,14 @@
 ---
-layout: paper
+layout: plain-page
 title: Getting Started
 permalink: /getting-started
 ---
+
+<style>
+table { width: 100%; border: 1px solid black; margin-bottom: 20px; }
+td + td, th + th { border-left: 1px solid black; padding-left: 20px; }
+td, th { border-bottom: 1px solid black; padding: 10px; vertical-align: top; }
+</style>
 
 # Getting Started with Althea  
 
@@ -15,7 +21,7 @@ Any high performance network will be made up of fast, high capacity, long range 
 We are working on firmware that we will ship on branded routers. The physical connections will be made according to whatever works best for the site. That could mean an inexpensive directional wifi antenna aimed across the street, an outdoor ethernet cable across the yard, or more professional equipment mounted on a radio tower.
 
 
-![Meshnet Roles](/images/roles.jpg "Meshnet Roles")
+<img src="/images/roles.jpg" width="100%" title="Meshnet Roles" alt="Meshnet Roles" />
 
 ## Talk to the Althea Team
 
@@ -24,7 +30,7 @@ We would love to hear about your mesh net project! Planning and implementing a c
 We offer live, video conference meetings with a member of our team, which can be scheduled by email.
 Our forum can also be a great place to learn, ask questions, and get connected to those nearby. https://forum.altheamesh.com/ 
 
-![Foggy Tower](/images/foggytower.jpg "Foggy Tower")
+<img src="/images/foggytower.jpg" width="100%" title="Foggy Tower" alt="Foggy Tower" />
 
 ## Planning an Althea powered Mesh Net
 
@@ -61,10 +67,10 @@ Wired installations should consider the cost of a DSLAM, G.Fast, switches, and p
 ### B - Installers 
 If users do not wish to install themselves, factor the labor costs of installation into the budget. There may also be liability concerns if volunteers are installing equipment at a customer’s premises. 
 
-### C - Applicable Licensing and permits
+### C - Applicable Licensing and Permits
 This can include business licenses and permits for hardware like antennas and radio towers. Licensing and permits will vary by municipality, county and state. 
 
-### D - Monthly costs for backhaul or business grade internet connection. 
+### D - Monthly costs for Backhaul or Business Grade Internet Connection
 
 Business class re-saleable internet can sometimes be obtained from your local, last mile ISP. There may also be affordable options from “middle mile” carriers. In major urban areas a traditional backhaul  carrier may be available. 
 
@@ -104,20 +110,49 @@ Pat holds a meeting with a few interested people and the customers who need inte
 
 Using Google Earth, they map the proposed sites, and decide that customers will install the hardware themselves. 
 
-![Rural Town Deployment](/images/rural.jpg "Rural Town Deployment")
+<img src="/images/rural.jpg" width="100%" title="Rural Town Deployment" alt="Rural Town Deployment" />
 
 
 Using this map, a budget is proposed. 
 
 ### Budget
 
-|Node|Description|Cost|
-|--- |--- |--- |
-|Gateway|Sector Antennas x2 ($220)<br>Mounting Hardware|$440<br>$100|
-|Intermediary|Rocket Dish x2<br>Radio Tower|$270<br>$500|
-|Users Nodes x4<br>Mounting Hardware|Airgrid Antennas ($70 each)<br>Standard Mount ($50 each)|$280<br>$200|
-|Misc Costs|Shielded Cat5e, 1000’<br>Shielded Cat5e ends|$200<br>$30|
-|Backhaul Costs|100mbps business class internet/month|$100 (per month)|
+<table>
+  <thead>
+    <tr>
+      <th>Node</th>
+      <th>Description</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gateway</td>
+      <td>Sector Antennas x2 ($220)<br>Mounting Hardware</td>
+      <td>$440<br>$100</td>
+    </tr>
+    <tr>
+      <td>Intermediary</td>
+      <td>Rocket Dish x2<br>Radio Tower</td>
+      <td>$270<br>$500</td>
+    </tr>
+    <tr>
+      <td>Users Nodes x4<br>Mounting Hardware</td>
+      <td>Airgrid Antennas ($70 each)<br>Standard Mount ($50 each)</td>
+      <td>$280<br>$200</td>
+    </tr>
+    <tr>
+      <td>Misc Costs</td>
+      <td>Shielded Cat5e, 1000’<br>Shielded Cat5e ends</td>
+      <td>$200<br>$30</td>
+    </tr>
+    <tr>
+      <td>Backhaul Costs</td>
+      <td>100mbps business class internet/month</td>
+      <td>$100 (per month)</td>
+    </tr>
+  </tbody>
+</table>
 
 The total hardware cost to build this mesh network is $2020 and $100/month for internet backhaul costs. Because users, in the case, will install their own equipment, the total remaining cost of $1540 is what Pat’s mesh net will be required to raise.
 
@@ -131,11 +166,32 @@ Lisa called the cable provider in her area and got a quote to provide backhaul t
 
 Lisa’s Budget is much more simple. 
 
-|Node|Description|Cost|
-|--- |--- |--- |
-|Cabinet|Install of 10 cable runs and networking equipment $1,500. Edgerouter Pro $350|$1850|
-|CPEx 10|TP Link C7 ($85 each)|$850|
-|Backhaul|1GB Business Class internet|$200 (per month)|
+<table>
+  <thead>
+    <tr>
+      <th>Node</th>
+      <th>Description</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cabinet</td>
+      <td>Install of 10 cable runs and networking equipment $1,500. Edgerouter Pro $350</td>
+      <td>$1850</td>
+    </tr>
+    <tr>
+      <td>CPEx 10</td>
+      <td>TP Link C7 ($85 each)</td>
+      <td>$850</td>
+    </tr>
+    <tr>
+      <td>Backhaul</td>
+      <td>1GB Business Class internet</td>
+      <td>$200 (per month)</td>
+    </tr>
+  </tbody>
+</table>
 
 Total initial investment was $2900.  Figuring for an average use of 200GB per month and charging $0.20/per GB, each apartment tenant will pay an average of $40/month. Lisa will start seeing a profit on her initial investment in just 16 months and will make an average of $200 a month, while offering her tenants quality internet at around $40 per month. 
 
