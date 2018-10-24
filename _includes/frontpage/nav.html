@@ -2,9 +2,9 @@
     <div class="container">
         <a class="navbar-brand" href="{{ '/' | relative_url }}">
           <picture>
-            <source srcset="/images/wordmark.webp" type="image/webp">
-            <source srcset="/images/wordmark.png" type="image/png"> 
-            <img width="120" src="/images/wordmark.png" alt="Althea" />
+          <source srcset="{{ '/images/wordmark.webp' | relative_url }}" type="image/webp">
+          <source srcset="{{ '/images/wordmark.png' | relative_url }}" type="image/png"> 
+          <img width="120" src="{{ '/images/wordmark.png | relative_url }}" alt="Althea" />
           </picture>
         </a>
         <div>
@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-            <a class="shadow btn btn-primary" href="/#get-involved" role="button">Get Involved</a>
+            <a class="shadow btn btn-primary" href="{{ '/#get-involved' | relative_url }}" role="button">Get Involved</a>
         </div>
     </div>
 </nav>

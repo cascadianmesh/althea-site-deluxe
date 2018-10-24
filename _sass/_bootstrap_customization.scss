@@ -266,28 +266,28 @@ h1 {
 
 @font-face {
     font-family: "cmu_serif";
-    src: url("/fonts/cmunti-webfont.woff") format("woff");
+    src: url("../fonts/cmunti-webfont.woff") format("woff");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "cmu_serif";
-    src: url("/fonts/cmunrm-webfont.woff") format("woff");
+    src: url("../fonts/cmunrm-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "cmu_serif";
-    src: url("/fonts/cmunbx-webfont.woff") format("woff");
+    src: url("../fonts/cmunbx-webfont.woff") format("woff");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "cmu_mono";
-    src: url("/fonts/cmunbtl-webfont.woff") format("woff");
+    src: url("../fonts/cmunbtl-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -296,8 +296,8 @@ h1 {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
-    src: local("Material Icons"), local("MaterialIcons-Regular"), url(/fonts/MaterialIcons-Regular.woff2) format("woff2"), url(/fonts/MaterialIcons-Regular.woff) format("woff"), url(/fonts/MaterialIcons-Regular.ttf) format("truetype");
+    src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/MaterialIcons-Regular.woff) format("woff"), url(../fonts/MaterialIcons-Regular.ttf) format("truetype");
 }
 
 .material-icons {
