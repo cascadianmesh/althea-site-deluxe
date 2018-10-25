@@ -9,5 +9,11 @@ title: Althea
 {% include frontpage/nav.html %}
 
 <div class="container page">
-    {{ content }}
+{% if page.url contains "blog" %}
+  <h1>{{ page.title }}</h1>
+  <time pubdate><i>{{ page.date | date: site.date_format }}</i></time>
+  <address><i>{{ page.author }}</i></address>
+{% endif %}
+
+  {{ content }}
 </div>

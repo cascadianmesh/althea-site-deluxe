@@ -25,3 +25,7 @@ exclude:
 
 sass:
   style: compressed
+
+
+permalink:    /blog/:title/
+date_format: "%b %-d, %Y"
