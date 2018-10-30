@@ -2,18 +2,14 @@
 layout: default
 title: Althea
 ---
-<!-- <div class="fixed-top d-sm-none">xs</div>
-<div class="fixed-top d-none d-sm-block d-md-none">sm</div>
-<div class="fixed-top d-none d-md-block d-lg-none">md</div>
-<div class="fixed-top d-none d-lg-block">lg</div> -->
 {% include frontpage/nav.html %}
 
 <div class="container page">
-{% if page.url contains "blog" %}
-  <h1>{{ page.title }}</h1>
-  <time pubdate><i>{{ page.date | date: site.date_format }}</i></time>
-  <address><i>{{ page.author }}</i></address>
-{% endif %}
+  {% if page.url contains "blog" %}
+    <h1>{{ page.title }}</h1>
+    <time pubdate><i>{{ page.date | date: site.date_format }}</i></time>
+    <address><i>{{ page.author }}</i></address>
+  {% endif %}
 
   {{ content }}
 </div>
