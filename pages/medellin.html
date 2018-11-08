@@ -30,15 +30,15 @@ permalink: /medellin
 </style>
 
 <div class="case-study">
-  <div class="d-flex flex-row align-content-center">
+  <div class="d-flex flex-row align-content-center" style="margin-bottom: 100px">
     <div class="mt-auto mb-auto pr-3">
       <hr style="width: 200px" />
     </div>
     <div class="d-flex flex-column justify-content-center pr-6 w-100">
-      <div class="flex-grow justify-content-end h-100 my-auto">
-        <div>
-        <img src="/images/location.jpg" style="width: 30px; height: 40px" />
-        <h4>Case Study &mdash; 01</h4>
+      <div class="flex-grow justify-content-end h-100">
+        <div class="mt-auto">
+          <img src="/images/location.jpg" style="width: 30px; height: 40px" />
+          <h4>Case Study &mdash; 01</h4>
         </div>
       </div>
       <div>
@@ -56,22 +56,21 @@ permalink: /medellin
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-6">
-      Legacy ISP: Slow or No Bandwidth
+  <div class="container page" style="margin-bottom: 100px">
+    <div class="d-flex flex-row" style="margin-bottom: 100px">
+      <h2>Legacy ISP: Slow or No Bandwidth</h2>
+      <div class="w-50">
+        In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at [red_medellin](https://www.redmedellin.com/) are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our [blog post](https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e) about helping them deploy Althea in Medellin.
+      </div>
     </div>
-    <div class="col-6">
-      In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at [red_medellin](https://www.redmedellin.com/) are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our [blog post](https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e) about helping them deploy Althea in Medellin.
-    </div>
+    <img class="w-100" style="max-width: none" src="/images/communa-13.jpg" />
   </div>
 
-  <img src="/images/communa-13.jpg" />
-
-  <div class="row">
-    <div class="col-6">
-      Althea: Faster, Cheaper Internet— Owned by the people using it
+  <div class="d-flex container page" style="margin-bottom: 100px">
+    <div class="w-50">
+      <h2 class="m-0 pr-6">Althea: Faster, Cheaper Internet— Owned by the people using it</h2>
     </div>
-    <div class="col-6">
+    <div class="w-50 flex-grow">
       <p>
         The [red_medellin](https://www.redmedellin.com/) subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
       </p>
@@ -88,21 +87,35 @@ permalink: /medellin
 
 
   <div class="d-flex flex-row">
-    <div class="flex-column">
-      <div>
-        <h2>Gateway Node</h2>
+    <div class="flex-column col-5" style="background: #002D39; color: white; padding-left: 150px">
+      <div class="pt-4 pr-3">
+        <div class="d-flex flex-row mt-6">
+          <div style="background: #E24356; border-radius: 100%; width: 40px; height: 40px">&nbsp;</div>
+          <h5 class="w-100 mt-auto mb-auto pl-2">Gateway Node</h5>
+          <h2>+</h2>
+        </div>
         <p>
         Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
         </p>
+        <img class="mr-2" src="/images/gateway-1.jpg" />
+        <img src="/images/gateway-2.jpg" />
       </div>
-      <div>
-        <h2>Intermediary Nodes</h2>
+      <div class="pt-4 pr-3">
+        <div class="d-flex flex-row mt-6">
+          <div style="background: #7C9499; border-radius: 100%; width: 40px; height: 40px">&nbsp;</div>
+          <h5 class="w-100 mt-auto mb-auto pl-2">Intermediary Nodes</h5>
+          <h2>+</h2>
+        </div>
         <p class="d-none">
           Any houses with a direct view of the school can point an inexpensive antenna to the sector antennas set up above the school and connect to the internet. These houses can then “pass on” this connection to their neighbors via ethernet cable, earning some money.
         </p>
       </div>
-      <div>
-        <h2>User Nodes</h2>
+      <div class="pt-4 pr-3">
+        <div class="d-flex flex-row mt-6">
+          <div class="my-auto" style="background: #687253; border-radius: 100%; width: 40px; height: 40px">&nbsp;</div>
+          <h5 class="w-100 my-auto pl-2">User Nodes</h5>
+          <h2 class="my-auto">+</h2>
+        </div>
         <p class="d-none">
           Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
         </p>
