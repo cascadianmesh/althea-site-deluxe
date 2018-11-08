@@ -8,30 +8,45 @@ permalink: /medellin
   .case-study {
     background: #FCFAF6;
   } 
+
+  .lead-header, .follow-header {
+    display: inline-block;
+  } 
+
+  .follow-header {
+    color: #D7B173;
+    font-family: "LL Akkurat Light Web";
+    font-weight: 100;
+  } 
 </style>
 
 <div class="case-study">
-  <div class="container page">
-    <div class="row">
-      <div class="col-6">
-      <h1>Medellin Colombia</h1>
-      </div>
-      <div class="col-6">
-      <img src="{{ '/images/casamarado.jpg' | relative_url }}" />
-      </div>
+  <div class="d-flex flex-row align-content-center">
+    <div class="flex-column mt-auto mb-auto">
+      <h2 class="lead-header">Medellin</h2> 
+      &nbsp;
+      <h2 class="follow-header">Colombia</span>
     </div>
-
-    <div class="row">
-      <div class="col-6">
-        Legacy ISP: Slow or No Bandwidth
-      </div>
-      <div class="col-6">
-      In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at [red_medellin](https://www.redmedellin.com/) are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our [blog post](https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e) about helping them deploy Althea in Medellin.
-      </div>
+    <div class="flex-column">
+      <figure>
+        <img src="{{ '/images/casamarado.jpg' | relative_url }}" style="width: 600px" />
+        <figcaption>
+        A long-range antenna connects a node to the backhaul connection in Communa 13.
+        <hr />
+        </figcaption>
     </div>
-
-    <img src="/images/communa-13.jpg" />
   </div>
+
+  <div class="row">
+    <div class="col-6">
+      Legacy ISP: Slow or No Bandwidth
+    </div>
+    <div class="col-6">
+      In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at [red_medellin](https://www.redmedellin.com/) are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our [blog post](https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e) about helping them deploy Althea in Medellin.
+    </div>
+  </div>
+
+  <img src="/images/communa-13.jpg" />
 
   <div class="row">
     <div class="col-6">
