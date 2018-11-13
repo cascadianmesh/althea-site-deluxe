@@ -25,8 +25,9 @@ permalink: /medellin
   } 
 
   figcaption {
-    color: #999;
-    font-weight: bold;
+    color: #5A6E80;
+    font-size: 0.8rem;
+    padding-top: 1rem;
   } 
 
   .subheading {
@@ -35,32 +36,43 @@ permalink: /medellin
     font-family: "LL Akkurat Light Web";
     font-weight: 100;
   } 
+
+  a {
+    color: black;
+    text-decoration: underline;
+  } 
 </style>
 
 <div class="case-study">
-  <div class="d-flex flex-row align-content-center" style="margin-bottom: 100px">
-    <div class="mt-auto mb-auto pr-3">
-      <hr style="width: 200px" />
-    </div>
-    <div class="d-flex flex-column justify-content-center pr-6 w-100">
-      <div class="flex-grow justify-content-end h-100">
-        <div class="mt-auto">
-          <img src="/images/location.jpg" style="width: 30px; height: 40px" />
-          <div class="subheading">Case Study &mdash; 01</div>
+  <div class="d-flex flex-row w-100">
+    <div class="col-6 d-flex flex-row align-content-center" style="margin-bottom: 100px">
+      <div class="mt-auto mb-auto pr-3">
+        <hr style="width: 10rem" />
+      </div>
+      <div class="d-flex flex-column justify-content-center pr-6 w-100">
+        <div class="flex-grow justify-content-end h-100">
+          <div class="d-flex mt-auto h-100 bd-highlight flex-column">
+            <div class="flex-grow h-100"></div>
+            <div>
+              <img src="/images/location.jpg" style="width: 30px; height: 40px" />
+              <div class="subheading">Case Study &mdash; 01</div>
+            </div>
+          </div>
         </div>
+        <div>
+          <h2 class="lead-header mb-0">Medellin <span class="follow-header">Colombia</span></h2> 
+        </div>
+        <div class="flex-grow h-100"></div>
       </div>
-      <div>
-        <h2 class="lead-header mb-0">Medellin <span class="follow-header">Colombia</span></h2> 
-      </div>
-      <div class="flex-grow h-100">Hello</div>
     </div>
-    <div class="w-100">
-      <figure class="float-right">
-        <img src="{{ '/images/casamarado.jpg' | relative_url }}" style="width: 800px" />
+    <div class="col-6">
+      <figure class="text-center">
+        <img src="{{ '/images/casamarado.jpg' | relative_url }}" style="width: 100%" />
         <figcaption>
         A long-range antenna connects a node to the backhaul connection in Communa 13.
         <hr />
         </figcaption>
+      </figure>
     </div>
   </div>
 
@@ -68,19 +80,33 @@ permalink: /medellin
     <div class="d-flex flex-row" style="margin-bottom: 100px">
       <h2>Legacy ISP: Slow or No Bandwidth</h2>
       <div class="w-50">
-        In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at [red_medellin](https://www.redmedellin.com/) are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our [blog post](https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e) about helping them deploy Althea in Medellin.
+        In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at <a href="https://www.redmedellin.com/">red_medellin</a> are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our <a href="https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e">blog post</a> about helping them deploy Althea in Medellin.
       </div>
     </div>
-    <img class="w-100" style="max-width: none" src="/images/communa-13.jpg" />
+    <div class="d-flex flex-row">
+      <figure class="w-50">
+        <img class="w-100 pr-2" src="/images/medellin-1.jpg" />
+        <figcaption class="pr-2">
+        A long-range antenna connects a node to the backhaul connection
+        </figcaption>
+      </figure>
+      <figure class="w-50">
+        <img class="w-100 pl-2" src="/images/medellin-2.jpg" />
+        <figcaption class="pl-2">
+        A long-range antenna connects a node to the backhaul connection
+        </figcaption>
+      </figure>
+    </div>
   </div>
 
   <div class="d-flex container page" style="margin-bottom: 100px">
-    <div class="w-50">
-      <h2 class="m-0 pr-6">Althea: Faster, Cheaper Internet— Owned by the people using it</h2>
+    <div class="col-4">
+      <h2>Althea: Faster, Cheaper Internet &mdash; Owned by the people using it</h2>
     </div>
+    <div class="col-2"></div>
     <div class="w-50 flex-grow">
       <p>
-        The [red_medellin](https://www.redmedellin.com/) subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
+      The <a href="https://www.redmedellin.com/">red_medellin</a> subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
       </p>
 
       <p>
@@ -94,43 +120,34 @@ permalink: /medellin
   </div>
 
 
-  <div class="d-flex flex-row" style="margin-bottom: 100px">
-    <div class="flex-column col-5" style="background: #002D39; color: white; padding-left: 150px">
-      <div class="pt-4 pr-3">
-        <div class="d-flex flex-row mt-6">
-          <div style="background: #E24356; border-radius: 100%; width: 40px; height: 40px">&nbsp;</div>
-          <h5 class="w-100 mt-auto mb-auto pl-2">Gateway Node</h5>
-          <h2>+</h2>
-        </div>
-        <p>
-        Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
-        </p>
-        <img class="mr-2" src="/images/gateway-1.jpg" />
-        <img src="/images/gateway-2.jpg" />
-      </div>
-      <div class="pt-4 pr-3">
-        <div class="d-flex flex-row mt-6">
-          <div style="background: #7C9499; border-radius: 100%; width: 40px; height: 40px">&nbsp;</div>
-          <h5 class="w-100 mt-auto mb-auto pl-2">Intermediary Nodes</h5>
-          <h2>+</h2>
-        </div>
-        <p class="d-none">
-          Any houses with a direct view of the school can point an inexpensive antenna to the sector antennas set up above the school and connect to the internet. These houses can then “pass on” this connection to their neighbors via ethernet cable, earning some money.
-        </p>
-      </div>
-      <div class="pt-4 pr-3">
-        <div class="d-flex flex-row mt-6">
-          <div class="my-auto" style="background: #687253; border-radius: 100%; width: 40px; height: 40px">&nbsp;</div>
-          <h5 class="w-100 my-auto pl-2">User Nodes</h5>
-          <h2 class="my-auto">+</h2>
-        </div>
-        <p class="d-none">
-          Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
-        </p>
+  <div class="w-100">
+    <div class="w-50" style="position: absolute;">
+      <img src="/images/map.png" class="w-100" />
+      <div class="w-100" style="position: absolute; left: 100%; background: #002D39; color: white;">
       </div>
     </div>
-    <div class="flex-column">
-      <img src="/images/map.jpg" />
+    <div class="d-flex flex-row-reverse container page" style="margin-bottom: 100px;">
+      <div class="flex-column col-6" style="background: #002D39; color: white;">
+        <p style="color: #5A6E80; text-transform: uppercase;">Select Node Type:</p>
+        <div class="pt-4 pr-3">
+          <div class="d-flex flex-row" style="margin-right: 100px">
+            <div style="border-bottom: 2px solid #E84658"><h5 class="w-100 mt-auto mb-auto pl-2">Gateway Node</h5></div>
+            <div style="border-bottom: 2px solid #4A6666"><h5 class="w-100 mt-auto mb-auto pl-2">Intermediary Nodes</h5></div>
+            <div style="border-bottom: 2px solid #4A6666"><h5 class="w-100 mt-auto mb-auto pl-2">Client Nodes</h5></div>
+          </div>
+          <p>
+          Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
+          </p>
+          <p class="d-none">
+            Any houses with a direct view of the school can point an inexpensive antenna to the sector antennas set up above the school and connect to the internet. These houses can then “pass on” this connection to their neighbors via ethernet cable, earning some money.
+          </p>
+          <p class="d-none">
+            Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
+          </p>
+          <img class="mr-2" src="/images/gateway-1.jpg" />
+          <img src="/images/gateway-2.jpg" />
+        </div>
+      </div>
     </div>
   </div>
   
