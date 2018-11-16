@@ -542,3 +542,133 @@ h1 {
 .case-studies {
   background: #FCFBF7;
 } 
+
+.view-case-study {
+  border-radius: 100px;
+  border: none;
+  background: #4FA2F0;
+  color: white;
+} 
+
+.next {
+  font-weight: normal;
+  font-family: 'LL Akkurat Regular Web';
+} 
+ 
+.learn-more {
+  background: #F5EFD3;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+} 
+
+.learn-more .arrow {
+  font-size: 18px;
+  color: #D7B173;
+} 
+
+.material-icons.small {
+  font-size: 18px;
+} 
+
+.gallery-nav {
+  color: #6B6E53;
+  cursor: pointer;
+} 
+
+.gallery-nav.active {
+  color: #D8B272;
+} 
+  
+.select-node {
+  text-transform: uppercase;
+} 
+
+.map-details {
+  background: #002D39;
+  color: #5A6E80; 
+} 
+
+.map-details p {
+  color: white;
+} 
+
+.tnt {
+  color: #424855;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+} 
+
+.map-details.arrow {
+  background: #002D39;
+  height: 30px;
+  left: -15px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 30px;
+} 
+
+.active.category {
+  color: white;
+  border-color: #E84658; 
+} 
+
+.category {
+  border-bottom: 3px solid #4A6666;
+  color: #6B797D;
+  cursor: pointer;
+} 
+
+.case-study {
+  background: #FCFAF6;
+} 
+
+.lead-header, .follow-header {
+  color: #002D39;
+  display: inline-block;
+  font-size: 3rem;
+} 
+
+.follow-header {
+  color: #D7B173;
+  font-family: "LL Akkurat Light Web";
+  font-weight: 100;
+} 
+
+hr {
+  border: 2px solid #D7B173;
+} 
+
+.caption {
+  color: #5A6E80;
+  padding: 1rem 0;
+  border-bottom: 3px solid #F5EFD3;
+} 
+
+.subheading {
+  color: #002D39;
+  text-transform: uppercase;
+  font-family: "LL Akkurat Light Web";
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+} 
+
+a {
+  color: black;
+  text-decoration: underline;
+} 
+
+.section {
+  padding-bottom: 8rem;
+} 
+
+.top-section { 
+  padding-top: 8rem;
+}
+
+.location {
+  width: 3rem;
+  margin-bottom: 1.2rem;
+} 

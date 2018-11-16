@@ -4,76 +4,29 @@ title: Althea
 permalink: /medellin
 ---
 
-<style>
-  .case-study {
-    background: #FCFAF6;
-  } 
-
-  .lead-header, .follow-header {
-    color: #002D39;
-    display: inline-block;
-    font-size: 3rem;
-  } 
-
-  .follow-header {
-    color: #D7B173;
-    font-family: "LL Akkurat Light Web";
-    font-weight: 100;
-  } 
-
-  hr {
-    border: 2px solid #D7B173;
-  } 
-
-  .caption {
-    color: #5A6E80;
-    padding: 1rem 0;
-  } 
-
-  .subheading {
-    color: #002D39;
-    text-transform: uppercase;
-    font-family: "LL Akkurat Light Web";
-    font-weight: 100;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  } 
-
-  a {
-    color: black;
-    text-decoration: underline;
-  } 
-
-  .section {
-    padding-bottom: 8rem;
-  } 
-</style>
-
 <div class="case-study">
-  <div class="d-flex flex-row flex-wrap" style="padding-top: 8rem">
-    <div class="col-2 d-flex flex-column justify-content-center">
+  <div class="d-flex flex-row flex-wrap top-section">
+    <div class="pl-0 col-md-2 d-flex flex-column justify-content-center">
       <hr class="w-100" />
     </div>
     <div class="col-md-3 col-sm-10 d-flex flex-column justify-content-center">
       <div class="d-flex flex-column justify-content-end h-100">
-        <img src="/images/location.jpg" style="width: 3rem; margin-bottom: 1.2rem;" />
+        <img src="/images/location.jpg" class="location" />
         <div class="subheading">Case Study &mdash; 01</div>
       </div>
       <h1 class="lead-header mb-0">Medellin <span class="follow-header">Colombia</span></h1> 
       <div class="h-100"></div>
     </div>
     <div class="col-md-7 col-sm-12 p-0">
-      <img src="{{ '/images/medellin.png' | relative_url }}" style="width: 100%" />
+      <img src="{{ '/images/medellin.png' | relative_url }}" class="w-100" />
     </div>
   </div>
 
-  <div class="caption col-md-5 offset-md-5 col-sm-12 text-right" style="border-bottom: 3px solid #F5EFD3;">
+  <div class="caption col-md-5 offset-md-5 col-sm-12 text-right">
     A long-range antenna connects a node to the backhaul connection in Communa 13.
   </div>
 
-  <div class="section"></div>
-
-  <div class="d-flex flex-row flex-wrap section">
+  <div class="d-flex flex-row flex-wrap section top-section">
     <h2 class="col-md-3 offset-md-2 col-sm-12">Legacy ISP: Slow or No Bandwidth</h2>
     <div class="col-md-5 col-sm-12">
       In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at <a href="https://www.redmedellin.com/">red_medellin</a> are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our <a href="https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e">blog post</a> about helping them deploy Althea in Medellin.
@@ -83,14 +36,14 @@ permalink: /medellin
   <div class="d-flex flex-row flex-wrap section">
     <figure class="col-md-4 offset-md-2 col-sm-12">
       <img class="w-100" src="/images/medellin-1.jpg" />
-      <div class="caption" style="border-bottom: 3px solid #F5EFD3;">
+      <div class="caption">
       A long-range antenna connects a node to the backhaul connection
       </div>
     </figure>
 
     <figure class="col-md-4 col-sm-12">
       <img class="w-100" src="/images/medellin-2.jpg" />
-      <div class="caption" style="border-bottom: 3px solid #F5EFD3;">
+      <div class="caption">
       A long-range antenna connects a node to the backhaul connection
       </div>
     </figure>
@@ -112,25 +65,27 @@ permalink: /medellin
   </div>
 
   <div class="d-flex justify-content-center">
-    <h5 style="color: #424855; text-transform: uppercase">Technology &amp; Topology</h5>
+    <span class="tnt mb-4">Technology &amp; Topology</span>
   </div>
 
-  <div class="d-flex flex-wrap p-0 section">
-    <div class="p-0 col-5">
+  <div class="d-flex flex-wrap-reverse p-0 section">
+    <div class="p-0 col-md-5">
       <img class="w-100 h-100" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCccjShBvFuT5U9eS-LHujKqP_-WdU931k&center=6.247820844709751,-75.62171557091173&zoom=16&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Cvisibility:off&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative%7Celement:labels%7Cvisibility:off&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:landscape%7Celement:geometry.fill%7Ccolor:0x0fb36f&style=feature:landscape%7Celement:labels%7Cvisibility:off&style=feature:landscape.man_made%7Cvisibility:off&style=feature:poi%7Cvisibility:off&style=feature:poi%7Celement:labels%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Ccolor:0x1a714c%7Cvisibility:simplified&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels%7Cvisibility:off&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a%7Cvisibility:off&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.arterial%7Celement:geometry.fill%7Ccolor:0x1a714c&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway%7Celement:geometry.fill%7Ccolor:0x1a714c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.highway.controlled_access%7Celement:geometry.fill%7Ccolor:0x1a714c&style=feature:road.local%7Celement:geometry.fill%7Ccolor:0x1a714c&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Cvisibility:off&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:geometry.fill%7Ccolor:0xc3e8ff&style=feature:water%7Celement:labels%7Cvisibility:off&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360&markers=anchor:32,10" />
 
     </div>
-    <div class="flex-column col-7 py-4 pl-4" style="background: #002D39; color: white;">
-      <div style="width: 30px; height: 30px; background: #002D39; -webkit-transform: rotate(45deg); transform: rotate(45deg); position: absolute; top: 50%; left: -15px;"></div>
-      <span style="color: #5A6E80; text-transform: uppercase;">Select Node Type:</span>
+
+    <div class="map-details flex-column col-md-7 py-4 pl-4">
+      <div class="arrow"></div>
+      <span class="select-node">Select Node Type:</span>
       <div class="pr-3">
-        <div class="d-flex flex-row flex-sm-wrap flex-md-nowrap my-4 col-10">
-          <div class="w-100 p-0" style="border-bottom: 3px solid #E84658; cursor: pointer;"><h4>Gateway Node</h4></div>
-          <div class="w-100 p-0" style="border-bottom: 3px solid #4A6666; color: #6B797D; cursor: pointer;"><h4>Intermediary Nodes</h4></div>
-          <div class="w-100 p-0" style="border-bottom: 3px solid #4A6666; color: #6B797D; cursor: pointer;"><h4>User Nodes</h4></div>
+        <div class="d-flex flex-row flex-wrap flex-lg-nowrap pl-0 my-4 col-10">
+          <div class="w-100 p-0 mb-2 active category"><h4>Gateway Node</h4></div>
+          <div class="w-100 p-0 mb-2 category"><h4>Intermediary Nodes</h4></div>
+          <div class="w-100 p-0 mb-2 category"><h4>User Nodes</h4></div>
         </div>
-        <div class="d-flex flex-row w-100">
-          <p class="col-5 mb-3 p-0">
+
+        <div class="d-flex flex-row w-100 mb-4">
+          <p class="col-md-7 col-lg-5 col-sm-12 mb-3 p-0">
           Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
           </p>
         </div>
@@ -140,92 +95,97 @@ permalink: /medellin
         <p class="d-none">
         Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
         </p>
+
         <div class="d-flex flex-row p-0 col-9">
           <div>
-            <i class="material-icons mb-2 font-size-14" style="color: #6B6E53; cursor: pointer;">arrow_back</i>
+            <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
           </div>
           <div class="ml-auto">
-            <i class="material-icons mb-2 font-size-14" style="color: #D8B272; cursor: pointer;">arrow_forward</i>
+            <i class="material-icons mb-2 font-size-14 gallery-nav active">arrow_forward</i>
           </div>
         </div>
+
         <div class="d-flex flex-row">
-          <div class="col-6 pr-4" style="color: #5A6E80">
+          <div class="pr-4">
             <img class="w-100" src="/images/gateway-1.png" />
             <div class="d-flex mt-2"> 
               <div>
                 <span>A long-range antenna connects a node</span>
               </div>
               <div class="ml-auto">
-                <i class="material-icons" style="font-size: 18px">search</i>
+                <i class="material-icons small">search</i>
               </div>
             </div>
           </div>
-          <div class="col-6 pr-4" style="color: #5A6E80">
+
+          <div class="pr-4" style="color: #5A6E80">
             <img class="w-100" src="/images/gateway-2.png" />
             <div class="d-flex mt-2"> 
               <div>
                 <span>A long-range antenna connects a node</span>
               </div>
               <div class="ml-auto">
-                <i class="material-icons" style="font-size: 18px">search</i>
+                <i class="material-icons small">search</i>
               </div>
             </div>
+          </div>
+
+          <div class="flex-shrink" style="color: #5A6E80">
+            <img style="margin-right: -2em; width: 2em; height: 87%" src="/images/gateway-3.png" />
           </div>
         </div>
       </div>
     </div>
   </div>
   
-  <div class="d-flex section" style="background: #F5EFD3; padding-top: 8rem">
+  <div class="d-flex learn-more">
     <div class="col-8 offset-2">
-      <h2>Learn more</h2>
+      <h1 class="mb-5">Learn more</h1>
       <div class="d-flex flex-row font-size-10 flex-wrap">
         <div class="col-md-3 h-100">
-          <img style="margin-bottom: 1.3em" src="/images/book-open-variant.svg" />
+          <img class="mb-2" src="/images/book-open-variant.svg" />
           <p><b>Read the full story</b> about how we helped red_medellin deploy Althea on Medium.</p>
-          <hr class="mt-auto" />
+          <i class="material-icons arrow">arrow_forward</i>
+          <hr class="m-0" />
         </div>
         <div class="col-md-3">
           <i class="material-icons mb-2">open_in_new</i><br />
           <p><b>Visit the red_medellin website</b> for regular updates on their progress and more information.</p>
-          <hr />
+          <i class="material-icons arrow">arrow_forward</i>
+          <hr class="m-0" />
         </div>
         <div class="col-md-3">
           <i class="material-icons mb-2">send</i><br />
           <p><b>Send us a message</b> with any questions or to get connected with the red_medellin subnet.</p>
-          <hr />
+          <i class="material-icons arrow">arrow_forward</i>
+          <hr class="m-0" />
         </div>
         <div class="col-md-3">
           <i class="material-icons mb-2">school</i><br />
           <p><b>Check out the How it Works page</b> to find out more about the Althea ecosystem.</p>
-          <hr />
+          <i class="material-icons arrow">arrow_forward</i>
+          <hr class="m-0" />
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section"></div>
-
-  <div class="d-flex flex-row flex-wrap section">
+  <div class="d-flex flex-row flex-wrap section top-section">
     <div class="col-2 d-flex flex-column justify-content-center">
       <hr class="w-100" />
     </div>
     <div class="col-md-3 col-sm-10 d-flex flex-column justify-content-center">
       <div class="d-flex flex-column justify-content-end h-100">
-        <img src="/images/location.jpg" style="width: 3rem; margin-bottom: 1.2rem;" />
-        <div class="subheading"><span style="font-weight: normal; font-family: 'LL Akkurat Regular Web';">Next</span> &nbsp; Case Study &mdash; 02</div>
+        <img src="/images/location.jpg" class="location" />
+        <div class="subheading"><span class="next" >Next</span> &nbsp; Case Study &mdash; 02</div>
       </div>
       <h1 class="lead-header mb-0">Clatskanie <span class="follow-header">Oregon</span></h1> 
       <div class="h-100">
-        <button class="px-3 py-2 mt-4" style="border-radius: 100px; border: none; background: #4FA2F0; color: white;">View Case Study</button>
+        <button class="view-case-study px-3 py-2 mt-4">View Case Study</button>
       </div>
     </div>
     <div class="col-md-7 col-sm-12 p-0">
-      <img src="{{ '/images/clatskanie.png' | relative_url }}" style="width: 100%" />
+      <img src="{{ '/images/clatskanie.png' | relative_url }}" class="w-100" />
     </div>
-  </div>
-
-  <div class="caption col-md-5 offset-md-5 col-sm-12 text-right" style="border-bottom: 3px solid #F5EFD3;">
-    
   </div>
 </div>
