@@ -4,6 +4,22 @@ title: Althea
 permalink: /medellin
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    var categories = document.querySelectorAll('.category')
+    var descriptions = document.querySelectorAll('.descriptions p')
+      
+    categories.forEach(function(e, i) {
+      e.onclick = function(e) {
+        categories.forEach(function (c) { c.classList.remove('active') });
+        e.currentTarget.classList.add('active');
+        descriptions.forEach(function (d) { d.classList.add('d-none') });
+        descriptions[i].classList.remove('d-none');
+      };
+    });
+  });
+</script>
+
 <div class="case-study">
   <div class="d-flex flex-row flex-wrap top-section">
     <div class="pl-0 col-md-2 d-flex flex-column justify-content-center">
@@ -84,17 +100,17 @@ permalink: /medellin
           <div class="w-100 p-0 mb-2 category"><h4>User Nodes</h4></div>
         </div>
 
-        <div class="d-flex flex-row w-100 mb-4">
-          <p class="col-md-7 col-lg-5 col-sm-12 mb-3 p-0">
+        <div class="d-flex flex-row w-100 mb-4 descriptions">
+          <p class="col-md-7 col-lg-5 col-sm-12 p-0">
           Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
           </p>
+          <p class="col-md-7 col-lg-5 col-sm-12 p-0 d-none">
+          Any houses with a direct view of the school can point an inexpensive antenna to the sector antennas set up above the school and connect to the internet. These houses can then “pass on” this connection to their neighbors via ethernet cable, earning some money.
+          </p>
+          <p class="col-md-7 col-lg-5 col-sm-12 p-0 d-none">
+          Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
+          </p>
         </div>
-        <p class="d-none">
-        Any houses with a direct view of the school can point an inexpensive antenna to the sector antennas set up above the school and connect to the internet. These houses can then “pass on” this connection to their neighbors via ethernet cable, earning some money.
-        </p>
-        <p class="d-none">
-        Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
-        </p>
 
         <div class="d-flex flex-row p-0 col-9">
           <div>
@@ -107,7 +123,7 @@ permalink: /medellin
 
         <div class="d-flex flex-row">
           <div class="pr-4">
-            <img class="w-100" src="/images/gateway-1.png" />
+            <img class="w-100" src="/images/drums.jpg" />
             <div class="d-flex mt-2"> 
               <div>
                 <span>A long-range antenna connects a node</span>
@@ -119,7 +135,7 @@ permalink: /medellin
           </div>
 
           <div class="pr-4" style="color: #5A6E80">
-            <img class="w-100" src="/images/gateway-2.png" />
+            <img class="w-100" src="/images/dish.jpg" />
             <div class="d-flex mt-2"> 
               <div>
                 <span>A long-range antenna connects a node</span>
