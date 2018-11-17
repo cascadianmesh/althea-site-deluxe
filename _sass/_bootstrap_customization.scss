@@ -666,12 +666,18 @@ a {
   text-decoration: underline;
 } 
 
-.section {
-  padding-bottom: 12rem;
+.top-section {
+  padding-top: 5.5em;
 } 
 
-.top-section { 
-  padding-top: 12rem;
+@media (min-width: 768px) {
+  .section {
+    padding-bottom: 12rem;
+  } 
+
+  .top-section { 
+    padding-top: 12rem;
+  }
 }
 
 .location {
