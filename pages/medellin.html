@@ -8,7 +8,16 @@ permalink: /medellin
   document.addEventListener("DOMContentLoaded", function(event) { 
     var categories = document.querySelectorAll('.category')
     var descriptions = document.querySelectorAll('.descriptions p')
-      
+    var navArrows = document.querySelectorAll('.gallery-nav')
+    var gallery = [
+      '/images/drums.jpg',
+      '/images/dish.jpg'
+    ]
+
+    navArrows[0].onclick = function(e) {
+      gallery.push(gallery.shift());
+    };
+
     categories.forEach(function(e, i) {
       e.onclick = function(e) {
         categories.forEach(function (c) { c.classList.remove('active') });
@@ -44,7 +53,7 @@ permalink: /medellin
 
   <div class="d-flex flex-row flex-wrap section top-section">
     <h2 class="col-md-3 offset-md-2 col-sm-12">Legacy ISP: Slow or No Bandwidth</h2>
-    <div class="col-md-5 col-sm-12">
+    <div class="col-md-4 col-sm-12">
       In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at <a href="https://www.redmedellin.com/">red_medellin</a> are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our <a href="https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e">blog post</a> about helping them deploy Althea in Medellin.
     </div>
   </div>
@@ -69,7 +78,7 @@ permalink: /medellin
     <div class="col-md-3 offset-md-2 col-sm-12">
       <h2>Althea: Faster, Cheaper Internet &mdash; Owned by the people using it</h2>
     </div>
-    <div class="col-md-5 col-sm-12">
+    <div class="col-md-4 col-sm-12">
       <p>
       The <a href="https://www.redmedellin.com/">red_medellin</a> subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
       </p>
@@ -94,7 +103,7 @@ permalink: /medellin
       <div class="arrow"></div>
       <span class="select-node">Select Node Type:</span>
       <div class="pr-3">
-        <div class="d-flex flex-row flex-wrap flex-lg-nowrap pl-0 my-4 col-10">
+        <div class="d-flex flex-row flex-wrap flex-lg-nowrap pl-0 my-4 col-9">
           <div class="w-100 p-0 mb-2 active category"><h4>Gateway Node</h4></div>
           <div class="w-100 p-0 mb-2 category"><h4>Intermediary Nodes</h4></div>
           <div class="w-100 p-0 mb-2 category"><h4>User Nodes</h4></div>
@@ -134,7 +143,7 @@ permalink: /medellin
             </div>
           </div>
 
-          <div class="pr-4" style="color: #5A6E80">
+          <div class="pr-4">
             <img class="w-100" src="/images/dish.jpg" />
             <div class="d-flex mt-2"> 
               <div>
@@ -146,8 +155,8 @@ permalink: /medellin
             </div>
           </div>
 
-          <div class="flex-shrink" style="color: #5A6E80">
-            <img style="margin-right: -2em; width: 2em; height: 87%" src="/images/gateway-3.png" />
+          <div>
+            <img class="next-image" src="/images/gateway-3.png" />
           </div>
         </div>
       </div>
