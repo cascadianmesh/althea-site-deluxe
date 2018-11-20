@@ -540,13 +540,13 @@ h1 {
 }
 
 .case-studies {
-  background: #FCFBF7;
+  background: $light-yellow;
 } 
 
 .view-case-study {
   border-radius: 100px;
   border: none;
-  background: #4FA2F0;
+  background: $blue;
   color: white;
 } 
 
@@ -556,7 +556,7 @@ h1 {
 } 
  
 .learn-more {
-  background: #F5EFD3;
+  background: $light-yellow;
   padding-top: 8rem;
   padding-bottom: 12rem;
 } 
@@ -576,7 +576,7 @@ h1 {
 } 
 
 .gallery-nav.active {
-  color: #D8B272;
+  color: $light-yellow;
 } 
   
 .select-node {
@@ -598,8 +598,8 @@ h1 {
   height: 87%;
 }
 
-.tnt {
-  color: #424855;
+h4 {
+  color: $gray;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bolder;
@@ -627,33 +627,33 @@ h1 {
 } 
 
 .case-study {
-  background: #FCFAF6;
+  background: $light-tan;
 } 
 
 .lead-header, .follow-header {
-  color: #002D39;
+  color: $dark-gray;
   display: inline-block;
   font-size: 3rem;
 } 
 
 .follow-header {
-  color: #D7B173;
+  color: $yellow;
   font-family: "LL Akkurat Light Web";
   font-weight: 100;
 } 
 
 hr {
-  border: 2px solid #D7B173;
+  border: 2px solid $yellow;
 } 
 
 .caption {
-  color: #5A6E80;
+  color: $light-gray;
   padding: 1rem 0;
-  border-bottom: 3px solid #F5EFD3;
+  border-bottom: 3px solid $light-yellow;
 } 
 
 .subheading {
-  color: #002D39;
+  color: $dark-gray;
   text-transform: uppercase;
   font-family: "LL Akkurat Light Web";
   font-weight: 100;
