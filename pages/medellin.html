@@ -30,62 +30,72 @@ permalink: /medellin
 </script>
 
 <div class="case-study">
-  <div class="d-flex flex-row flex-wrap top-section">
-    <div class="d-none d-sm-flex pl-0 col-md-2 flex-column justify-content-center">
-      <hr class="w-100" />
-    </div>
-    <div class="col-md-3 col-sm-10 d-flex flex-column justify-content-center">
-      <div class="d-flex flex-column justify-content-end h-100">
-        <img src="{{ '/images/location.jpg' | relative_url }}" class="location" />
-        <div class="subheading">Case Study &mdash; 01</div>
+  <div class="container top-section">
+    <div class="row">
+      <div class="col-12 col-sm-6" style="overflow: visible">
+        <div class="d-flex flex-column justify-content-center h-100">
+          <div class="h-100 d-flex flex-column justify-content-end">
+            <img src="{{ '/images/location.jpg' | relative_url }}" class="location" />
+            <div class="subheading">Case Study &mdash; 01</div>
+          </div>
+          <div>
+            <h1 class="lead-header">Medellin <span class="follow-header">Colombia</span></h1> 
+          </div>
+          <div class="h-100 d-none d-sm-block"></div>
+        </div>
+        <hr style="width: 500px; position: absolute; right: 100%; top: 250px;" />
       </div>
-      <h1 class="lead-header mb-0">Medellin <span class="follow-header">Colombia</span></h1> 
-      <div class="h-100"></div>
-    </div>
-    <div class="col-md-7 col-sm-12 p-0">
-      <img src="{{ '/images/medellin.png' | relative_url }}" class="w-100" />
-    </div>
-  </div>
-
-  <div class="caption col-10 offset-1 col-md-5 offset-md-5 text-right">
-    A long-range antenna connects a node to the backhaul connection in Communa 13.
-  </div>
-
-  <div class="d-flex flex-row flex-wrap section top-section">
-    <h2 class="col-md-3 offset-md-2 col-sm-12">Legacy ISP: Slow or No Bandwidth</h2>
-    <div class="col-md-4 col-sm-12">
-      In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at <a href="https://www.redmedellin.com/">red_medellin</a> are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our <a href="https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e">blog post</a> about helping them deploy Althea in Medellin.
-    </div>
-  </div>
-
-  <div class="d-flex flex-row flex-wrap section">
-    <figure class="col-md-4 offset-md-2 col-sm-12">
-      <img class="w-100" src="{{ '/images/medellin-1.jpg' | relative_url }}" />
-      <div class="caption">
-      A long-range antenna connects a node to the backhaul connection
+      <div class="col-12 col-sm-6">
+        <!-- <img src="{{ '/images/casamarado.jpg' | relative_url }}" style="height: 800px" /> -->
+        <div style="background-image: url(/images/casamarado.jpg); background-position: right; background-size: cover; min-width: 60vw; height: 600px;"></div>
+        <div class="caption text-right">
+          A long-range antenna connects a node to the backhaul connection in Communa 13.
+        </div>
       </div>
-    </figure>
-
-    <figure class="col-md-4 col-sm-12">
-      <img class="w-100" src="{{ '/images/medellin-2.jpg' | relative_url }}" />
-      <div class="caption">
-      A long-range antenna connects a node to the backhaul connection
-      </div>
-    </figure>
+    </div>
   </div>
 
-  <div class="d-flex flex-row flex-wrap section">
-    <div class="col-md-3 offset-md-2 col-sm-12">
-      <h2>Althea: Faster, Cheaper Internet &mdash; Owned by the people using it</h2>
+  <div class="container section top-section">
+    <div class="row">
+      <h2 class="col-12 col-sm-5">Legacy ISP: Slow or No Bandwidth</h2>
+      <div class="col-12 col-sm-6">
+        In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at <a href="https://www.redmedellin.com/">red_medellin</a> are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our <a href="https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e">blog post</a> about helping them deploy Althea in Medellin.
+      </div>
     </div>
-    <div class="col-md-4 col-sm-12">
-      <p>
-      The <a href="https://www.redmedellin.com/">red_medellin</a> subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
-      </p>
+  </div>
 
-      <p>
-        red_medellin was started by 4 young Americans living in Medellin. However, they do not own the network. Althea's decentralized architecture means that each node is owned by the people using it to buy and/or sell internet access. The red_medellin subnet organizers provide technical support and installation services to this network of independently-owned nodes.
-      </p>
+  <div class="container section">
+    <div class="row">
+      <figure class="col-12 col-sm-6">
+        <img class="w-100" src="{{ '/images/medellin-1.jpg' | relative_url }}" />
+        <div class="caption">
+        A long-range antenna connects a node to the backhaul connection
+        </div>
+      </figure>
+
+      <figure class="col-12 col-sm-6">
+        <img class="w-100" src="{{ '/images/medellin-2.jpg' | relative_url }}" />
+        <div class="caption">
+        A long-range antenna connects a node to the backhaul connection
+        </div>
+      </figure>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div class="row">
+      <div class="col-12 col-sm-5">
+        <h2>Althea: Faster, Cheaper Internet &mdash; Owned by the people using it</h2>
+      </div>
+      <div class="col-12 col-sm-6">
+        <p>
+        The <a href="https://www.redmedellin.com/">red_medellin</a> subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
+        </p>
+
+        <p>
+          red_medellin was started by 4 young Americans living in Medellin. However, they do not own the network. Althea's decentralized architecture means that each node is owned by the people using it to buy and/or sell internet access. The red_medellin subnet organizers provide technical support and installation services to this network of independently-owned nodes.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -93,70 +103,72 @@ permalink: /medellin
     <h4 class="mb-4">Technology &amp; Topology</h4>
   </div>
 
-  <div class="d-flex flex-wrap-reverse p-0 section">
-    <div class="p-0 col-md-5">
-      <img class="w-100 h-100" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCccjShBvFuT5U9eS-LHujKqP_-WdU931k&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Cvisibility:off&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative%7Celement:labels%7Cvisibility:off&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:landscape%7Celement:geometry.fill%7Ccolor:0x0fb36f&style=feature:landscape%7Celement:labels%7Cvisibility:off&style=feature:landscape.man_made%7Cvisibility:off&style=feature:poi%7Cvisibility:off&style=feature:poi%7Celement:labels%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Ccolor:0x1a714c%7Cvisibility:simplified&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels%7Cvisibility:off&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a%7Cvisibility:off&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.arterial%7Celement:geometry.fill%7Ccolor:0x1a714c&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway%7Celement:geometry.fill%7Ccolor:0x1a714c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.highway.controlled_access%7Celement:geometry.fill%7Ccolor:0x1a714c&style=feature:road.local%7Celement:geometry.fill%7Ccolor:0x1a714c&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Cvisibility:off&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:geometry.fill%7Ccolor:0xc3e8ff&style=feature:water%7Celement:labels%7Cvisibility:off&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360&markers=icon:https://goo.gl/1oTJ9Y%7CSydney+NSW%7C-75.6280844,6.250851|-75.6280844,6.260851" />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div style="background-image: url(/images/map.png); background-position: right; background-size: cover; width: 1000px; height: 100%; position: absolute; right: 0px;"></div>
+      </div>
 
-    </div>
-
-    <div class="map-details flex-column col-md-7 py-4 pl-4">
-      <div class="arrow"></div>
-      <span class="select-node">Select Node Type:</span>
-      <div class="pr-3">
-        <div class="d-flex flex-row flex-wrap flex-lg-nowrap pl-0 my-4 col-9">
-          <div class="w-100 p-0 mb-2 active category"><h3>Gateway Node</h3></div>
-          <div class="w-100 p-0 mb-2 category"><h3>Intermediary Nodes</h3></div>
-          <div class="w-100 p-0 mb-2 category"><h3>User Nodes</h3></div>
-        </div>
-
-        <div class="d-flex flex-row w-100 mb-4 descriptions">
-          <p class="col-md-7 col-lg-5 col-sm-12 p-0">
-          Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
-          </p>
-          <p class="col-md-7 col-lg-5 col-sm-12 p-0 d-none">
-          Any houses with a direct view of the school can point an inexpensive antenna to the sector antennas set up above the school and connect to the internet. These houses can then “pass on” this connection to their neighbors via ethernet cable, earning some money.
-          </p>
-          <p class="col-md-7 col-lg-5 col-sm-12 p-0 d-none">
-          Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
-          </p>
-        </div>
-
-        <div class="d-flex flex-row p-0 col-9">
-          <div>
-            <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+      <div class="map-details flex-column col-md-7" style="overflow: visible">
+        <div style="background: #002D39; height: 100%; width: 100%; position: absolute; left: 100%;"></div>
+        <div class="arrow"></div>
+        <span class="select-node">Select Node Type:</span>
+        <div class="pr-3">
+          <div class="d-flex flex-row flex-wrap flex-lg-nowrap pl-0 my-4 col-9">
+            <div class="w-100 p-0 mb-2 active category"><h3>Gateway Node</h3></div>
+            <div class="w-100 p-0 mb-2 category"><h3>Intermediary Nodes</h3></div>
+            <div class="w-100 p-0 mb-2 category"><h3>User Nodes</h3></div>
           </div>
-          <div class="ml-auto">
-            <i class="material-icons mb-2 font-size-14 gallery-nav active">arrow_forward</i>
-          </div>
-        </div>
 
-        <div class="d-flex flex-row">
-          <div class="pr-4">
-            <img class="w-100" src="{{ '/images/drums.jpg' | relative_url }}" />
-            <div class="d-flex mt-2"> 
-              <div>
-                <span>A long-range antenna connects a node</span>
-              </div>
-              <div class="ml-auto">
-                <i class="material-icons small">search</i>
-              </div>
+          <div class="d-flex flex-row w-100 mb-4 descriptions">
+            <p class="col-md-7 col-lg-5 col-sm-12 p-0">
+            Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
+            </p>
+            <p class="col-md-7 col-lg-5 col-sm-12 p-0 d-none">
+            Any houses with a direct view of the school can point an inexpensive antenna to the sector antennas set up above the school and connect to the internet. These houses can then “pass on” this connection to their neighbors via ethernet cable, earning some money.
+            </p>
+            <p class="col-md-7 col-lg-5 col-sm-12 p-0 d-none">
+            Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
+            </p>
+          </div>
+
+          <div class="d-flex flex-row p-0 col-9">
+            <div>
+              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+            </div>
+            <div class="ml-auto">
+              <i class="material-icons mb-2 font-size-14 gallery-nav active">arrow_forward</i>
             </div>
           </div>
 
-          <div class="pr-4">
-            <img class="w-100" src="{{ '/images/dish.jpg' | relative_url }}" />
-            <div class="d-flex mt-2"> 
-              <div>
-                <span>A long-range antenna connects a node</span>
-              </div>
-              <div class="ml-auto">
-                <i class="material-icons small">search</i>
+          <div class="d-flex flex-row">
+            <div class="pr-4">
+              <img class="w-100" src="{{ '/images/drums.jpg' | relative_url }}" />
+              <div class="d-flex mt-2"> 
+                <div>
+                  <span>A long-range antenna connects a node</span>
+                </div>
+                <div class="ml-auto">
+                  <i class="material-icons small">search</i>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div>
-            <img class="next-image" src="{{ '/images/gateway-3.png' | relative_url }}" />
+            <div class="pr-4">
+              <img class="w-100" src="{{ '/images/dish.jpg' | relative_url }}" />
+              <div class="d-flex mt-2"> 
+                <div>
+                  <span>A long-range antenna connects a node</span>
+                </div>
+                <div class="ml-auto">
+                  <i class="material-icons small">search</i>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <img class="next-image" src="{{ '/images/gateway-3.png' | relative_url }}" />
+            </div>
           </div>
         </div>
       </div>
