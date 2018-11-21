@@ -719,12 +719,6 @@ a {
   right: 0px;
 } 
 
-@media (min-width: 1600px) {
-    .container{
-        max-width: 1470px;
-    }
-}
-
 @media (max-width: 576px) {
   .lead-header, .follow-header {
     font-size: 2rem;

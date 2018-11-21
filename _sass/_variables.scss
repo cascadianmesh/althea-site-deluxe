@@ -47,3 +47,10 @@ $gray: #424855;
 $dark-gray: #002B36;
 
 $light-tan: #FCFAF6;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1150px
+) !default;
