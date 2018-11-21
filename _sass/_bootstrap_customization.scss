@@ -580,7 +580,10 @@ h1 {
 } 
   
 .select-node {
+  font-family: "LL Akkurat Light Web";
   text-transform: uppercase;
+  color: $light-gray;
+  font-size: 14px;
 } 
 
 .map-details {
@@ -598,6 +601,10 @@ h1 {
   height: 87%;
 }
 
+h3 {
+  font-size: 18px;
+} 
+
 h4 {
   color: $gray;
   text-transform: uppercase;
@@ -605,7 +612,7 @@ h4 {
   font-weight: bolder;
 } 
 
-.map-details.arrow {
+.map-details .arrow {
   background: #002D39;
   height: 30px;
   left: -15px;
@@ -646,10 +653,14 @@ hr {
   border: 2px solid $yellow;
 } 
 
-.caption {
+figcaption {
   color: $light-gray;
   padding: 1rem 0;
   border-bottom: 3px solid $light-yellow;
+} 
+
+.tiny-caption {
+  font-size: 14px;
 } 
 
 .subheading {
