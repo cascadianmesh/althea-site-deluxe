@@ -541,6 +541,7 @@ h1 {
 
 .case-studies {
   background: $light-yellow;
+  overflow: hidden;
 } 
 
 .view-case-study {
@@ -711,7 +712,6 @@ a {
 } 
 
 .map {
-  background-image: url(../images/map.png);
   background-position: right;
   background-size: cover;
   width: 1000px;
@@ -720,7 +720,15 @@ a {
   right: 0px;
 } 
 
-@media (max-width: 576px) {
+.map.clatskanie {
+  background-image: url(../images/clatskanie_map.png);
+}
+
+.map.medellin {
+  background-image: url(../images/medellin_map.png);
+}
+
+@media (max-width: 768px) {
   .lead-header, .follow-header {
     font-size: 2rem;
   } 

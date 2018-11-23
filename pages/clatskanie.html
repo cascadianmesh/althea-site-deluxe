@@ -1,13 +1,11 @@
 ---
 layout: case-studies
 title: Althea
-permalink: /medellin
+permalink: /clatskanie
 ---
 
 <script>
   document.addEventListener("DOMContentLoaded", function(event) { 
-    var categories = document.querySelectorAll('.category')
-    var descriptions = document.querySelectorAll('.descriptions p')
     var navArrows = document.querySelectorAll('.gallery-nav')
     var gallery = [
       '/images/drums.jpg',
@@ -17,15 +15,6 @@ permalink: /medellin
     navArrows[0].onclick = function(e) {
       gallery.push(gallery.shift());
     };
-
-    categories.forEach(function(e, i) {
-      e.onclick = function(e) {
-        categories.forEach(function (c) { c.classList.remove('active') });
-        e.currentTarget.classList.add('active');
-        descriptions.forEach(function (d) { d.classList.add('d-none') });
-        descriptions[i].classList.remove('d-none');
-      };
-    });
   });
 </script>
 
@@ -33,20 +22,25 @@ permalink: /medellin
   <div class="container top-section">
     <div class="row">
       <div class="col-12 col-sm-6" style="overflow: visible">
-        <div class="d-flex flex-column justify-content-center h-100">
+        <div class="d-flex flex-column justify-content-center h-100 pl-2">
           <div class="h-100 d-flex flex-column justify-content-end">
             <img src="{{ '/images/location.jpg' | relative_url }}" class="location" />
-            <div class="subheading">Case Study &mdash; 01</div>
+            <div class="subheading">Case Study &mdash; 02</div>
           </div>
           <div>
-            <h1 class="lead-header">Medellin <span class="follow-header">Colombia</span></h1> 
+            <h1 class="lead-header">Clatskanie <span class="follow-header">Oregon</span></h1> 
           </div>
           <div class="h-100 d-none d-sm-block"></div>
         </div>
-        <hr style="width: 500px; position: absolute; right: 100%; top: 250px;" />
+        <hr class="stretchy" />
       </div>
-      <div class="col-12 col-sm-6">
-        <div style="background-image: url({{ '/images/casamarado.jpg' | relative_url }}); background-position: right; background-size: cover; min-width: 60vw; height: 600px;"></div>
+      <div class="col-12 col-sm-6 px-0">
+        <div class="d-none d-sm-block clatskanie"></div>
+        <img class="d-sm-none" src="{{ '/images/clatskanie.jpg' | relative_url }}" width="100%" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 offset-sm-6">
         <figcaption class="tiny-caption text-right">
           A long-range antenna connects a node to the backhaul connection in Communa 13.
         </figcaption>
@@ -57,23 +51,21 @@ permalink: /medellin
   <div class="container section top-section">
     <div class="row">
       <h2 class="col-12 col-sm-5">Legacy ISP: Slow or No Bandwidth</h2>
-      <div class="col-12 col-sm-6">
-        In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at <a href="https://www.redmedellin.com/">red_medellin</a> are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our <a href="https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e">blog post</a> about helping them deploy Althea in Medellin.
-      </div>
+      <div class="col-12 col-sm-6">A fiber connection runs through the small town of Clatskanie. But with a population of only 2000, ISPs in the area just aren't motivated to build adequate infrastructure to the outlying areas. Some residents' only option is expensive internet access through cell phone companies which can cost upwards of $150 per month.</div>
     </div>
   </div>
 
   <div class="container section">
     <div class="row">
       <figure class="col-12 col-sm-6">
-        <img class="w-100" src="{{ '/images/medellin-1.jpg' | relative_url }}" />
+        <img class="w-100" src="{{ '/images/offgrid_tower.png' | relative_url }}" />
         <figcaption class="tiny-caption">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
       </figure>
 
       <figure class="col-12 col-sm-6">
-        <img class="w-100" src="{{ '/images/medellin-2.jpg' | relative_url }}" />
+        <img class="w-100" src="{{ '/images/antenna_tree.png' | relative_url }}" />
         <figcaption class="tiny-caption">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
@@ -88,15 +80,52 @@ permalink: /medellin
       </div>
       <div class="col-12 col-sm-6">
         <p>
-        The <a href="https://www.redmedellin.com/">red_medellin</a> subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
+        While ISPs aren’t motivated to address these access issues, Clatskanie’s residents are resourceful. With Althea, they are able to set up a network whose nodes are owned by the local residents who use them to access the internet. Soon, these nodes will pay each other, giving families who host nodes that relay traffic for other houses a small income to offset their payments for internet access.
         </p>
 
         <p>
-          red_medellin was started by 4 young Americans living in Medellin. However, they do not own the network. Althea's decentralized architecture means that each node is owned by the people using it to buy and/or sell internet access. The red_medellin subnet organizers provide technical support and installation services to this network of independently-owned nodes.
+        The network’s current main gateway is at Deborah’s computer repair shop. At the computer repair shop, there is a sector antenna which connects to 5 homes in the surrounding town, up to 2 miles away. There is a tower on a hill above town with an intermediary node which relays the internet access to another home.
+        </p>
+
+        <p>
+        The subnet DAO, ClatskanieCoop, is structured as a legal cooperative. A legal entity is not necessary for all Althea subnets, since the subnet DAO software allows a local group to administer the network and manage revenue from the network on the blockchain, but the cooperative structure has proven useful for ClatskanieCoop because it allows them to interface with the traditional legal system to co-own hardware and get permits.
+        </p>
+
+        <p>
+        Some residents are planning to put up towers to reach larger areas as a side hustle, investing a few thousand dollars in the tower equipment to be able to make a few hundred dollars a month going forward.
+        </p>
+
+        <p>
+        Clatskanie was Althea’s first deployment, and is being spearheaded by one of Althea’s founders, Deborah Simpier. She is joined by 4 other co-organizers: Yvonne owns the local fruit stand, and is a bus driver. Dante is a young game developer. Shaun is a programmer and tinkerer who designed the telescoping tower that ClatskanieCoop is currently using. Clark is a retired Intel project manager.
         </p>
       </div>
     </div>
   </div>
+
+  <div class="container section">
+    <div class="row">
+      <figure class="col-12">
+        <img class="w-100" src="{{ '/images/clatskanie_gateway.png' | relative_url }}" />
+        <figcaption class="tiny-caption">
+        A long-range antenna connects a node to the backhaul connection
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div class="row">
+      <div class="col-12 col-sm-5">
+        <h2>Future vision</h2>
+      </div>
+      <div class="col-12 col-sm-6">
+        <p>
+        An additional 25 houses are currently on the waitlist. After this, there are plans to extend the network to other communities along the Columbia River like Marshland, Woodson, and Kerry. Because of Althea’s decentralized structure, it’s easy for anyone to buy some equipment and extend the network, but ClatskanieCoop will play a guiding role, as organizers of their subnet DAO.
+        </p>
+      </div>
+    </div>
+  </div>
+
 
   <div class="w-100 text-center">
     <h4 class="mb-4">Technology &amp; Topology</h4>
@@ -104,34 +133,50 @@ permalink: /medellin
 
   <div class="container">
     <div class="row">
-      <div class="d-none d-md-block col-md-5">
-        <div style="background-image: url(/images/map.png); background-position: right; background-size: cover; width: 1000px; height: 100%; position: absolute; right: 0px;"></div>
+      <div class="col-12 col-md-5 px-0 px-sm-2">
+        <div class="clatskanie map"></div>
       </div>
 
-      <div class="map-details col-12 col-md-7 pl-4" style="overflow: visible">
+      <div class="map-details col-12 col-md-7 pl-md-4">
         <div class="arrow d-none d-md-block"></div>
-        <div class="d-none d-md-block" style="background: #002D39; height: 100%; width: 100%; position: absolute; left: 100%;"></div>
-        <h4 class="select-node pt-4">Select Node Type:</h4>
-        <div class="pr-3">
-          <div class="d-flex w-100 my-4">
-            <div class="flex-fill active category"><h3>Gateway Node</h3></div>
-            <div class="flex-fill category"><h3>Intermediary Nodes</h3></div>
-            <div class="flex-fill category"><h3>User Nodes</h3></div>
+        <div class="d-none d-md-block" style="background: #002D39; height: 100%; width: 100%; position: absolute; left: 99%;"></div>
+        <h4 class="select-node pt-4 text-center text-md-left">Select Node Type:</h4>
+        <div>
+          <div class="w-100 my-4 d-none d-md-flex nav">
+            <div href="#gateway" class="flex-fill active category" data-toggle="tab" role="tab" aria-controls="gateway" aria-selected="true"><h3>Gateway Node</h3></div>
+            <div href="#intermediary" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="intermediary" aria-selected="true"><h3>Intermediary Nodes</h3></div>
+            <div href="#user" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="user" aria-selected="true"><h3>User Nodes</h3></div>
+          </div>
+          <div class="d-flex d-md-none justify-content-center active category text-center mb-2">
+            <div>
+              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+            </div>
+            <h3 class="flex-fill">Gateway Node</h3>
+            <div class="ml-auto">
+              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
+            </div>
           </div>
 
-          <div class="col-8 descriptions" style="min-height: 200px">
-            <p>
-            Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
+          <div class="tab-content col-12 col-md-12 col-md-8 descriptions" style="min-height: 350px;">
+            <div class="tab-pane active show w-100" id="gateway">
+              <p>
+              The backhaul is provided by a commercial internet subscription at Deborah’s computer shop. This costs x per month. This is broadcasted out to the town by some sector antennas on the computer shop’s roof. ClatskanieCoop has opted to use 2.4ghz radios instead of 5ghz because the lower frequencies go through foliage more easily.
+              </p>
+
+              <p>
+              Another idea for a second gateway is to work with the Smoky Waters wireless ISP which is based on a nearby island. Smoky Waters could sell bandwidth into the ClatskanieCoop subnet from their network. Althea’s architecture allows multiple gateway nodes to serve a subnet. Individual routers automatically choose the gateway which is faster and cheaper, which tends to be physically near to them.
+              </p>
+            </div>
+
+            <p class="tab-pane" id="intermediary">
+Currently, the tower and a couple of homes in Clatskanie are serving as intermediary nodes. Any Althea node can sell bandwidth to other nodes, but we call a node that has better antennas and earns money forwarding packets for other nodes an intermediary node. In the future, another tower over Clatskanie and one covering Marshland will be intermediary nodes. Also, anyone who wants to hook up their neighbor or any other house they have line of sight to can become an intermediary node.
             </p>
-            <p class="d-none">
-            Any houses with a direct view of the school can point an inexpensive antenna to the sector antennas set up above the school and connect to the internet. These houses can then “pass on” this connection to their neighbors via ethernet cable, earning some money.
-            </p>
-            <p class="d-none">
-            Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
+            <p class="tab-pane" id="user">
+Users access bandwidth through intermediary nodes, or directly from the gateway node, and don't pass it on to anyone else... yet. Anytime they want to, these users could become intermediary nodes by selling their connection on to their neighbors.
             </p>
           </div>
 
-          <div class="d-flex flex-row">
+          <div class="d-none d-md-flex">
             <div>
               <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
             </div>
@@ -140,22 +185,22 @@ permalink: /medellin
             </div>
           </div>
 
-          <div class="d-flex flex-row section">
-            <div class="pr-4">
-              <img class="w-100" src="{{ '/images/drums.jpg' | relative_url }}" />
+          <div class="d-flex section">
+            <div class="col-12 col-md-6">
+              <img class="w-100" src="{{ '/images/tower_laptop.png' | relative_url }}" />
               <div class="d-flex mt-2"> 
                 <div>
-                  <span>A long-range antenna connects a node</span>
+                  <span class="tiny-caption">A long-range antenna connects a node</span>
                 </div>
-                <div class="ml-auto">
+                <div class="d-none d-md-block ml-auto">
                   <i class="material-icons small">search</i>
                 </div>
               </div>
             </div>
 
-            <div>
-              <img class="w-100" src="{{ '/images/dish.jpg' | relative_url }}" />
-              <div class="d-flex mt-2"> 
+            <div class="col-md-6">
+              <img class="w-100" src="{{ '/images/roof_antenna.png' | relative_url }}" />
+              <div class="d-none d-md-flex mt-2"> 
                 <div>
                   <span>A long-range antenna connects a node</span>
                 </div>
@@ -172,65 +217,58 @@ permalink: /medellin
   
   <div class="learn-more">
     <div class="container">
-      <h1 class="mb-5">Learn more</h1>
+      <h1 class="mb-sm-5">Learn more</h1>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-sm-3">
           <img class="mb-2" src="{{ '/images/book-open-variant.svg' | relative_url }}" />
           <p><b>Read the full story</b> about how we helped red_medellin deploy Althea on Medium.</p>
+          <div class="d-sm-none mb-4">
+            <i class="material-icons arrow">arrow_forward</i>
+            <hr class="m-0" />
+          </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-3">
           <i class="material-icons mb-2">open_in_new</i><br />
           <p><b>Visit the red_medellin website</b> for regular updates on their progress and more information.</p>
+          <div class="d-sm-none mb-4">
+            <i class="material-icons arrow">arrow_forward</i>
+            <hr class="m-0" />
+          </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-3">
           <i class="material-icons mb-2">send</i><br />
           <p><b>Send us a message</b> with any questions or to get connected with the red_medellin subnet.</p>
+          <div class="d-sm-none mb-4">
+            <i class="material-icons arrow">arrow_forward</i>
+            <hr class="m-0" />
+          </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-3">
           <i class="material-icons mb-2">school</i><br />
           <p><b>Check out the How it Works page</b> to find out more about the Althea ecosystem.</p>
-        </div>
-      </div>
-      <div class="row w-100 d-none d-md-flex">
-        <div class="col-3 m-0">
-          <i class="material-icons arrow">arrow_forward</i>
-          <hr class="m-0" />
-        </div>
-        <div class="col-3 m-0">
-          <i class="material-icons arrow">arrow_forward</i>
-          <hr class="m-0" />
-        </div>
-        <div class="col-3 m-0">
-          <i class="material-icons arrow">arrow_forward</i>
-          <hr class="m-0" />
-        </div>
-        <div class="col-3 m-0">
-          <i class="material-icons arrow">arrow_forward</i>
-          <hr class="m-0" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container section top-section">
-    <div class="row">
-      <div class="col-12 col-sm-6" style="overflow: visible">
-        <div class="d-flex flex-column justify-content-center h-100">
-          <div class="h-100 d-flex flex-column justify-content-end">
-            <img src="{{ '/images/location.jpg' | relative_url }}" class="location" />
-            <div class="subheading"><span class="next" >Next</span> &nbsp; Case Study &mdash; 02</div>
-          </div>
-          <div>
-            <h1 class="lead-header">Clatskanie <span class="follow-header">Oregon</span></h1> 
-          </div>
-          <div class="h-100">
-            <button class="view-case-study px-3 py-2 mt-2">View Case Study</button>
+          <div class="d-sm-none">
+            <i class="material-icons arrow">arrow_forward</i>
+            <hr class="m-0" />
           </div>
         </div>
-        <hr style="width: 500px; position: absolute; right: 100%; top: 250px;" />
       </div>
-      <div class="col-12 col-sm-6">
-        <div style="background-image: url({{ '/images/clatskanie.jpg' | relative_url }}); background-position: right; background-size: cover; min-width: 60vw; height: 600px;"></div>
+      <div class="row d-none d-sm-flex">
+        <div class="col-sm-3">
+          <i class="material-icons arrow">arrow_forward</i>
+          <hr class="m-0" />
+        </div>
+        <div class="col-sm-3">
+          <i class="material-icons arrow">arrow_forward</i>
+          <hr class="m-0" />
+        </div>
+        <div class="col-sm-3">
+          <i class="material-icons arrow">arrow_forward</i>
+          <hr class="m-0" />
+        </div>
+        <div class="col-sm-3">
+          <i class="material-icons arrow">arrow_forward</i>
+          <hr class="m-0" />
+        </div>
       </div>
     </div>
   </div>
