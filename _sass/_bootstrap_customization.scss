@@ -728,6 +728,11 @@ a {
   background-image: url(../images/medellin_map.png);
 }
 
+.descriptions {
+  min-height: 20em;
+  max-width: 34em;
+} 
+
 @media (max-width: 768px) {
   .lead-header, .follow-header {
     font-size: 2rem;
