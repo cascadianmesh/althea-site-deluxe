@@ -6,11 +6,15 @@ permalink: /clatskanie
 
 <script>
   document.addEventListener("DOMContentLoaded", function(event) { 
-    var navArrows = document.querySelectorAll('.gallery-nav')
+    $('#next').click(() => $('.carousel').carousel('next'));
+    $('#prev').click(() => $('.carousel').carousel('prev'));
+    $('.carousel').bcSwipe({ threshold: 50 });
+
+    var navArrows = document.querySelectorAll('.gallery-nav');
     var gallery = [
       '/images/drums.jpg',
       '/images/dish.jpg'
-    ]
+    ];
 
     navArrows[0].onclick = function(e) {
       gallery.push(gallery.shift());
@@ -41,7 +45,7 @@ permalink: /clatskanie
     </div>
     <div class="row">
       <div class="col-12 col-sm-6 offset-sm-6">
-        <figcaption class="tiny-caption text-right">
+        <figcaption class="tiny-caption text-right underline">
           A long-range antenna connects a node to the backhaul connection in Communa 13.
         </figcaption>
       </div>
@@ -59,14 +63,14 @@ permalink: /clatskanie
     <div class="row">
       <figure class="col-12 col-sm-6">
         {% include responsive-image.html class="w-100" image="offgrid_tower" ext="png" alt="Offgrid Tower" %}
-        <figcaption class="tiny-caption">
+        <figcaption class="tiny-caption underline">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
       </figure>
 
       <figure class="col-12 col-sm-6">
         {% include responsive-image.html class="w-100" image="antenna_tree" ext="png" alt="Antenna Behind a Tree" %}
-        <figcaption class="tiny-caption">
+        <figcaption class="tiny-caption underline">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
       </figure>
@@ -106,7 +110,7 @@ permalink: /clatskanie
     <div class="row">
       <figure class="col-12">
         {% include responsive-image.html class="w-100" image="clatskanie_gateway" ext="png" alt="Gateway Node" %}
-        <figcaption class="tiny-caption">
+        <figcaption class="tiny-caption underline">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
       </figure>
@@ -178,34 +182,62 @@ Users access bandwidth through intermediary nodes, or directly from the gateway 
 
           <div class="d-none d-md-flex">
             <div>
-              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+              <i id="prev" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
             </div>
             <div class="ml-auto">
-              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
+              <i id="next" class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
             </div>
           </div>
 
           <div class="d-flex section">
-            <div class="w-50 mr-2">
-              {% include responsive-image.html class="w-100" image="tower_laptop" ext="png" alt="Laptop and Tower" %}
-              <div class="d-flex mt-2"> 
-                <div class="mb-auto">
-                  <span class="tiny-caption">A long-range antenna connects a node</span>
-                </div>
-                <div class="d-none d-md-block ml-auto">
-                  <i class="material-icons small">search</i>
+            <div class="w-100 w-md-50 mr-md-2">
+              <div class="carousel slide" data-ride="false" data-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <figure class="col-12 col-sm-6">
+                      {% include responsive-image.html class="w-100" image="tower_laptop" ext="png" alt="Laptop and Tower" %}
+                      <figcaption class="tiny-caption">
+                        <span>A long-range antenna connects a node to the backhaul connection</span>
+                        <i class="float-right material-icons small">search</i>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="carousel-item">
+                    <figure class="col-12 col-sm-6">
+                      {% include responsive-image.html class="w-100" image="roof_antenna" ext="png" alt="Laptop and Tower" %}
+                      <figcaption class="tiny-caption">
+                        <span>A long-range antenna connects a node to the backhaul connection</span>
+                        <i class="float-right material-icons small">search</i>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="w-50">
-              {% include responsive-image.html class="w-100" image="roof_antenna" ext="png" alt="Antenna on a Roof" %}
-              <div class="d-none d-md-flex mt-2"> 
-                <div class="mb-auto">
-                  <span class="tiny-caption">A long-range antenna connects a node</span>
-                </div>
-                <div class="ml-auto">
-                  <i class="material-icons small">search</i>
+            <div class="d-none w-50 d-md-flex">
+              <div class="carousel slide" data-ride="false" data-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    {% include responsive-image.html class="w-100" image="roof_antenna" ext="png" alt="Laptop and Tower" %}
+                    <figure class="col-12 col-sm-6">
+                      {% include responsive-image.html class="w-100" image="tower_laptop" ext="png" alt="Laptop and Tower" %}
+                      <figcaption class="tiny-caption">
+                        <span>A long-range antenna connects a node to the backhaul connection</span>
+                        <i class="float-right material-icons small">search</i>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="carousel-item">
+                    {% include responsive-image.html class="w-100" image="tower_laptop" ext="png" alt="Laptop and Tower" %}
+                    <figure class="col-12 col-sm-6">
+                      {% include responsive-image.html class="w-100" image="tower_laptop" ext="png" alt="Laptop and Tower" %}
+                      <figcaption class="tiny-caption">
+                        <span>A long-range antenna connects a node to the backhaul connection</span>
+                        <i class="float-right material-icons small">search</i>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </div>
             </div>
