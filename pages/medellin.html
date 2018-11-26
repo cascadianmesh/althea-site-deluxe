@@ -36,7 +36,7 @@ permalink: /medellin
       </div>
       <div class="col-12 col-sm-6 px-0">
         <div class="d-none d-sm-block casamarado"></div>
-        <img class="d-sm-none" src="{{ '/images/casamarado.jpg' | relative_url }}" width="100%" />
+        {% include responsive-image.html class="w-100" image="casamarado" ext="jpg" alt="Casamarado" %}
       </div>
     </div>
     <div class="row">
@@ -60,14 +60,14 @@ permalink: /medellin
   <div class="container section">
     <div class="row">
       <figure class="col-12 col-sm-6">
-        <img class="w-100" src="{{ '/images/medellin-1.jpg' | relative_url }}" />
+        {% include responsive-image.html class="w-100" image="medellin-1" ext="jpg" alt="Medellin" %}
         <figcaption class="tiny-caption">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
       </figure>
 
       <figure class="col-12 col-sm-6">
-        <img class="w-100" src="{{ '/images/medellin-2.jpg' | relative_url }}" />
+        {% include responsive-image.html class="w-100" image="medellin-2" ext="jpg" alt="Medellin" %}
         <figcaption class="tiny-caption">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
@@ -145,7 +145,7 @@ permalink: /medellin
 
           <div class="d-flex section">
             <div class="col-12 col-md-6">
-              <img class="w-100" src="{{ '/images/drums.jpg' | relative_url }}" />
+              {% include responsive-image.html class="w-100" image="drums" ext="jpg" alt="Playing Drums" %}
               <div class="d-flex mt-2"> 
                 <div>
                   <span class="tiny-caption">A long-range antenna connects a node</span>
@@ -157,7 +157,7 @@ permalink: /medellin
             </div>
 
             <div class="col-md-6">
-              <img class="w-100" src="{{ '/images/dish.jpg' | relative_url }}" />
+              {% include responsive-image.html class="w-100" image="dish" ext="jpg" alt="Antenna Dish" %}
               <div class="d-none d-md-flex mt-2"> 
                 <div>
                   <span>A long-range antenna connects a node</span>
@@ -250,7 +250,7 @@ permalink: /medellin
       </div>
       <div class="col-12 col-sm-6 px-0">
         <div class="d-none d-sm-block clatskanie"></div>
-        <img class="d-sm-none" src="{{ '/images/clatskanie.jpg' | relative_url }}" width="100%" />
+        {% include responsive-image.html class="w-100" image="clatskanie" ext="jpg" alt="Clatskanie" %}
       </div>
     </div>
   </div>

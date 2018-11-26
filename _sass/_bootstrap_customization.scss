@@ -10,99 +10,6 @@
     background-size: cover;
 }
 
-.airgrid { background-image: url(../images/airgrid_500.webp); }
-.airmax { background-image: url(../images/airmax_500.webp); }
-.edgerouter { background-image: url(../images/edgerouter_500.webp); }
-.ethernet { background-image: url(../images/Ethernet_500.webp); }
-.glb { background-image: url(../images/GLB1300_500.webp); }
-.litebeam { background-image: url(../images/Litebeam_transparent_500.webp); } 
-.n750 { background-image: url(../images/n750_500.webp); }
-.nanobeam { background-image: url(../images/nanobeam.webp); }
-.solar-panel { background-image: url(../images/portable-solar-panel_500.webp); }
-
-.no-webp, .no-js {
-    .airgrid { background-image: url(../images/airgrid_500.jpg); }
-    .airmax { background-image: url(../images/airmax_500.jpg); }
-    .edgerouter { background-image: url(../images/edgerouter_500.png); }
-    .equipment { background-image: url(../images/Litebeam_transparent_500.png); } 
-    .ethernet { background-image: url(../images/Ethernet_500.jpg); }
-    .glb { background-image: url(../images/GLB1300_500.png); }
-    .n750 { background-image: url(../images/n750_500.jpg); }
-    .nanobeam { background-image: url(../images/nanobeam.jpg); }
-    .solar-panel { background-image: url(../images/portable-solar-panel_500.jpg); }
-}
-
-@media (max-width: 768px) {
-    .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-640.webp); }
-    .clatskanie { background-image: url(../images/Clatskanie-graphic-640.webp); }
-    .medellin { background-image: url(../images/Medellin-graphic-640.webp); } 
-
-    .no-webp, .no-js {
-      .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-640.jpg); }
-      .clatskanie { background-image: url(../images/Clatskanie-graphic-640.png); }
-      .medellin { background-image: url(../images/Medellin-graphic-640.png); } 
-    }
-}
-
-@media (min-width: 768px) {
-    .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-768.webp); }
-    .clatskanie { background-image: url(../images/Clatskanie-graphic-768.webp); }
-    .medellin { background-image: url(../images/Medellin-graphic-768.webp); } 
-
-    .no-webp, .no-js {
-      .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-768.jpg); }
-      .clatskanie { background-image: url(../images/Clatskanie-graphic-768.png); }
-      .medellin { background-image: url(../images/Medellin-graphic-768.png); } 
-    }
-}
-
-@media (min-width: 1024px) {
-    .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-1024.webp); }
-    .clatskanie { background-image: url(../images/Clatskanie-graphic-1024.webp); }
-    .medellin { background-image: url(../images/Medellin-graphic-1024.webp); } 
-
-    .no-webp, .no-js {
-      .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-1024.jpg); }
-      .clatskanie { background-image: url(../images/Clatskanie-graphic-1024.png); }
-      .medellin { background-image: url(../images/Medellin-graphic-1024.png); } 
-    }
-}
-
-@media (min-width: 1366px) {
-    .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-1366.webp); }
-    .clatskanie { background-image: url(../images/Clatskanie-graphic-1366.webp); }
-    .medellin { background-image: url(../images/Medellin-graphic-1366.webp); } 
-
-    .no-webp, .no-js {
-      .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-1366.jpg); }
-      .clatskanie { background-image: url(../images/Clatskanie-graphic-1366.png); }
-      .medellin { background-image: url(../images/Medellin-graphic-1366.png); } 
-    }
-}
-
-@media (min-width: 1600px) {
-    .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-1600.webp); }
-    .clatskanie { background-image: url(../images/Clatskanie-graphic-1600.webp); }
-    .medellin { background-image: url(../images/Medellin-graphic-1600.webp); } 
-
-    .no-webp, .no-js {
-      .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-1600.jpg); }
-      .clatskanie { background-image: url(../images/Clatskanie-graphic-1600.png); }
-      .medellin { background-image: url(../images/Medellin-graphic-1600.png); } 
-    }
-}
-
-@media (min-width: 1920px) {
-    .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-1920.webp); }
-    .clatskanie { background-image: url(../images/Clatskanie-graphic-1920.webp); }
-    .medellin { background-image: url(../images/Medellin-graphic-1920.webp); } 
-
-    .no-webp, .no-js {
-      .jumbotron { background-image: linear-gradient(90deg, rgba(5, 16, 35, 0.5) 0%, rgba(5, 16, 35, 0.4) 46.6%, rgba(0, 0, 0, 0) 100%), url(../images/transmitters-sky-1920.jpg); }
-      .clatskanie { background-image: url(../images/Clatskanie-graphic-1920.png); }
-      .medellin { background-image: url(../images/Medellin-graphic-1920.png); } 
-    }
-}
 
 .rounded-button-bar {
     display: flex;
@@ -662,20 +569,19 @@ hr.stretchy {
   top: 250px;
 } 
 
-.casamarado {
-  background-image: url(../images/casamarado.jpg);
+.bleed-right {
   background-position: right;
   background-size: cover;
   min-width: 60vw;
   height: 600px;
 } 
 
-.clatskanie {
+.casamarado {
+  background-image: url(../images/casamarado.jpg);
+} 
+
+.offgrid {
   background-image: url(../images/clatskanie.jpg);
-  background-position: right;
-  background-size: cover;
-  min-width: 60vw;
-  height: 600px;
 }
 
 figcaption {

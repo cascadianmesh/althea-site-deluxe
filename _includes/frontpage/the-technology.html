@@ -4,19 +4,7 @@
     </div>
 
     <div class="col-12">
-        <picture>
-          <source media="(max-width: 768px)" srcset="/images/basic-diagram-640.webp" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="/images/basic-diagram-1024.webp" type="image/webp">
-          <source media="(min-width: 1366px)" srcset="/images/basic-diagram-1366.webp" type="image/webp">
-          <source media="(min-width: 1600px)" srcset="/images/basic-diagram-1600.webp" type="image/webp">
-          <source media="(min-width: 1920px)" srcset="/images/basic-diagram-1920.webp" type="image/webp">
-          <source media="(max-width: 768px)" srcset="/images/basic-diagram-640.png" type="image/png">
-          <source media="(min-width: 1024px)" srcset="/images/basic-diagram-1024.png" type="image/png">
-          <source media="(min-width: 1366px)" srcset="/images/basic-diagram-1366.png" type="image/png">
-          <source media="(min-width: 1600px)" srcset="/images/basic-diagram-1600.png" type="image/png">
-          <source media="(min-width: 1920px)" srcset="/images/basic-diagram-1920.png" type="image/png">
-          <img class="img-fluid" src="/images/basic-diagram-640.png" alt="Basic diagram" />
-        </picture>
+      {% include responsive-image.html class="img-fluid" image="basic-diagram" ext="png" alt="Basic diagram" %}
     </div>
 
     <div class="col-12 col-sm-4 mt-3">
