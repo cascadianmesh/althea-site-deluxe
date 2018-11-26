@@ -542,10 +542,6 @@ h4 {
   cursor: pointer;
 } 
 
-.case-study {
-  background: $light-tan;
-} 
-
 .lead-header, .follow-header {
   color: $dark-gray;
   display: inline-block;
@@ -606,7 +602,7 @@ figcaption.underline {
   margin-bottom: 1rem;
 } 
 
-a {
+.case-study p a {
   color: black;
   text-decoration: underline;
 } 

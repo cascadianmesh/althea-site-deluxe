@@ -4,44 +4,6 @@ title: Althea
 permalink: /clatskanie
 ---
 
-<script>
-  document.addEventListener("DOMContentLoaded", function(event) { 
-    $('#next').click(() => $('.carousel').carousel('next'));
-    $('#prev').click(() => $('.carousel').carousel('prev'));
-    $('.carousel').bcSwipe({ threshold: 50 });
-
-    var navArrows = document.querySelectorAll('.gallery-nav');
-    var categories = ['Gateway Nodes', 'Intermediary Nodes', 'User Nodes']
-    var keys = ['gateway', 'intermediary', 'user']
-
-    function showtab () { 
-      $('#category').html(categories[0]);
-      $(`.tabs div[href="#${keys[0]}"]`).tab('show');
-    }
-
-    $('#prev-category').click(() => {
-      categories.unshift(categories.pop());
-      keys.unshift(keys.pop());
-      showtab();
-    });
-
-    $('#next-category').click(() => {
-      categories.push(categories.shift());
-      keys.push(keys.shift());
-      showtab();
-    });
-
-    var gallery = [
-      '/images/drums.jpg',
-      '/images/dish.jpg'
-    ];
-
-    navArrows[0].onclick = function(e) {
-      gallery.push(gallery.shift());
-    };
-  });
-</script>
-
 <div class="case-study">
   <div class="container top-section">
     <div class="row">
