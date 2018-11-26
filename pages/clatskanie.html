@@ -11,6 +11,26 @@ permalink: /clatskanie
     $('.carousel').bcSwipe({ threshold: 50 });
 
     var navArrows = document.querySelectorAll('.gallery-nav');
+    var categories = ['Gateway Nodes', 'Intermediary Nodes', 'User Nodes']
+    var keys = ['gateway', 'intermediary', 'user']
+
+    function showtab () { 
+      $('#category').html(categories[0]);
+      $(`.tabs div[href="#${keys[0]}"]`).tab('show');
+    }
+
+    $('#prev-category').click(() => {
+      categories.unshift(categories.pop());
+      keys.unshift(keys.pop());
+      showtab();
+    });
+
+    $('#next-category').click(() => {
+      categories.push(categories.shift());
+      keys.push(keys.shift());
+      showtab();
+    });
+
     var gallery = [
       '/images/drums.jpg',
       '/images/dish.jpg'
@@ -146,18 +166,18 @@ permalink: /clatskanie
         <div class="d-none d-md-block" style="background: #002D39; height: 100%; width: 100%; position: absolute; left: 99%;"></div>
         <h4 class="select-node pt-4 text-center text-md-left">Select Node Type:</h4>
         <div>
-          <div class="w-100 my-4 d-none d-md-flex nav">
+          <div class="w-100 my-4 d-none d-md-flex nav tabs">
             <div href="#gateway" class="flex-fill active category" data-toggle="tab" role="tab" aria-controls="gateway" aria-selected="true"><h3>Gateway Node</h3></div>
             <div href="#intermediary" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="intermediary" aria-selected="true"><h3>Intermediary Nodes</h3></div>
             <div href="#user" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="user" aria-selected="true"><h3>User Nodes</h3></div>
           </div>
           <div class="d-flex d-md-none justify-content-center active category text-center mb-2">
             <div>
-              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+              <i id="prev-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
             </div>
-            <h3 class="flex-fill">Gateway Node</h3>
+            <h3 id="category" class="flex-fill">Gateway Node</h3>
             <div class="ml-auto">
-              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
+              <i id="next-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
             </div>
           </div>
 
