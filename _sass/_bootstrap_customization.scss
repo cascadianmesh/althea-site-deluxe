@@ -619,11 +619,15 @@ figcaption.underline {
 .map {
   background-position: right;
   background-size: cover;
-  width: 1000px;
-  height: 100%;
+  width: 754px;
+  height: 768px;
   position: absolute;
   right: 0px;
 } 
+
+.map.blank {
+  background-image: url(../images/blank_map.jpg);
+}
 
 .map.clatskanie {
   background-image: url(../images/clatskanie_map.png);
@@ -707,3 +711,33 @@ figcaption.underline {
     color: white;
   } 
 } 
+
+.card-text {
+  font-size: 20px;
+} 
+
+.forward-link {
+  color: $yellow;
+  font-size: 20px;
+  font-weight: bold;
+} 
+
+body {
+  background: $light-tan;
+  font-size: 20px;
+} 
+
+.map-details {
+  font-size: 18px;
+  height: 768px;
+
+  a.btn-primary {
+    border-radius: 100px;
+    color: white;
+    font-family: "LL Akkurat Light Web";
+  } 
+}
+
+hr.light-yellow {
+  border-color: $light-yellow;
+}
