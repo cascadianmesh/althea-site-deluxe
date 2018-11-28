@@ -741,3 +741,21 @@ body {
 hr.light-yellow {
   border-color: $light-yellow;
 }
+
+.btn {
+  border-radius: 100px;
+  font-family: "LL Akkurat Light Web";
+  padding-left: 30px;
+  padding-right: 30px;
+} 
+
+.btn-primary {
+  color: white;
+  background: $blue;
+} 
+
+.btn-secondary {
+  color: #666;
+  border-color: #666;
+  background: white;
+} 
