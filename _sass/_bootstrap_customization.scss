@@ -690,3 +690,20 @@ figcaption.underline {
   } 
 }
 
+.bg-yellow {
+  background: $light-yellow;
+  color: #433726;
+} 
+
+.top-nav {
+  font-family: "LL Akkurat Light Web";
+  
+  a {
+    color: black;
+  }
+
+  a.btn-primary {
+    border-radius: 100px;
+    color: white;
+  } 
+} 
