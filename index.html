@@ -202,3 +202,43 @@ title: Althea
     </div>
   </div>
 </div>
+
+<div class="bg-yellow get-involved">
+  <div class="container section top-section">
+    <h1 id="get-involved">Get Involved</h1>
+    <div class="row">
+      <div class="col-6">
+        <p>Althea test deployments are launching now in the US and Colombia, with hundreds of other communities ready to get started. Join us: whether you’ve got a little extra time, technical skills, a commitment to open and accessible Internet, or all of the above, we’d love to hear from you.</p>
+      </div>
+      <div class="col-6">
+        <p><strong>Select a role below to learn more and get started. Don’t see what you’re looking for? Send us an email at hello@altheamesh.com.</strong></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body" style="padding: 40px 80px">
+        <div class="d-flex justify-content-center mb-3">
+          <div class="my-4 d-none d-md-flex nav tabs">
+            <div href="#organizer-form" class="flex-fill active category pb-2" data-toggle="tab" role="tab" aria-controls="urban" aria-selected="true"><h3>Organizer</h3></div>
+            <div href="#user-form" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3>User</h3></div>
+            <div href="#developer-form" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3>Developer</h3></div>
+            <div href="#other-form" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3>Other</h3></div>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active show" id="organizer-form">
+            {% include get-involved/organizer.html %}
+          </div>
+          <div class="tab-pane" id="user-form">
+            {% include get-involved/user.html %}
+          </div>
+          <div class="tab-pane" id="developer-form">
+            {% include get-involved/developer.html %}
+          </div>
+          <div class="tab-pane" id="other-form">
+            {% include get-involved/other.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

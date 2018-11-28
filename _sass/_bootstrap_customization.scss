@@ -759,3 +759,33 @@ hr.light-yellow {
   border-color: #666;
   background: white;
 } 
+
+h3 {
+  font-size: 24px;
+}
+
+.get-involved .tabs {
+  text-align: center;
+  max-width: 80%;
+
+  div {
+    min-width: 180px;
+  } 
+
+  .category {
+    color: #ccc;
+    border-color: #ccc;
+  } 
+
+  .active {
+    color: black;
+    border-color: $red;
+  } 
+
+} 
+
+.form-group label {
+  font-size: 16px;
+  padding-bottom: 8px;
+  text-transform: none;
+} 
