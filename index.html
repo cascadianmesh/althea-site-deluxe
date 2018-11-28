@@ -66,91 +66,95 @@ title: Althea
     </div>
   </div>
 </div>
-<div class="container section">
-  <div class="row mb-4">
-    <div class="col-12 text-center">
-      <h2>Althea can be deployed in any environment</h2>
+
+<div class="w-100" style="overflow: hidden">
+  <div class="container section">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2>Althea can be deployed in any environment</h2>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-5 px-0 px-sm-2">
-      <div class="blank map"></div>
-    </div>
+    <div class="row">
+      <div class="col-12 col-md-5 px-0 px-sm-2">
+        <div class="blank map"></div>
+      </div>
 
-    <div class="map-details col-12 col-md-7 pl-md-4">
-      <div class="d-none d-md-block" style="background: #002D39; height: 100%; width: 100%; position: absolute; left: 99%;"></div>
-      <div class="p-4">
-        <div class="w-100 my-4 d-none d-md-flex nav tabs">
-          <div href="#urban" class="flex-fill active category pb-2" data-toggle="tab" role="tab" aria-controls="urban" aria-selected="true"><h3 style="font-size: 24px">Urban Area</h3></div>
-          <div href="#rural" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3 style="font-size: 24px">Rural Area</h3></div>
-        </div>
-        <div class="d-flex d-md-none justify-content-center active category text-center mb-2">
-          <div>
-            <i id="prev-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+      <div class="map-details col-12 col-md-7 pl-md-4">
+        <div style="background: #002D39; height: 100%; width: 40vw; position: absolute; left: 99%;"></div>
+        <div class="p-4">
+          <div class="w-100 my-4 d-none d-md-flex nav tabs">
+            <div href="#urban" class="flex-fill active category pb-2" data-toggle="tab" role="tab" aria-controls="urban" aria-selected="true"><h3 style="font-size: 24px">Urban Area</h3></div>
+            <div href="#rural" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3 style="font-size: 24px">Rural Area</h3></div>
           </div>
-          <h3 id="category" class="flex-fill">Gateway Node</h3>
-          <div class="ml-auto">
-            <i id="next-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
-          </div>
-        </div>
-
-        <div class="tab-content descriptions">
-          <div class="tab-pane active show w-100" id="urban">
-            <p>
-            A combination of wireless and wired connections can be used to connect nodes in urban areas with varied terrain, like the red_medellin subnet in Medellin, Colombia. 
-            </p>
-
-            <a class="btn btn-primary" href="{{ '/medellin' | relative_url }}" role="button">View Case Study</a>
+          <div class="d-flex d-md-none justify-content-center active category text-center mb-2">
+            <div>
+              <i id="prev-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+            </div>
+            <h3 id="category" class="flex-fill">Gateway Node</h3>
+            <div class="ml-auto">
+              <i id="next-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
+            </div>
           </div>
 
-          <div class="tab-pane w-100" id="rural">
-            <p>
-            Legacy ISPs aren’t incentivized to offer quality—or any—internet access to remote, sparsely-populated areas. Althea makes it possible for places like Clatskanie, Oregon to build and and manage their own networks.
-            </p>
+          <div class="tab-content descriptions">
+            <div class="tab-pane active show w-100" id="urban">
+              <p>
+              A combination of wireless and wired connections can be used to connect nodes in urban areas with varied terrain, like the red_medellin subnet in Medellin, Colombia. 
+              </p>
 
-            <a class="btn btn-primary" href="{{ '/clatskanie' | relative_url }}" role="button">View Case Study</a>
-          </div>
-        </div>
+              <a class="btn btn-primary" href="{{ '/medellin' | relative_url }}" role="button">View Case Study</a>
+            </div>
 
-        <div class="d-none d-md-flex">
-          <div>
-            <i id="prev" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
-          </div>
-          <div class="ml-auto">
-            <i id="next" class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
-          </div>
-        </div>
+            <div class="tab-pane w-100" id="rural">
+              <p>
+              Legacy ISPs aren’t incentivized to offer quality—or any—internet access to remote, sparsely-populated areas. Althea makes it possible for places like Clatskanie, Oregon to build and and manage their own networks.
+              </p>
 
-        <div class="d-flex section" style="position: absolute; bottom: 0; width: 50vw;">
-          <div class="mr-2">
-            {% include responsive-image.html class="w-100" image="drums" ext="jpg" alt="Playing Drums" %}
-            <div class="d-flex mt-2"> 
-              <div>
-                <span class="tiny-caption">A long-range antenna connects a node</span>
+              <a class="btn btn-primary" href="{{ '/clatskanie' | relative_url }}" role="button">View Case Study</a>
+            </div>
+          </div>
+
+          <div class="d-none d-md-flex">
+            <div>
+              <i id="prev" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+            </div>
+            <div class="ml-auto">
+              <i id="next" class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
+            </div>
+          </div>
+
+          <div class="d-flex section" style="position: absolute; bottom: 0; width: 50vw;">
+            <div class="mr-2">
+              {% include responsive-image.html class="w-100" image="drums" ext="jpg" alt="Playing Drums" %}
+              <div class="d-flex mt-2"> 
+                <div>
+                  <span class="tiny-caption">A long-range antenna connects a node</span>
+                </div>
+                <div class="d-none d-md-block ml-auto">
+                  <i class="material-icons small">search</i>
+                </div>
               </div>
-              <div class="d-none d-md-block ml-auto">
-                <i class="material-icons small">search</i>
+            </div>
+
+            <div>
+              {% include responsive-image.html class="w-100" image="dish" ext="jpg" alt="Antenna Dish" %}
+              <div class="d-none d-md-flex mt-2"> 
+                <div>
+                  <span class="tiny-caption">A long-range antenna connects a node</span>
+                </div>
+                <div class="ml-auto">
+                  <i class="material-icons small">search</i>
+                </div>
               </div>
             </div>
           </div>
 
-          <div>
-            {% include responsive-image.html class="w-100" image="dish" ext="jpg" alt="Antenna Dish" %}
-            <div class="d-none d-md-flex mt-2"> 
-              <div>
-                <span class="tiny-caption">A long-range antenna connects a node</span>
-              </div>
-              <div class="ml-auto">
-                <i class="material-icons small">search</i>
-              </div>
-            </div>
-          </div>
         </div>
-
       </div>
     </div>
   </div>
 </div>
+
 <div class="container section">
   <div class="row">
     <div class="w-100 text-center">
@@ -206,12 +210,12 @@ title: Althea
 <div class="bg-yellow get-involved">
   <div class="container section top-section">
     <h1 id="get-involved">Get Involved</h1>
-    <div class="row">
-      <div class="col-6">
-        <p>Althea test deployments are launching now in the US and Colombia, with hundreds of other communities ready to get started. Join us: whether you’ve got a little extra time, technical skills, a commitment to open and accessible Internet, or all of the above, we’d love to hear from you.</p>
+    <div class="d-flex">
+      <div class="flex-grow w-100">
+        <p style="max-width: 500px; min-width: 500px">Althea test deployments are launching now in the US and Colombia, with hundreds of other communities ready to get started. Join us: whether you’ve got a little extra time, technical skills, a commitment to open and accessible Internet, or all of the above, we’d love to hear from you.</p>
       </div>
-      <div class="col-6">
-        <p><strong>Select a role below to learn more and get started. Don’t see what you’re looking for? Send us an email at hello@altheamesh.com.</strong></p>
+      <div class="flex-shrink">
+        <p style="max-width: 500px; min-width: 500px;"><strong>Select a role below to learn more and get started. Don’t see what you’re looking for? Send us an email at <a href="mailto:hello@altheamesh.com" style="color: black; text-decoration: underline">hello@altheamesh.com</a></strong></p>
       </div>
     </div>
     <div class="card">
