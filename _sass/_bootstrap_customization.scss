@@ -637,12 +637,7 @@ figcaption.underline {
   background-image: url(../images/medellin_map.png);
 }
 
-.descriptions {
-  min-height: 20em;
-  max-width: 34em;
-} 
-
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .lead-header, .follow-header {
     font-size: 2rem;
   } 
@@ -729,6 +724,7 @@ body {
 
 .map-details {
   font-size: 18px;
+  letter-spacing: 1px;
   height: 768px;
 
   a.btn-primary {
@@ -760,21 +756,36 @@ hr.light-yellow {
   background: white;
 } 
 
+h2 {
+  font-size: 42px;
+} 
+
 h3 {
   font-size: 24px;
 }
 
-.get-involved .tabs {
-  text-align: center;
-  max-width: 80%;
+@media (max-width: 1150px) {
+  h3 {
+    font-size: 32px;
+  }
 
-  div {
-    min-width: 180px;
+  .btn-secondary {
+    border-width: 2px;
   } 
+}
+
+@media (min-width: 1150px) {
+  .get-involved p {
+    max-width: 420px;
+  } 
+}
+
+.get-involved {
+  text-align: center;
 
   .category {
-    color: #ccc;
-    border-color: #ccc;
+    color: #999;
+    border-color: #ddd;
   } 
 
   .active {
@@ -782,6 +793,11 @@ h3 {
     border-color: $red;
   } 
 
+} 
+
+.get-involved .tabs div {
+  max-width: 80%;
+  min-width: 180px;
 } 
 
 .form-group label {

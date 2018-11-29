@@ -1,51 +1,53 @@
-<div class="section">
-    <div class="row">
-        <div class="col-12 col-lg-8 offset-lg-1 mb-4">
-            <h1 id="get-involved">Get Involved</h1>
-            <p>Althea test deployments are launching now in the US and Colombia, with hundreds of other communities ready to get started. Join us: whether you’ve got a little extra time, technical skills, a commitment to open and accessible Internet, or all of the above, we’d love to hear from you.</p>
-            <p><strong>Select a role below to learn more and get started. Don’t see what you’re looking for? Send us an email at hello@altheamesh.com.</strong></p>
+
+<div class="bg-yellow get-involved">
+  <div class="container section top-section text-center text-xl-left">
+    <h1 id="get-involved">Get Involved</h1>
+    <div class="d-flex flex-wrap flex-xl-nowrap justify-content-center">
+      <div class="d-none d-xl-block w-100">
+        <p style="max-width: 500px; min-width: 500px">Althea test deployments are launching now in the US and Colombia, with hundreds of other communities ready to get started. Join us: whether you’ve got a little extra time, technical skills, a commitment to open and accessible Internet, or all of the above, we’d love to hear from you.</p>
+      </div>
+      <div class="d-xl-none">
+        <p style="max-width: 500px; min-width: 500px">Althea test deployments are launching now in the US and Colombia, with hundreds of other communities ready to get started. Join us: whether you’ve got a little extra time, technical skills, a commitment to open and accessible Internet, or all of the above, we’d love to hear from you.</p>
+      </div>
+      <div class="flex-shrink">
+        <p style="max-width: 500px; min-width: 500px;"><strong>Select a role below to learn more and get started. Don’t see what you’re looking for? Send us an email at <a href="mailto:hello@altheamesh.com" style="color: black; text-decoration: underline">hello@altheamesh.com</a></strong></p>
+      </div>
+    </div>
+    <div class="card shadow pa-5" style="border-radius: 0.6em; border-width: 0px;">
+      <div class="card-body px-4 px-xl-5 py-4">
+        <div class="d-flex d-xl-none justify-content-center active category text-center mb-2 nav mx-5">
+          <div>
+            <i id="prev-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+          </div>
+          <h3 id="category" class="flex-fill">Organizer</h3>
+          <div class="ml-auto">
+            <i id="next-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
+          </div>
         </div>
-    </div>
-    <div class="row mb-3">
-        <ul class="nav col-12 col-lg-10 offset-lg-1">
-            <li class="col-6 col-sm-3 mb-3">
-                <div href="#organizer-form" style="cursor: pointer;" class="card border-0 shadow align-items-center p-sm-4 p-1 card-tab active show" data-toggle="tab">
-                    <i class="material-icons mb-2 font-size-36">group</i>
-                    <div class="small-emphasis">Organizer</div>
-                </div>
-            </li>
-            <li class="col-6 col-sm-3 mb-3">
-                <div href="#user-form" style="cursor: pointer;" class="card border-0 shadow align-items-center p-sm-4 p-1 card-tab" data-toggle="tab">
-                    <i class="material-icons mb-2 font-size-36">person</i>
-                    <div class="small-emphasis">User</div>
-                </div>
-            </li>
-            <li class="col-6 col-sm-3 mb-3">
-                <div href="#developer-form" style="cursor: pointer;" class="card border-0 shadow align-items-center p-sm-4 p-1 card-tab" data-toggle="tab">
-                    <i class="material-icons mb-2 font-size-36">code</i>
-                    <div class="small-emphasis">Developer</div>
-                </div>
-            </li>
-            <li class="col-6 col-sm-3 mb-3">
-                <div href="#other-form" style="cursor: pointer;" class="card border-0 shadow align-items-center p-sm-4 p-1 card-tab" data-toggle="tab">
-                    <i class="material-icons mb-2 font-size-36">help</i>
-                    <div class="small-emphasis">Other</div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="tab-content">
-        <div class="tab-pane active show" id="organizer-form">
+        <div class="d-none d-xl-flex justify-content-center mb-3 text-center">
+          <div class="my-4 d-none d-md-flex nav tabs">
+            <div href="#organizer-form" class="flex-fill active category pb-2" data-toggle="tab" role="tab" aria-controls="urban" aria-selected="true"><h3>Organizer</h3></div>
+            <div href="#user-form" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3>User</h3></div>
+            <div href="#developer-form" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3>Developer</h3></div>
+            <div href="#other-form" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3>Other</h3></div>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active show" id="organizer-form">
             {% include get-involved/organizer.html %}
-        </div>
-        <div class="tab-pane" id="user-form">
+          </div>
+          <div class="tab-pane" id="user-form">
             {% include get-involved/user.html %}
-        </div>
-        <div class="tab-pane" id="developer-form">
+          </div>
+          <div class="tab-pane" id="developer-form">
             {% include get-involved/developer.html %}
-        </div>
-        <div class="tab-pane" id="other-form">
+          </div>
+          <div class="tab-pane" id="other-form">
             {% include get-involved/other.html %}
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
+
