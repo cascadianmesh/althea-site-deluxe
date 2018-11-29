@@ -637,7 +637,7 @@ figcaption.underline {
   background-image: url(../images/medellin_map.png);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 992px) {
   .lead-header, .follow-header {
     font-size: 2rem;
   } 
@@ -756,6 +756,10 @@ hr.light-yellow {
   background: white;
 } 
 
+h1 {
+  font-size: 72px;
+} 
+
 h2 {
   font-size: 42px;
 } 
@@ -764,7 +768,11 @@ h3 {
   font-size: 24px;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  } 
+
   h3 {
     font-size: 32px;
   }
@@ -774,7 +782,7 @@ h3 {
   } 
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 992px) {
   .get-involved p {
     max-width: 420px;
   } 
@@ -805,3 +813,55 @@ h3 {
   padding-bottom: 8px;
   text-transform: none;
 } 
+
+.gallery {
+  position: absolute; 
+  bottom: 0; 
+  width: 900px
+}
+
+@include media-breakpoint-down(sm) {
+  h1 {
+    padding-left: 10px; /* text spills out the left side of its container without this for some reason */
+  } 
+
+  h2 {
+    font-size: 30px;
+  } 
+
+  h3 {
+    font-size: 20px;
+  } 
+
+  .card-text {
+    font-size: 16px;
+  } 
+
+  .forward-link {
+    font-size: 16px;
+  } 
+
+  .container {
+    padding: 15px;
+  } 
+
+  .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    padding: 35px;
+  } 
+
+  .navbar {
+    padding: 0;
+  } 
+
+  .skinny {
+    padding: 35px;
+  } 
+
+  .gallery {
+    width: 600px;
+  } 
+
+  .map-details {
+    height: 580px;
+  } 
+}

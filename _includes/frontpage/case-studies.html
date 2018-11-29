@@ -1,35 +1,26 @@
 <div class="container mb-4">
   <div class="row">
-    <div class="col-10 offset-1 col-xl-12 offset-xl-0 text-center">
+    <div class="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0 text-center">
       <h2>Althea can be deployed in any environment</h2>
     </div>
   </div>
 </div>
 
-<img class="d-xl-none w-100" src="{{ '/images/blank_map-768.jpg' | relative_url }}" />
+<img class="d-lg-none w-100" src="{{ '/images/blank_map-768.jpg' | relative_url }}" />
 
 <div id="case-studies" class="w-100" style="overflow: hidden; background: #002D39;">
   <div class="container">
     <div class="row">
-      <div class="d-none d-xl-block col-xl-5 px-0 px-sm-2">
+      <div class="d-none d-lg-block col-lg-5 px-0 px-sm-2">
         <div class="blank map"></div>
       </div>
 
-      <div class="map-details col-12 col-xl-7 pl-xl-5 pt-xl-3">
+      <div class="map-details col-12 col-lg-7 pl-lg-5 pt-lg-3">
         <div style="background: #002D39; height: 100%; width: 40vw; position: absolute; left: 99%;"></div>
         <div>
-          <div class="w-100 my-4 d-none d-xl-flex nav tabs" style="max-width: 500px">
-            <div href="#urban" class="flex-fill active category pb-2" data-toggle="tab" role="tab" aria-controls="urban" aria-selected="true"><h3>Urban Area</h3></div>
+          <div class="w-100 mb-4 mt-sm-4 d-flex nav tabs" style="max-width: 500px">
+            <div href="#urban" class="flex-fill active category pb-sm-2" data-toggle="tab" role="tab" aria-controls="urban" aria-selected="true"><h3>Urban Area</h3></div>
             <div href="#rural" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true"><h3>Rural Area</h3></div>
-          </div>
-          <div class="d-flex d-xl-none justify-content-center active category text-center mb-2">
-            <div>
-              <i id="prev-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
-            </div>
-            <h3 id="category" class="flex-fill">Gateway Node</h3>
-            <div class="ml-auto">
-              <i id="next-category" class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
-            </div>
           </div>
 
           <div class="tab-content descriptions">
@@ -38,7 +29,7 @@
               A combination of wireless and wired connections can be used to connect nodes in urban areas with varied terrain, like the red_medellin subnet in Medellin, Colombia. 
               </p>
 
-              <a class="btn btn-primary px-4 py-3 px-xl-3 py-xl-2" href="{{ '/medellin' | relative_url }}" role="button" style="font-size: 16px; letter-spacing: 1px;">View Case Study</a>
+              <a class="btn btn-primary px-4 py-3 px-lg-3 py-lg-2" href="{{ '/medellin' | relative_url }}" role="button" style="font-size: 16px; letter-spacing: 1px;">View Case Study</a>
             </div>
 
             <div class="tab-pane w-100" id="rural">
@@ -50,7 +41,7 @@
             </div>
           </div>
 
-          <div class="d-flex mt-3" style="max-width: 440px">
+          <div class="d-none d-sm-flex mt-3" style="max-width: 440px">
             <div>
               <i id="prev" class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
             </div>
@@ -59,8 +50,8 @@
             </div>
           </div>
 
-          <div class="d-flex section" style="position: absolute; bottom: 0; width: 900px">
-            <div class="mr-3">
+          <div class="d-flex section gallery">
+            <div class="mr-2 mr-sm-3">
               {% include responsive-image.html class="w-100" image="drums" ext="jpg" alt="Playing Drums" %}
               <div class="d-flex mt-2"> 
                 <div>
