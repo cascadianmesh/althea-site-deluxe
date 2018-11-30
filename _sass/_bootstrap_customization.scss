@@ -619,7 +619,7 @@ figcaption.underline {
 .map {
   background-position: right;
   background-size: cover;
-  width: 754px;
+  width: 45vw;
   height: 768px;
   position: absolute;
   right: 0px;
@@ -637,12 +637,7 @@ figcaption.underline {
   background-image: url(../images/medellin_map.png);
 }
 
-.descriptions {
-  min-height: 20em;
-  max-width: 34em;
-} 
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .lead-header, .follow-header {
     font-size: 2rem;
   } 
@@ -699,6 +694,11 @@ figcaption.underline {
   color: #433726;
 } 
 
+.bg-dark {
+  background-color: $dark-gray !important;
+  color: white;
+} 
+
 .top-nav {
   font-family: "LL Akkurat Light Web";
   
@@ -710,10 +710,6 @@ figcaption.underline {
     border-radius: 100px;
     color: white;
   } 
-} 
-
-.card-text {
-  font-size: 20px;
 } 
 
 .forward-link {
@@ -729,6 +725,7 @@ body {
 
 .map-details {
   font-size: 18px;
+  letter-spacing: 1px;
   height: 768px;
 
   a.btn-primary {
@@ -740,4 +737,168 @@ body {
 
 hr.light-yellow {
   border-color: $light-yellow;
+}
+
+.btn {
+  border-radius: 100px;
+  font-family: "LL Akkurat Light Web";
+  padding-left: 30px;
+  padding-right: 30px;
+} 
+
+.btn-primary {
+  color: white;
+  background: $blue;
+} 
+
+.btn-secondary {
+  color: #666;
+  border-color: #666;
+  background: white;
+} 
+
+h1 {
+  font-size: 72px;
+} 
+
+h2 {
+  font-size: 42px;
+} 
+
+h3 {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  } 
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .btn-secondary {
+    border-width: 2px;
+  } 
+}
+
+@media (min-width: 992px) {
+  .get-involved p {
+    max-width: 420px;
+  } 
+}
+
+.get-involved {
+  text-align: center;
+
+  .category {
+    color: #999;
+    border-color: #ddd;
+  } 
+
+  .active {
+    color: black;
+    border-color: $red;
+  } 
+
+} 
+
+.get-involved .tabs div {
+  max-width: 80%;
+  min-width: 180px;
+} 
+
+.form-group label {
+  font-size: 16px;
+  padding-bottom: 8px;
+  text-transform: none;
+} 
+
+.gallery {
+  position: absolute; 
+  bottom: 0; 
+  width: 900px
+}
+
+@include media-breakpoint-down(sm) {
+  h1 {
+    padding-left: 10px; /* text spills out the left side of its container without this for some reason */
+  } 
+
+  h2 {
+    font-size: 30px;
+  } 
+
+  h3 {
+    font-size: 20px;
+  } 
+
+  .card-text {
+    font-size: 16px;
+  } 
+
+  .forward-link {
+    font-size: 16px;
+  } 
+
+  .container {
+    padding: 15px;
+  } 
+
+  .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    padding: 35px;
+  } 
+
+  .navbar {
+    padding: 0;
+  } 
+
+  .skinny {
+    padding: 35px;
+  } 
+
+  .gallery {
+    width: 600px;
+  } 
+
+  .map-details {
+    height: 580px;
+  } 
+
+  .get-involved p {
+    max-width: 360px;
+  } 
+}
+
+@include media-breakpoint-up(md) {
+  h3 {
+    font-size: 30px;
+  } 
+
+  .card-text {
+    font-size: 16px;
+  } 
+
+  .descriptions p {
+    max-width: 420px;
+  } 
+}
+
+@include media-breakpoint-up(lg) {
+  .get-involved p {
+    max-width: 520px;
+  } 
+
+  .get-involved .card p {
+    max-width: 420px;
+  } 
+
+  h3 {
+    font-size: 24px;
+  } 
 }
