@@ -699,6 +699,11 @@ figcaption.underline {
   color: white;
 } 
 
+.bg-light {
+  background-color: $light-tan !important;
+  color: $gray;
+} 
+
 .top-nav {
   font-family: "LL Akkurat Light Web";
   
@@ -887,9 +892,17 @@ h3 {
   .descriptions p {
     max-width: 420px;
   } 
+
+  p {
+    max-width: 560px;
+  } 
 }
 
 @include media-breakpoint-up(lg) {
+  p {
+    max-width: 505px;
+  } 
+
   .get-involved p {
     max-width: 520px;
   } 
@@ -905,6 +918,10 @@ h3 {
   h3 {
     font-size: 24px;
   } 
+
+  .about {
+    height: 450px;
+  } 
 }
 
 a {
@@ -913,4 +930,9 @@ a {
 
 .team p {
   max-width: 320px;
+} 
+
+.switcher {
+  border-bottom: 4px solid $red;
+  cursor: pointer;
 } 
