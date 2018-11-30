@@ -694,6 +694,11 @@ figcaption.underline {
   color: #433726;
 } 
 
+.bg-dark {
+  background-color: $dark-gray !important;
+  color: white;
+} 
+
 .top-nav {
   font-family: "LL Akkurat Light Web";
   
@@ -705,10 +710,6 @@ figcaption.underline {
     border-radius: 100px;
     color: white;
   } 
-} 
-
-.card-text {
-  font-size: 20px;
 } 
 
 .forward-link {
@@ -769,6 +770,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
   h1 {
     font-size: 40px;
   } 
@@ -863,5 +868,37 @@ h3 {
 
   .map-details {
     height: 580px;
+  } 
+
+  .get-involved p {
+    max-width: 360px;
+  } 
+}
+
+@include media-breakpoint-up(md) {
+  h3 {
+    font-size: 30px;
+  } 
+
+  .card-text {
+    font-size: 16px;
+  } 
+
+  .descriptions p {
+    max-width: 420px;
+  } 
+}
+
+@include media-breakpoint-up(lg) {
+  .get-involved p {
+    max-width: 520px;
+  } 
+
+  .get-involved .card p {
+    max-width: 420px;
+  } 
+
+  h3 {
+    font-size: 24px;
   } 
 }
