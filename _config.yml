@@ -28,4 +28,4 @@ sass:
 
 
 permalink:    /blog/:title/
-date_format: "%b %-d, %Y"
+date_format: "%d.%m.%Y"
