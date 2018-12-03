@@ -478,12 +478,11 @@ h1 {
   font-size: 18px;
 } 
 
-.gallery-nav {
+.gallery-nav a {
   color: #6B6E53;
-  cursor: pointer;
 } 
 
-.gallery-nav.active {
+.gallery-nav a:hover {
   color: $light-yellow;
 } 
   
@@ -627,6 +626,7 @@ figcaption.underline {
   height: 768px;
   position: absolute;
   right: 0px;
+  z-index: 1;
 } 
 
 .map.blank {
@@ -734,8 +734,6 @@ body {
 } 
 
 .map-details {
-  font-size: 18px;
-  letter-spacing: 1px;
   height: 768px;
 
   a.btn-primary {
@@ -835,8 +833,6 @@ h3 {
 
 .gallery {
   position: absolute; 
-  bottom: 0; 
-  width: 900px
 }
 
 @include media-breakpoint-down(sm) {
@@ -912,6 +908,10 @@ h3 {
     max-width: 505px;
   } 
 
+  .descriptions p {
+    max-width: 530px;
+  } 
+
   .get-involved p {
     max-width: 520px;
   } 
@@ -957,4 +957,9 @@ a {
 
 .posts h2 {
   font-size: 30px;
+} 
+
+.gallery div {
+  margin-right: 25px;
+  width: 500px;
 } 
