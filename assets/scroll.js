@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let start = $('#start').offset().top - ((wh - ih) / 2)
     let end = $('#start img:last').offset().top - ((wh - ih) / 2)
 
-    console.log(start, pos, end, ih, wh, ((wh - ih) / 2))
-
     let offset = $('.container').offset()
     
     if (pos > start && pos < end) {
@@ -23,9 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       $('.container img').css('visibility', 'visible')
     } 
 
-    console.log('meow')
     let norm = (1 - (end - pos) / (end -start)) * 8
-    console.log('norm', norm)
     for (let i = 1; i < 8; i++) {
       $(`#img${i+1}`).css('opacity', norm - i)
     } 
@@ -33,4 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   $('#img1').css('opacity', 1)
   $(window).scroll()
+  $(window).resize(function () {
+    $(window).scroll()
+  })
 });
