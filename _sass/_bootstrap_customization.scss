@@ -589,6 +589,10 @@ figcaption.underline {
   border-bottom: 3px solid $light-yellow;
 }
 
+.caption {
+  font-size: 17px;
+} 
+
 .tiny-caption {
   font-size: 14px;
 } 
@@ -946,4 +950,8 @@ a {
 
 .navbar .btn-primary {
   margin-left: 25px;
+} 
+
+.posts h2 {
+  font-size: 30px;
 } 

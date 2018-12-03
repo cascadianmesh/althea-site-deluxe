@@ -2,6 +2,8 @@
 layout: plain-page
 title:      Comparison of Althea and RightMesh
 summary:    "Althea has made many careful design decisions to optimize performance and reduce overhead. In this post we compare Althea to a different incentivized mesh architecture and show how each of these choices impacts the final product."
+image: clatskanie-blog.jpg
+author: Jehan Tremback
 ---
 
 We’ve been working on the architecture of Althea for nearly a year now, during that time we’ve made a lot of decisions that define how our network is structured with broad impacts on how it will perform in the real world. This post assumes you have already had a chance to read [our paper](http://altheamesh.com/documents/whitepaper.pdf) which contains our design for incentivizing mesh routing with cryptocurrency payments. It leverages existing technology, addresses major security concerns adequately and is expected to run on nearly any device, even off-the-shelf consumer routers.
