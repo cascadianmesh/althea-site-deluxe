@@ -3,6 +3,8 @@ layout: plain-page
 permalink: /blog/
 ---
 
+<script src="{{ '/assets/load-more.js' | relative_url }}"></script>
+
 <div class="bg-yellow">
   <div class="d-flex flex-wrap flex-lg-nowrap container">
     <div class="mt-sm-4 mt-lg-auto w-100 mb-sm-2 text-center text-lg-left">
@@ -12,7 +14,7 @@ permalink: /blog/
   </div>
 </div>
 
-<div class="container top-section">
+<div class="container section top-section">
   <div class="d-flex flex-wrap row posts">
     {% for post in site.posts %}
       <div class="col-12 col-lg-6 post mb-4">
@@ -30,4 +32,6 @@ permalink: /blog/
       </div>
     {% endfor %}
   </div>
+  <hr class="light-yellow" />
+  <div class="text-center w-100"><a id="load-more" class="btn btn-primary" href="#">Load More</a></div>
 </div>
