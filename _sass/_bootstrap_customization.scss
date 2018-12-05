@@ -21,7 +21,6 @@ h3 {
 .btn {
   font-size: 16px;
   line-height: 28px;
-  letter-spacing: 1px;
 } 
 
 .case-studies {
@@ -190,8 +189,12 @@ figcaption.underline {
   text-decoration: underline;
 } 
 
+.section {
+  padding-bottom: 90px;
+} 
+
 .top-section {
-  padding-top: 5.5em;
+  padding-top: 90px;
 } 
 
 .location {
@@ -400,3 +403,10 @@ a {
   font-size: 30px;
 } 
 
+.core-tech {
+  margin-left: 50px;
+} 
+
+.core-tech p {
+  max-width: 464px;
+} 
