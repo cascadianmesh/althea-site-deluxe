@@ -1,0 +1,29 @@
+@include media-breakpoint-up(lg) {
+  p {
+    max-width: 505px;
+  } 
+
+  .descriptions p {
+    max-width: 530px;
+  } 
+
+  .get-involved p {
+    max-width: 520px;
+  } 
+
+  .get-involved .card p {
+    max-width: 420px;
+  } 
+
+  .news h3 {
+    font-size: 30px;
+  } 
+
+  h3 {
+    font-size: 24px;
+  } 
+
+  .about {
+    height: 450px;
+  } 
+}
