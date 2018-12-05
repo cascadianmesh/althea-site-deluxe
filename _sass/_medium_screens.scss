@@ -3,15 +3,70 @@
     font-size: 32px;
   } 
 
-  .card-text {
-    font-size: 16px;
+  .lead {
+    padding-top: 43px;
+    padding-bottom: 50px;
+
+    p {
+      max-width: 351px;
+    } 
+
+    img {
+      width: 333px;
+      position: absolute;
+      left: 500px;
+      bottom: 0px;
+      padding-bottom: 68px;
+      margin-bottom: -68px;
+    } 
+
+    a.btn-primary {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 20px;
+      font-family: "LL Akkurat Light Web";
+      margin-top: 30px;
+    } 
   } 
 
-  .descriptions p {
-    max-width: 420px;
+  .card-text {
+    font-size: 16px;
   } 
 
   p {
     max-width: 560px;
   } 
+
+  .category {
+    font-size: 32px;
+  } 
+
+  .tabs h3 {
+    font-size: 32px;
+  } 
+
+  .tab-content {
+    p {
+      margin-top: 60px;
+      max-width: 481px;
+    } 
+  } 
+
+  .tab-pane {
+    min-height: 250px;
+  } 
+
+  .gallery-nav {
+    width: 535px;
+  } 
+
+  .gallery-item {
+    margin-right: 25px;
+    width: 555px;
+  } 
+
+  #case-studies {
+    min-height: 900px;
+  } 
 }
+
