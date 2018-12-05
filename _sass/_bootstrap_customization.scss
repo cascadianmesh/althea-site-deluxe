@@ -4,6 +4,10 @@ body {
   font-size: 20px;
 } 
 
+a {
+  color: black;
+} 
+
 h1 {
   font-size: 70px;
   letter-spacing: 1px;
@@ -185,7 +189,6 @@ figcaption.underline {
 } 
 
 .case-study p a {
-  color: black;
   text-decoration: underline;
 } 
 
@@ -279,6 +282,10 @@ figcaption.underline {
 .bg-yellow {
   background: $light-yellow;
   color: #433726;
+
+  a {
+    color: #433726;
+  }
 } 
 
 .bg-dark {
@@ -367,6 +374,10 @@ hr.light-yellow {
   min-width: 180px;
 } 
 
+.tabs h3 {
+  font-size: 24px;
+} 
+
 .form-group label {
   font-size: 16px;
   padding-bottom: 8px;
@@ -376,10 +387,6 @@ hr.light-yellow {
 .gallery {
   position: absolute; 
 }
-
-a {
-  color: black;
-} 
 
 .team p {
   max-width: 320px;
@@ -409,4 +416,16 @@ a {
 
 .core-tech p {
   max-width: 464px;
+} 
+
+.footer a {
+  color: white;
+} 
+
+.footer-label {
+  font-family: "LL Akkurat Bold Web";
+} 
+
+.select-a-role {
+  font-family: "LL Akkurat Bold Web";
 } 
