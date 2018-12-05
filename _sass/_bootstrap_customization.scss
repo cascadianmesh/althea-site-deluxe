@@ -1,3 +1,29 @@
+body {
+  background: $light-tan;
+  font-family: "LL Akkurat Regular Web";
+  font-size: 20px;
+} 
+
+h1 {
+  font-size: 70px;
+  letter-spacing: 1px;
+  line-height: 75px;
+} 
+
+h2 {
+  font-size: 42px;
+} 
+
+h3 {
+  font-size: 32px;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+} 
+
 .case-studies {
   background: $light-yellow;
   overflow: hidden;
@@ -27,7 +53,7 @@
 } 
 
 .material-icons.small {
-  font-size: 18px;
+  font-size: 14px;
 } 
 
 .gallery-nav a {
@@ -82,15 +108,17 @@ h4 {
   width: 30px;
 } 
 
-.active.category {
-  color: white;
-  border-color: #E84658; 
-} 
-
 .category {
   border-bottom: 3px solid #4A6666;
   color: #6B797D;
   cursor: pointer;
+  font-size: 24px;
+  font-family: "LL Akkurat Bold Web";
+} 
+
+.active.category {
+  color: white;
+  border-color: #E84658; 
 } 
 
 .lead-header, .follow-header {
@@ -145,7 +173,7 @@ figcaption.underline {
 } 
 
 .tiny-caption {
-  font-size: 14px;
+  font-size: 16px;
 } 
 
 .subheading {
@@ -279,11 +307,6 @@ figcaption.underline {
   font-weight: bold;
 } 
 
-body {
-  background: $light-tan;
-  font-family: "LL Akkurat Regular Web";
-  font-size: 20px;
-} 
 
 .map-details {
   height: 768px;
@@ -320,18 +343,6 @@ hr.light-yellow {
   background: white;
 } 
 
-h1 {
-  font-size: 66px;
-  letter-spacing: 2px;
-} 
-
-h2 {
-  font-size: 42px;
-} 
-
-h3 {
-  font-size: 24px;
-}
 
 .get-involved {
   text-align: center;
@@ -363,65 +374,6 @@ h3 {
   position: absolute; 
 }
 
-@include media-breakpoint-down(sm) {
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 40px;
-    padding-left: 10px; /* text spills out the left side of its container without this for some reason */
-  } 
-
-  h2 {
-    font-size: 30px;
-  } 
-
-  h3 {
-    font-size: 20px;
-  } 
-
-  .btn-secondary {
-    border-width: 2px;
-  } 
-
-  .card-text {
-    font-size: 16px;
-  } 
-
-  .forward-link {
-    font-size: 16px;
-  } 
-
-  .container {
-    padding: 15px;
-  } 
-
-  .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
-    padding: 35px;
-  } 
-
-  .navbar {
-    padding: 0;
-  } 
-
-  .skinny {
-    padding: 35px;
-  } 
-
-  .gallery {
-    width: 600px;
-  } 
-
-  .map-details {
-    height: 580px;
-  } 
-
-  .get-involved p {
-    max-width: 360px;
-  } 
-}
-
 a {
   color: black;
 } 
@@ -448,7 +400,3 @@ a {
   font-size: 30px;
 } 
 
-.gallery div {
-  margin-right: 25px;
-  width: 500px;
-} 

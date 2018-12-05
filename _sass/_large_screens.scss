@@ -4,7 +4,7 @@
   } 
 
   .descriptions p {
-    max-width: 530px;
+    max-width: 527px;
   } 
 
   .get-involved p {
@@ -15,15 +15,28 @@
     max-width: 420px;
   } 
 
-  .news h3 {
-    font-size: 30px;
-  } 
-
   h3 {
-    font-size: 24px;
+    font-size: 32px;
   } 
 
   .about {
     height: 450px;
+  } 
+
+  .hero p {
+    max-width: 302px;
+  } 
+
+  .hero .card {
+    height: 338px;
+  } 
+
+  .hero .card-body {
+    padding-top: 33px;
+  } 
+
+  .gallery-item {
+    margin-right: 25px;
+    width: 500px;
   } 
 }
