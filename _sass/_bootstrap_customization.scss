@@ -228,58 +228,6 @@ figcaption.underline {
   background-image: url(../images/medellin_map.png);
 }
 
-@media (max-width: 992px) {
-  .lead-header, .follow-header {
-    font-size: 2rem;
-  } 
-
-  .subheading {
-    color: $dark-gray;
-    text-transform: uppercase;
-    font-family: "LL Akkurat Light Web";
-    font-weight: 100;
-    font-size: 14px;
-    margin-bottom: 1rem;
-  } 
-
-  hr.stretchy {
-    right: 97%;
-    top: 80px;
-  } 
-
-  .casamarado {
-    min-width: 0px;
-    height: 200px;
-    width: 100%;
-  } 
-
-  .clatskanie {
-    width: 100%;
-    height: 450px;
-  }
-
-  .section {
-    padding-bottom: 1em;
-  } 
-
-  .top-section {
-    padding-top: 1em;
-  } 
-
-  .learn-more {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  } 
-
-  .map {
-    background-position: right;
-    background-size: cover;
-    height: 40vh;
-    width: 100%;
-    position: relative;
-  } 
-}
-
 .bg-yellow {
   background: $light-yellow;
   color: #433726;
@@ -378,12 +326,6 @@ hr.light-yellow {
   font-size: 24px;
 } 
 
-.form-group label {
-  font-size: 16px;
-  padding-bottom: 8px;
-  text-transform: none;
-} 
-
 .gallery {
   position: absolute; 
 }
@@ -408,14 +350,6 @@ hr.light-yellow {
 
 .posts h2 {
   font-size: 30px;
-} 
-
-.core-tech {
-  margin-left: 50px;
-} 
-
-.core-tech p {
-  max-width: 464px;
 } 
 
 .footer a {
