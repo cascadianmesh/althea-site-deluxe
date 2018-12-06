@@ -31,11 +31,12 @@
   } 
 
   .lead {
+    position: relative;
     font-size: 16px;
 
     img {
       position: absolute; 
-      bottom: 135px; 
+      bottom: -120px; 
       right: 0; 
     } 
   } 
