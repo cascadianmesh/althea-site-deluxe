@@ -4,20 +4,6 @@ title: Althea
 permalink: /medellin
 ---
 
-<script>
-  document.addEventListener("DOMContentLoaded", function(event) { 
-    var navArrows = document.querySelectorAll('.gallery-nav')
-    var gallery = [
-      '/images/drums.jpg',
-      '/images/dish.jpg'
-    ]
-
-    navArrows[0].onclick = function(e) {
-      gallery.push(gallery.shift());
-    };
-  });
-</script>
-
 <div class="case-study">
   <div class="container top-section">
     <div class="row">
@@ -35,14 +21,13 @@ permalink: /medellin
         <hr class="stretchy" />
       </div>
       <div class="col-12 col-sm-6 px-0">
-        <div class="d-none d-sm-block casamarado"></div>
-        {% include responsive-image.html class="w-100" image="casamarado" ext="jpg" alt="Casamarado" %}
+        <div class="d-none d-sm-block bleed-right casamarado"></div>
       </div>
     </div>
     <div class="row">
       <div class="col-12 col-sm-6 offset-sm-6">
-        <figcaption class="tiny-caption text-right">
-          A long-range antenna connects a node to the backhaul connection in Communa 13.
+        <figcaption class="tiny-caption text-right underline py-2">
+          A long-range antenna connects a node to the backhaul in Communa 13.
         </figcaption>
       </div>
     </div>
@@ -61,26 +46,26 @@ permalink: /medellin
     <div class="row">
       <figure class="col-12 col-sm-6">
         {% include responsive-image.html class="w-100" image="medellin-1" ext="jpg" alt="Medellin" %}
-        <figcaption class="tiny-caption">
+        <figcaption class="underline py-2 tiny-caption">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
       </figure>
 
       <figure class="col-12 col-sm-6">
         {% include responsive-image.html class="w-100" image="medellin-2" ext="jpg" alt="Medellin" %}
-        <figcaption class="tiny-caption">
+        <figcaption class="underline py-2 tiny-caption">
         A long-range antenna connects a node to the backhaul connection
         </figcaption>
       </figure>
     </div>
   </div>
 
-  <div class="container section">
+  <div class="container section red-medellin">
     <div class="row">
       <div class="col-12 col-sm-5">
-        <h2>Althea: Faster, Cheaper Internet &mdash; Owned by the people using it</h2>
+        <h2>Althea: Faster, Cheaper Internet <br /> &mdash; Owned by the people using it</h2>
       </div>
-      <div class="col-12 col-sm-6">
+      <div class="col-12 col-sm-6 p-0">
         <p>
         The <a href="https://www.redmedellin.com/">red_medellin</a> subnet DAO is bringing internet access to Communa 13, partnering with another local organization to buy bandwidth, and beaming it by radio to the neighborhood. While some nodes on the network will just be accessing the internet, others can help grow the network organically by getting their neighbors set up too—offsetting the cost of their own connection, or even earning a little money doing so.
         </p>
@@ -108,9 +93,9 @@ permalink: /medellin
         <h4 class="select-node pt-4 text-center text-md-left">Select Node Type:</h4>
         <div>
           <div class="w-100 my-4 d-none d-md-flex nav">
-            <div href="#gateway" class="flex-fill active category" data-toggle="tab" role="tab" aria-controls="gateway" aria-selected="true"><h3>Gateway Node</h3></div>
-            <div href="#intermediary" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="intermediary" aria-selected="true"><h3>Intermediary Nodes</h3></div>
-            <div href="#user" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="user" aria-selected="true"><h3>User Nodes</h3></div>
+            <div href="#gateway" class="flex-fill active category" data-toggle="tab" role="tab" aria-controls="gateway" aria-selected="true">Gateway Node</div>
+            <div href="#intermediary" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="intermediary" aria-selected="true">Intermediary Nodes</div>
+            <div href="#user" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="user" aria-selected="true">User Nodes</div>
           </div>
           <div class="d-flex d-md-none justify-content-center active category text-center mb-2">
             <div>

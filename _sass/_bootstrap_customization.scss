@@ -16,6 +16,9 @@ h1 {
 
 h2 {
   font-size: 42px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  font-family: "LL Akkurat Bold Web";
 } 
 
 h3 {
@@ -27,7 +30,7 @@ h4 {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bolder;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 } 
 
 .btn {
@@ -115,6 +118,7 @@ h4 {
   cursor: pointer;
   font-size: 24px;
   font-family: "LL Akkurat Bold Web";
+  padding-bottom: 15px;
 } 
 
 .active.category {
@@ -125,7 +129,7 @@ h4 {
 .lead-header, .follow-header {
   color: $dark-gray;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 56px;
 } 
 
 .follow-header {
@@ -142,18 +146,18 @@ hr.stretchy {
   width: 500px;
   position: absolute;
   right: 100%;
-  top: 250px;
+  top: 300px;
 } 
 
 .bleed-right {
   background-position: right;
   background-size: cover;
-  min-width: 60vw;
-  height: 600px;
+  min-width: 826px;
+  height: 670px;
 } 
 
 .casamarado {
-  background-image: url(../images/casamarado.jpg);
+  background-image: url(../images/casamarado-lead.jpg);
 } 
 
 .offgrid {
@@ -162,7 +166,6 @@ hr.stretchy {
 
 figcaption {
   color: $light-gray;
-  padding: 1rem 0;
 } 
 
 figcaption.underline {
@@ -183,7 +186,6 @@ figcaption.underline {
   font-family: "LL Akkurat Light Web";
   font-weight: 100;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
 } 
 
 .case-study p a {
@@ -222,7 +224,7 @@ figcaption.underline {
 }
 
 .map.medellin {
-  background-image: url(../images/medellin_map.png);
+  background-image: url(../images/medellin_gateway.jpg);
 }
 
 .bg-yellow {
