@@ -1,4 +1,8 @@
 @include media-breakpoint-only(md) {
+  .btn {
+    letter-spacing: 0.5px;
+  } 
+
   .section {
     padding-bottom: 50px;
   } 
@@ -61,10 +65,10 @@
     } 
 
     img {
-      width: 333px;
+      width: 388px;
       position: absolute;
       left: 500px;
-      bottom: 0px;
+      bottom: -68px;
       padding-bottom: 68px;
       margin-bottom: -68px;
     } 
@@ -126,7 +130,23 @@
 
   iframe {
     height: 323px;
-    width: 100%;
+    width: 695px;
+  } 
+
+  .core-tech {
+    .btn {
+      padding: 25px 45px;
+      letter-spacing: 0.5px;
+    } 
+
+    .btn-primary {
+      padding: 25px 80px;
+      margin-left: 30px;
+    } 
+
+    .btn-secondary {
+      border: 2px solid #333;
+    } 
   } 
 
   .core-tech p {
@@ -149,5 +169,13 @@
 
   button[type="submit"] {
     padding: 20px 80px;
+  } 
+
+  .map-details p {
+    max-width: 481px;
+  } 
+
+  .tabs {
+    max-width: 620px;
   } 
 }

@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
   let count = 0
 
+  $('.gallery-item').swipe({
+     swipeLeft: $('.gallery-nav #next').click,
+     swipeRight: $('.gallery-nav #prev').click
+  });
+
   $('.gallery-nav a').click(function(e) {
     e.preventDefault()
     let left = $('.gallery').css('left').replace('px', '')
     let adjust = $('.gallery img').outerWidth(true)
-    console.log('nihao')
-    console.log(adjust)
 
     if ($(this).attr('id') === 'prev') {
       if (count <= 0) return

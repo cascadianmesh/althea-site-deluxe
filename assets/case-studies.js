@@ -4,13 +4,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
      swipeRight: $('#prev-category').click
   });
 
-  $('#next').click(() => $('.carousel').carousel('next'));
-  $('#prev').click(() => $('.carousel').carousel('prev'));
-  $('.carousel').bcSwipe({ threshold: 50 });
-
-  var navArrows = document.querySelectorAll('.gallery-nav');
   var categories = ['Gateway Nodes', 'Intermediary Nodes', 'User Nodes']
   var keys = ['gateway', 'intermediary', 'user']
+
+  var types = ['Organizer', 'User', 'Developer', 'Other']
+  var type_keys = ['organizer-form', 'user-form', 'developer-form', 'other-form']
 
   function showtab () { 
     $('#category').html(categories[0]);

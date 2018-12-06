@@ -8,7 +8,8 @@
   </div>
 </div>
 
-<img class="d-lg-none" src="{{ '/images/blank_map-768.jpg' | relative_url }}" style="width: 966px" />
+<img class="d-none d-sm-block d-lg-none" src="{{ '/images/blank_map-768.jpg' | relative_url }}" style="width: 966px" />
+<img class="d-sm-none" src="{{ '/images/blank_map-400.jpg' | relative_url }}" />
 
 <div id="case-studies" class="w-100" style="overflow: hidden; background: #002D39;">
   <div class="container">
@@ -20,7 +21,7 @@
       <div class="map-details col-12 col-lg-7 pl-lg-5 pt-lg-3">
         <div style="background: #002D39; height: 100%; width: 40vw; position: absolute; left: 99%;"></div>
         <div>
-          <div class="w-100 mb-4 mt-sm-4 d-flex nav tabs" style="max-width: 500px">
+          <div class="w-100 mb-4 mt-sm-4 d-flex nav tabs">
             <div href="#urban" class="flex-fill active category pb-sm-2" data-toggle="tab" role="tab" aria-controls="urban" aria-selected="true">Urban Area</div>
             <div href="#rural" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true">Rural Area</div>
           </div>
@@ -31,7 +32,7 @@
               A combination of wireless and wired connections can be used to connect nodes in urban areas with varied terrain, like the red_medellin subnet in Medellin, Colombia. 
               </p>
 
-              <a class="btn btn-primary px-4 py-3 px-lg-3 py-lg-2" href="{{ '/medellin' | relative_url }}" role="button">View Case Study</a>
+              <a class="btn btn-primary px-md-4 py-md-3 px-lg-3 py-lg-2" href="{{ '/medellin' | relative_url }}" role="button">View Case Study</a>
             </div>
 
             <div class="tab-pane w-100 my-auto" id="rural">
@@ -39,7 +40,7 @@
               Legacy ISPs aren’t incentivized to offer quality — or any — internet access to remote, sparsely-populated areas. Althea makes it possible for places like Clatskanie, Oregon to build and manage their own networks.
               </p>
 
-              <a class="btn btn-primary px-4 py-3 px-lg-3 py-lg-2" href="{{ '/clatskanie' | relative_url }}" role="button">View Case Study</a>
+              <a class="btn btn-primary px-md-4 py-md-3 px-lg-3 py-lg-2" href="{{ '/clatskanie' | relative_url }}" role="button">View Case Study</a>
             </div>
           </div>
 
@@ -55,11 +56,11 @@
           <div class="d-flex section gallery">
             <div class="gallery-item">
               <img src="{{ '/images/gallery_01.jpg' | relative_url }}" alt="Antenna Dish" />
-              <div class="d-flex mt-2"> 
+              <div class="d-flex mt-1 mt-sm-2"> 
                 <div>
                   <span class="tiny-caption">A long-range antenna connects a node</span>
                 </div>
-                <div class="ml-auto">
+                <div class="ml-auto d-none d-sm-flex">
                   <i class="material-icons small mt-1">search</i>
                 </div>
               </div>
@@ -67,11 +68,11 @@
 
             <div class="gallery-item">
               <img src="{{ '/images/gallery_02.jpg' | relative_url }}" alt="Playing Drums" />
-              <div class="d-flex mt-2"> 
+              <div class="d-flex mt-1 mt-sm-2"> 
                 <div>
                   <span class="tiny-caption">A long-range antenna connects a node</span>
                 </div>
-                <div class="ml-auto">
+                <div class="ml-auto d-none d-sm-flex">
                   <i class="material-icons small mt-1">search</i>
                 </div>
               </div>
