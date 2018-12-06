@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let end = $('#start img:last').offset().top - ((wh - ih) / 2)
 
     let offset = $('.container').offset()
+    $('.container img').css('visibility', 'hidden')
     
     if (pos > start && pos < end) {
       $('#images').show()
       $('#images').css('position', 'fixed')
       $('#images').css('top', wh / 2 - ih / 2)
       $('#images').css('left', offset.left + 12)
-      $('.container img').css('visibility', 'hidden')
     } else if (pos <= start) {
       $('.container img:first').css('visibility', 'visible')
       $('#images').hide()
