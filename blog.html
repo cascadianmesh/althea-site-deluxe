@@ -3,13 +3,24 @@ layout: plain-page
 permalink: /blog/
 ---
 
-<div class="home">
+<script src="{{ '/assets/load-more.js' | relative_url }}"></script>
 
-  <div class="posts">
+<div class="bg-yellow">
+  <div class="d-flex flex-wrap flex-lg-nowrap container">
+    <div class="mt-sm-4 mt-lg-auto w-100 mb-sm-2 text-center text-lg-left">
+      <div class="section"></div>
+      <h1>Althea Blog</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container section top-section">
+  <div class="d-flex flex-wrap row posts">
     {% for post in site.posts %}
-      <div class="post py3">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h2>{{ post.title }}</h2></a>
-        <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+      <div class="col-12 col-lg-6 post mb-4">
+        <img src="{{ '/images/' | append: post.image | relative_url }}" class="w-100" />
+        <p class="post-meta caption mt-2 mb-1">{{ post.author }} | {{ post.date | date: site.date_format }}</p>
+        <h2 class="mt-0">{{ post.title }}</h2>
         <p class="post-summary">
           {% if post.summary %}
             {{ post.summary }}
@@ -17,7 +28,10 @@ permalink: /blog/
             {{ post.excerpt }}
           {% endif %}
         </p>
+        <p><a href="{{ post.url | prepend: site.baseurl }}" class="forward-link post-link">Learn More <i class="align-middle material-icons">arrow_forward</i></a></p>
       </div>
     {% endfor %}
   </div>
+  <hr class="light-yellow" />
+  <div class="text-center w-100"><a id="load-more" class="btn btn-primary" href="#">Load More</a></div>
 </div>

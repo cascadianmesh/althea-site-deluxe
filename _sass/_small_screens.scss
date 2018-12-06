@@ -1,0 +1,58 @@
+@include media-breakpoint-down(sm) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-left: 10px; /* text spills out the left side of its container without this for some reason */
+  } 
+
+  h2 {
+    font-size: 30px;
+  } 
+
+  h3 {
+    font-size: 20px;
+  } 
+
+  .btn-secondary {
+    border-width: 2px;
+  } 
+
+  .card-text {
+    font-size: 16px;
+  } 
+
+  .forward-link {
+    font-size: 16px;
+  } 
+
+  .container {
+    padding: 15px;
+  } 
+
+  .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    padding: 35px;
+  } 
+
+  .navbar {
+    padding: 0;
+  } 
+
+  .skinny {
+    padding: 35px;
+  } 
+
+  .gallery {
+    width: 600px;
+  } 
+
+  .map-details {
+    height: 580px;
+  } 
+
+  .get-involved p {
+    max-width: 360px;
+  } 
+}

@@ -2,6 +2,8 @@
 title: "Live demo video"
 layout: plain-page
 summary: "We’ve been hard at work getting our hardware demo polished. It consists of 10 Raspberry Pi’s, running our extension to the Babel routing protocol that lets it route according to price as well as quality."
+image: casamarado-blog.jpg
+author: Jehan Tremback
 ---
 
 

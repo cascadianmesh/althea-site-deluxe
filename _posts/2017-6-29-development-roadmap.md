@@ -2,6 +2,8 @@
 layout: plain-page
 title:      Development Roadmap
 summary:    "We are developing Althea incrementally over several stages. The first couple stages are not anywhere near the full capabilities that Althea will have. They are not even mesh networks. However, developing software in an incremental manner lets us test and prove out various elements of the system continously."
+author: Jehan Tremback
+image: clatskanie-blog.jpg
 ---
 
 We are developing Althea incrementally over several stages. The first couple stages are not anywhere near the full capabilities that Althea will have. They are not even mesh networks. However, developing software in an incremental manner lets us test and prove out various elements of the system continously. Most development is happening in the [physical-node](https://github.com/althea-mesh/physical-node) and [exit-node](https://github.com/althea-mesh/exit-node) repos. These repos will also pull in various daemons that we are creating to run the network.

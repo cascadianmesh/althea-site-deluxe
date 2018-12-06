@@ -1,455 +1,37 @@
-.navbar {
-    padding-left: 0;
-    padding-right: 0;
-}
+body {
+  background: $light-tan;
+  font-family: "LL Akkurat Regular Web";
+  font-size: 20px;
+} 
 
-.jumbotron {
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-
-.rounded-button-bar {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-
-    .line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-
-        div {
-            background: $black;
-            height: 2px;
-            position: relative;
-            top: 31px;
-            width: 100%;
-        }
-    }
-
-    .item {
-        display: inline-block;
-        z-index: 1;
-        cursor: pointer;
-
-        .button {
-            height: 64px;
-            width: 64px;
-            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
-            border-radius: 999999px;
-            background: $white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 5px;
-
-            &.active {
-                background: $blue;
-            }
-        }
-    }
-}
-
-@mixin small-emphasis {
-    text-transform: uppercase;
-    font-size: $font-size-sm;
-    font-weight: 500;
-    letter-spacing: 0.86px;
-}
-
-.small-emphasis {
-    @include small-emphasis;
-}
-
-.form-group {
-    label {
-        @include small-emphasis;
-
-        margin-bottom: $spacer * 0.1;
-    }
-}
-
-.btn-light {
-    background-color: $white;
-}
-
-.section {
-    padding-bottom: 5.5rem;
-}
+a {
+  color: black;
+} 
 
 h1 {
-    margin-bottom: $spacer * 1.5;
+  font-size: 70px;
+  letter-spacing: 1px;
+  line-height: 75px;
+} 
+
+h2 {
+  font-size: 42px;
+} 
+
+h3 {
+  font-size: 32px;
 }
 
-.footer-list {
-    li {
-        a {
-            color: $light;
-        }
-
-        margin-bottom: map-get($spacers, 1);
-    }
-}
-
-.footer-label {
-    color: $white;
-    opacity: .6;
-}
-
-.case-study {
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    min-height: 500px;
-
-    .blurb {
-        text-shadow: 0px 2px 1px $white, 0px -2px 1px $white, 2px 0px 1px $white, -2px 0px 1px $white, -2px -2px 1px $white, 2px -2px 1px $white, -2px 2px 1px $white, 2px 2px 1px $white;
-    }
-
-    @include media-breakpoint-down(sm) {
-        .blurb {
-            font-size: 1.4rem;
-        }
-    }
-
-
-    .card {
-        border: 1px solid #979797 !important;
-    }
-
-    .equipment-pic {
-        background-repeat: no-repeat;
-        background-position: center;
-        -webkit-background-size: contain;
-        background-size: contain;
-        width: 7rem;
-        height: 4.5rem;
-    }
-}
-
-@include media-breakpoint-down(sm) {
-    h1 {
-        font-size: 2rem;
-    }
-}
-
-
-.page {
-    h1, h2, h3, h4 {
-        margin: 1.414em 0 0.5em;
-        line-height: 1.2;
-    }
-
-    h1 {
-        margin-top: 0;
-        font-size: 3.157em;
-    }
-
-    h2 {
-        font-size: 2.369em;
-    }
-
-    h3 {
-        font-size: 1.777em;
-    }
-
-    h4 {
-        font-size: 1.333em;
-    }
-
-    small, .font_small {
-        font-size: 0.75em;
-    }
-
-    p, h1, h2, h3, h4, ul, table, img {
-        max-width: 50em;
-    }
-}
-
-@font-face {
-    font-family: "cmu_serif";
-    src: url("../fonts/cmunti-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "cmu_serif";
-    src: url("../fonts/cmunrm-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "cmu_serif";
-    src: url("../fonts/cmunbx-webfont.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "cmu_mono";
-    src: url("../fonts/cmunbtl-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
-    src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/MaterialIcons-Regular.woff) format("woff"), url(../fonts/MaterialIcons-Regular.ttf) format("truetype");
-}
-
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px; /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-}
-
-.paper {
-    font-size: 18px;
-    color: #444;
-    font-family: "cmu_serif", serif;
-    font-weight: 300;
-
-    // margin: 0 auto;
-    max-width: 45rem;
-    line-height: 1.45;
-    padding: 0.25rem;
-
-    @media print {
-        *,
-        *:before,
-        *:after {
-            background: transparent !important;
-            color: #000 !important;
-            box-shadow: none !important;
-            text-shadow: none !important;
-        }
-
-        a,
-        a:visited {
-            text-decoration: underline;
-        }
-
-        a[href]:after {
-            content: " (" attr(href) ")";
-        }
-
-        abbr[title]:after {
-            content: " (" attr(title) ")";
-        }
-
-        a[href^="#"]:after,
-        a[href^="javascript:"]:after {
-            content: "";
-        }
-
-        pre,
-        blockquote {
-            border: 1px solid #999;
-            page-break-inside: avoid;
-        }
-
-        thead {
-            display: table-header-group;
-        }
-
-        tr,
-        img {
-            page-break-inside: avoid;
-        }
-
-        img {
-            max-width: 100% !important;
-        }
-
-        p,
-        h2,
-        h3 {
-            orphans: 3;
-            widows: 3;
-        }
-
-        h2,
-        h3 {
-            page-break-after: avoid;
-        }
-    }
-
-    pre,
-    code {
-        font-family: "cmu_mono", monospace;
-    }
-
-    pre {
-        padding: 0.5rem;
-        line-height: 1.25;
-        overflow-x: scroll;
-    }
-
-    a,
-    a:visited {
-        color: #3498db;
-        border-bottom: none;
-        text-decoration: underline;
-    }
-
-    a:hover,
-    a:focus,
-    a:active {
-        color: #2980b9;
-    }
-
-    .modest-no-decoration {
-        text-decoration: none;
-    }
-
-    p,
-    .modest-p {
-        font-size: 1rem;
-        margin-bottom: 1.3rem;
-    }
-
-    h1,
-    .modest-h1,
-    h2,
-    .modest-h2,
-    h3,
-    .modest-h3,
-    h4,
-    .modest-h4 {
-        margin-top: 1.414rem;
-        margin-bottom: .5rem;
-        font-weight: inherit;
-        line-height: 1.42;
-    }
-
-    // font-size: 2.827rem;
-
-    h1,
-    .modest-h1 {
-        // margin-top: 0;
-        // font-size: 3.998rem;
-        // font-size: 2.827rem;
-        font-size: 1.999rem;
-    }
-
-    h2,
-    .modest-h2 {
-        // font-size: 2.827rem;
-        // font-size: 1.999rem;
-        font-size: 1.414rem;
-    }
-
-    h3,
-    .modest-h3 {
-        // font-size: 1.999rem;
-        // font-size: 1.414rem;
-        font-size: 1.121rem;
-    }
-
-    h4,
-    .modest-h4 {
-        // font-size: 1.414rem;
-        // font-size: 1.121rem;
-        font-size: 1rem;
-    }
-
-    h5,
-    .modest-h5 {
-        // font-size: 1.121rem;
-        // font-size: 1rem;
-        font-size: 1rem;
-    }
-
-    h6,
-    .modest-h6 {
-        font-size: 0.88rem;
-    }
-
-    small,
-    .modest-small {
-        font-size: 0.707em;
-    }
-
-    /* https://github.com/mrmrs/fluidity */
-
-    img,
-    canvas,
-    iframe,
-    video,
-    svg,
-    select,
-    textarea {
-        max-width: 70%;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "cmu_serif", serif;
-        font-weight: 700;
-    }
-
-    blockquote {
-        border-left: 8px solid #fafafa;
-        padding: 1rem;
-    }
-
-    pre,
-    code {
-        background-color: #fafaf9;
-        color: #7d4b62;
-    }
-}
-
-.card-tab {
-    cursor: pointer;
-
-    &.active {
-        background-color: $primary;
-    }
-}
-
-.font-size-36 {
-    font-size: 36px !important;
-}
+.btn {
+  font-size: 20px;
+  line-height: 28px;
+} 
 
 .case-studies {
   background: $light-yellow;
   overflow: hidden;
 } 
+
 
 .view-case-study {
   border-radius: 100px;
@@ -475,15 +57,14 @@ h1 {
 } 
 
 .material-icons.small {
-  font-size: 18px;
+  font-size: 14px;
 } 
 
-.gallery-nav {
+.gallery-nav a {
   color: #6B6E53;
-  cursor: pointer;
 } 
 
-.gallery-nav.active {
+.gallery-nav a:hover {
   color: $light-yellow;
 } 
   
@@ -531,15 +112,17 @@ h4 {
   width: 30px;
 } 
 
-.active.category {
-  color: white;
-  border-color: #E84658; 
-} 
-
 .category {
   border-bottom: 3px solid #4A6666;
   color: #6B797D;
   cursor: pointer;
+  font-size: 24px;
+  font-family: "LL Akkurat Bold Web";
+} 
+
+.active.category {
+  color: white;
+  border-color: #E84658; 
 } 
 
 .lead-header, .follow-header {
@@ -589,8 +172,12 @@ figcaption.underline {
   border-bottom: 3px solid $light-yellow;
 }
 
+.caption {
+  font-size: 17px;
+} 
+
 .tiny-caption {
-  font-size: 14px;
+  font-size: 16px;
 } 
 
 .subheading {
@@ -603,12 +190,15 @@ figcaption.underline {
 } 
 
 .case-study p a {
-  color: black;
   text-decoration: underline;
 } 
 
+.section {
+  padding-bottom: 90px;
+} 
+
 .top-section {
-  padding-top: 5.5em;
+  padding-top: 90px;
 } 
 
 .location {
@@ -623,6 +213,7 @@ figcaption.underline {
   height: 768px;
   position: absolute;
   right: 0px;
+  z-index: 1;
 } 
 
 .map.blank {
@@ -637,61 +228,17 @@ figcaption.underline {
   background-image: url(../images/medellin_map.png);
 }
 
-@media (max-width: 992px) {
-  .lead-header, .follow-header {
-    font-size: 2rem;
-  } 
-
-  .subheading {
-    color: $dark-gray;
-    text-transform: uppercase;
-    font-family: "LL Akkurat Light Web";
-    font-weight: 100;
-    font-size: 14px;
-    margin-bottom: 1rem;
-  } 
-
-  hr.stretchy {
-    right: 97%;
-    top: 80px;
-  } 
-
-  .casamarado {
-    min-width: 0px;
-    height: 200px;
-    width: 100%;
-  } 
-
-  .clatskanie {
-    width: 100%;
-    height: 450px;
-  }
-
-  .section {
-    padding-bottom: 1em;
-  } 
-
-  .top-section {
-    padding-top: 1em;
-  } 
-
-  .learn-more {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  } 
-
-  .map {
-    background-position: right;
-    background-size: cover;
-    height: 40vh;
-    width: 100%;
-    position: relative;
-  } 
-}
-
 .bg-yellow {
   background: $light-yellow;
   color: #433726;
+
+  a {
+    color: #433726;
+  }
+
+  a.btn-primary {
+    color: white;
+  }
 } 
 
 .bg-dark {
@@ -710,11 +257,6 @@ figcaption.underline {
   a {
     color: black;
   }
-
-  a.btn-primary {
-    border-radius: 100px;
-    color: white;
-  } 
 } 
 
 .forward-link {
@@ -723,14 +265,8 @@ figcaption.underline {
   font-weight: bold;
 } 
 
-body {
-  background: $light-tan;
-  font-size: 20px;
-} 
 
 .map-details {
-  font-size: 18px;
-  letter-spacing: 1px;
   height: 768px;
 
   a.btn-primary {
@@ -754,6 +290,9 @@ hr.light-yellow {
 .btn-primary {
   color: white;
   background: $blue;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
 } 
 
 .btn-secondary {
@@ -762,41 +301,6 @@ hr.light-yellow {
   background: white;
 } 
 
-h1 {
-  font-size: 72px;
-} 
-
-h2 {
-  font-size: 42px;
-} 
-
-h3 {
-  font-size: 24px;
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 40px;
-  } 
-
-  h3 {
-    font-size: 32px;
-  }
-
-  .btn-secondary {
-    border-width: 2px;
-  } 
-}
-
-@media (min-width: 992px) {
-  .get-involved p {
-    max-width: 420px;
-  } 
-}
 
 .get-involved {
   text-align: center;
@@ -818,115 +322,13 @@ h3 {
   min-width: 180px;
 } 
 
-.form-group label {
-  font-size: 16px;
-  padding-bottom: 8px;
-  text-transform: none;
+.tabs h3 {
+  font-size: 24px;
 } 
 
 .gallery {
   position: absolute; 
-  bottom: 0; 
-  width: 900px
 }
-
-@include media-breakpoint-down(sm) {
-  h1 {
-    padding-left: 10px; /* text spills out the left side of its container without this for some reason */
-  } 
-
-  h2 {
-    font-size: 30px;
-  } 
-
-  h3 {
-    font-size: 20px;
-  } 
-
-  .card-text {
-    font-size: 16px;
-  } 
-
-  .forward-link {
-    font-size: 16px;
-  } 
-
-  .container {
-    padding: 15px;
-  } 
-
-  .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
-    padding: 35px;
-  } 
-
-  .navbar {
-    padding: 0;
-  } 
-
-  .skinny {
-    padding: 35px;
-  } 
-
-  .gallery {
-    width: 600px;
-  } 
-
-  .map-details {
-    height: 580px;
-  } 
-
-  .get-involved p {
-    max-width: 360px;
-  } 
-}
-
-@include media-breakpoint-up(md) {
-  h3 {
-    font-size: 30px;
-  } 
-
-  .card-text {
-    font-size: 16px;
-  } 
-
-  .descriptions p {
-    max-width: 420px;
-  } 
-
-  p {
-    max-width: 560px;
-  } 
-}
-
-@include media-breakpoint-up(lg) {
-  p {
-    max-width: 505px;
-  } 
-
-  .get-involved p {
-    max-width: 520px;
-  } 
-
-  .get-involved .card p {
-    max-width: 420px;
-  } 
-
-  .news h3 {
-    font-size: 30px;
-  } 
-
-  h3 {
-    font-size: 24px;
-  } 
-
-  .about {
-    height: 450px;
-  } 
-}
-
-a {
-  color: black;
-} 
 
 .team p {
   max-width: 320px;
@@ -935,4 +337,29 @@ a {
 .switcher {
   border-bottom: 4px solid $red;
   cursor: pointer;
+} 
+
+.navbar .btn {
+  padding-left: 25px;
+  padding-right: 25px;
+} 
+
+.navbar .btn-primary {
+  margin-left: 25px;
+} 
+
+.posts h2 {
+  font-size: 30px;
+} 
+
+.footer a {
+  color: white;
+} 
+
+.footer-label {
+  font-family: "LL Akkurat Bold Web";
+} 
+
+.select-a-role {
+  font-family: "LL Akkurat Bold Web";
 } 
