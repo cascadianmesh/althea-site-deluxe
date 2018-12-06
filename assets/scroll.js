@@ -16,9 +16,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
       $('#images').css('top', wh / 2 - ih / 2)
       $('#images').css('left', offset.left + 12)
       $('.container img').css('visibility', 'hidden')
-    } else {
+    } else if (pos <= start) {
+      $('.container img:first').css('visibility', 'visible')
       $('#images').hide()
-      $('.container img').css('visibility', 'visible')
+    } else {
+      $('.container img:last').css('visibility', 'visible')
+      $('#images').hide()
     } 
 
     let norm = (1 - (end - pos) / (end -start)) * 8
