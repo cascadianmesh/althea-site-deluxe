@@ -22,6 +22,14 @@ h3 {
   font-size: 32px;
 }
 
+h4 {
+  color: $gray;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+} 
+
 .btn {
   font-size: 20px;
   line-height: 28px;
@@ -90,17 +98,6 @@ h3 {
   height: 87%;
 }
 
-h3 {
-  font-size: 18px;
-} 
-
-h4 {
-  color: $gray;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bolder;
-  letter-spacing: 3px;
-} 
 
 .map-details .arrow {
   background: #002D39;
@@ -198,7 +195,7 @@ figcaption.underline {
 } 
 
 .top-section {
-  padding-top: 90px;
+  padding-top: 50px;
 } 
 
 .location {
@@ -210,7 +207,7 @@ figcaption.underline {
   background-position: right;
   background-size: cover;
   width: 45vw;
-  height: 768px;
+  height: 809px;
   position: absolute;
   right: 0px;
   z-index: 1;
@@ -267,7 +264,7 @@ figcaption.underline {
 
 
 .map-details {
-  height: 768px;
+  height: 809px;
 
   a.btn-primary {
     border-radius: 100px;
@@ -362,4 +359,9 @@ hr.light-yellow {
 
 .select-a-role {
   font-family: "LL Akkurat Bold Web";
+} 
+
+.navbar-brand {
+  font-size: 32px;
+  font-weight: bold;
 } 

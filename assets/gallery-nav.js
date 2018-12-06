@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   $('.gallery-nav a').click(function(e) {
     e.preventDefault()
     let left = $('.gallery').css('left').replace('px', '')
-    let adjust = 525
+    let adjust = $('.gallery img').outerWidth(true)
+    console.log('nihao')
+    console.log(adjust)
 
     if ($(this).attr('id') === 'prev') {
       if (count <= 0) return

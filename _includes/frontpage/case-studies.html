@@ -25,8 +25,8 @@
             <div href="#rural" class="flex-fill category" data-toggle="tab" role="tab" aria-controls="rural" aria-selected="true">Rural Area</div>
           </div>
 
-          <div class="tab-content descriptions mb-3">
-            <div class="tab-pane active show w-100" id="urban">
+          <div class="tab-content descriptions mb-4 d-flex">
+            <div class="tab-pane active show w-100 my-auto" id="urban">
               <p class="mb-3">
               A combination of wireless and wired connections can be used to connect nodes in urban areas with varied terrain, like the red_medellin subnet in Medellin, Colombia. 
               </p>
@@ -34,7 +34,7 @@
               <a class="btn btn-primary px-4 py-3 px-lg-3 py-lg-2" href="{{ '/medellin' | relative_url }}" role="button">View Case Study</a>
             </div>
 
-            <div class="tab-pane w-100" id="rural">
+            <div class="tab-pane w-100 my-auto" id="rural">
               <p>
               Legacy ISPs aren’t incentivized to offer quality — or any — internet access to remote, sparsely-populated areas. Althea makes it possible for places like Clatskanie, Oregon to build and manage their own networks.
               </p>
@@ -43,7 +43,7 @@
             </div>
           </div>
 
-          <div class="gallery-nav d-none d-sm-flex" style="max-width: 440px">
+          <div class="gallery-nav d-none d-sm-flex">
             <div>
               <a href="#" id="prev"><i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i></a>
             </div>
@@ -54,7 +54,7 @@
 
           <div class="d-flex section gallery">
             <div class="gallery-item">
-              {% include responsive-image.html class="w-100" image="drums" ext="jpg" alt="Playing Drums" %}
+              <img src="{{ '/images/gallery_01.jpg' | relative_url }}" alt="Antenna Dish" />
               <div class="d-flex mt-2"> 
                 <div>
                   <span class="tiny-caption">A long-range antenna connects a node</span>
@@ -66,7 +66,7 @@
             </div>
 
             <div class="gallery-item">
-              {% include responsive-image.html class="w-100" image="dish" ext="jpg" alt="Antenna Dish" %}
+              <img src="{{ '/images/gallery_02.jpg' | relative_url }}" alt="Playing Drums" />
               <div class="d-flex mt-2"> 
                 <div>
                   <span class="tiny-caption">A long-range antenna connects a node</span>
