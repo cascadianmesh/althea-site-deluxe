@@ -12,27 +12,21 @@
   } 
 
   .lead-header, .follow-header {
-    font-size: 2rem;
+    font-size: 56px;
+    line-height: 56px;
   } 
 
   .subheading {
     color: $dark-gray;
     text-transform: uppercase;
-    font-family: "LL Akkurat Light Web";
-    font-weight: 100;
-    font-size: 14px;
-    margin-bottom: 1rem;
+    font-family: "LL Akkurat Bold Web";
+    font-size: 18px;
   } 
 
   hr.stretchy {
-    right: 97%;
-    top: 80px;
-  } 
-
-  .casamarado {
-    min-width: 0px;
-    height: 200px;
-    width: 100%;
+    right: 100%;
+    top: 122px;
+    margin-right: 20px;
   } 
 
   .clatskanie {
@@ -41,8 +35,12 @@
   }
 
   .learn-more {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    h2 {
+      font-family: "LL Akkurat Bold Web";
+    } 
   } 
 
   .map {
@@ -52,6 +50,7 @@
     width: 100%;
     position: relative;
   } 
+
   h3 {
     font-size: 32px;
   } 
@@ -82,14 +81,6 @@
     } 
   } 
 
-  p {
-    max-width: 560px;
-  } 
-
-  .category {
-    font-size: 32px;
-  } 
-
   .tabs h3 {
     font-size: 32px;
   } 
@@ -112,6 +103,10 @@
   .gallery-item {
     margin-right: 25px;
     width: 555px;
+
+    img {
+      width: 560px;
+    } 
   } 
 
   #case-studies {
@@ -171,11 +166,33 @@
     padding: 20px 80px;
   } 
 
-  .map-details p {
-    max-width: 481px;
-  } 
-
   .tabs {
     max-width: 620px;
+  } 
+
+  .casamarado, .offgrid {
+    width: 843px;
+  } 
+
+  .offgrid {
+    background-image: url(../images/clatskanie_next-720.jpg);
+    height: 670px;
+  } 
+
+  .slow-bandwidth h2 {
+    max-width: 431px;
+  } 
+
+  .red-medellin h2 {
+    max-width: 600px;
+  } 
+
+  .lm-1 { max-width: 331px; }
+  .lm-2 { max-width: 332px; }
+  .lm-3 { max-width: 331px; }
+  .lm-4 { max-width: 334px; }
+
+  .clatskanie-next {
+    padding-top: 150px;
   } 
 }
