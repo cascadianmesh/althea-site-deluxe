@@ -53,7 +53,7 @@ h4 {
 
 .next {
   font-weight: normal;
-  font-family: 'LL Akkurat Regular Web';
+  font-family: 'LL Akkurat Bold Web';
 } 
  
 .learn-more {
@@ -149,19 +149,20 @@ hr.stretchy {
   top: 300px;
 } 
 
-.bleed-right {
+.casamarado {
+  background-image: url(../images/casamarado_lead.jpg);
   background-position: right;
   background-size: cover;
-  min-width: 826px;
+  min-width: 50vw;
   height: 670px;
 } 
 
-.casamarado {
-  background-image: url(../images/casamarado-lead.jpg);
-} 
-
 .offgrid {
-  background-image: url(../images/clatskanie.jpg);
+  background-image: url(../images/clatskanie_next.jpg);
+  background-position: left;
+  background-size: cover;
+  min-width: 50vw;
+  height: 673px;
 }
 
 figcaption {

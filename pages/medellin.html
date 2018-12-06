@@ -4,8 +4,10 @@ title: Althea
 permalink: /medellin
 ---
 
+<script src="{{ '/assets/gallery-nav.js' | relative_url }}"></script>
+
 <div class="case-study">
-  <div class="container top-section">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-sm-6" style="overflow: visible">
         <div class="d-flex flex-column justify-content-center h-100 pl-2">
@@ -62,8 +64,8 @@ permalink: /medellin
 
   <div class="container section red-medellin">
     <div class="row">
-      <div class="col-12 col-sm-5">
-        <h2>Althea: Faster, Cheaper Internet <br /> &mdash; Owned by the people using it</h2>
+      <div class="col-12 col-sm-6">
+        <h2>Althea: Faster, Cheaper Internet &mdash; Owned by the people using it</h2>
       </div>
       <div class="col-12 col-sm-6 p-0">
         <p>
@@ -107,7 +109,7 @@ permalink: /medellin
             </div>
           </div>
 
-          <div class="tab-content col-12 col-md-12 col-md-8 descriptions" style="min-height: 200px;">
+          <div class="tab-content pl-0 col-12 col-md-12 col-md-8 descriptions" style="min-height: 200px;">
             <p class="tab-pane active show w-100" id="gateway">
             Red_medellin has partnered with local recording studio Son Bata to buy commercial bandwidth and beam it to Comuna 13. This connection will travel 1.6km by point-to-point radio to a school that sits on a hill above the neighborhood, with a great line of sight to many of the houses and buildings nearby.
             </p>
@@ -119,36 +121,36 @@ permalink: /medellin
             </p>
           </div>
 
-          <div class="d-none d-md-flex">
+          <div class="gallery-nav d-none d-sm-flex">
             <div>
-              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+              <a href="#" id="prev"><i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i></a>
             </div>
             <div class="ml-auto">
-              <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
+              <a href="#" id="next"><i class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i></a>
             </div>
           </div>
 
-          <div class="d-flex section">
-            <div class="col-12 col-md-6">
-              {% include responsive-image.html class="w-100" image="drums" ext="jpg" alt="Playing Drums" %}
-              <div class="d-flex mt-2"> 
+          <div class="d-flex section gallery">
+            <div class="gallery-item">
+              <img src="{{ '/images/gallery_01.jpg' | relative_url }}" alt="Antenna Dish" />
+              <div class="d-flex mt-1 mt-sm-2"> 
                 <div>
                   <span class="tiny-caption">A long-range antenna connects a node</span>
                 </div>
-                <div class="d-none d-md-block ml-auto">
-                  <i class="material-icons small">search</i>
+                <div class="ml-auto d-none d-sm-flex">
+                  <i class="material-icons small mt-1">search</i>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6">
-              {% include responsive-image.html class="w-100" image="dish" ext="jpg" alt="Antenna Dish" %}
-              <div class="d-none d-md-flex mt-2"> 
+            <div class="gallery-item">
+              <img src="{{ '/images/gallery_02.jpg' | relative_url }}" alt="Playing Drums" />
+              <div class="d-flex mt-1 mt-sm-2"> 
                 <div>
-                  <span>A long-range antenna connects a node</span>
+                  <span class="tiny-caption">A long-range antenna connects a node</span>
                 </div>
-                <div class="ml-auto">
-                  <i class="material-icons small">search</i>
+                <div class="ml-auto d-none d-sm-flex">
+                  <i class="material-icons small mt-1">search</i>
                 </div>
               </div>
             </div>
@@ -158,13 +160,13 @@ permalink: /medellin
     </div>
   </div>
   
-  <div class="learn-more mb-4">
+  <div class="learn-more">
     <div class="container">
-      <h1 class="mb-sm-5">Learn more</h1>
+      <h2 class="mb-sm-5">Learn more</h2>
       <div class="row">
         <div class="col-sm-3">
           <img class="mb-2" src="{{ '/images/book-open-variant.svg' | relative_url }}" />
-          <p><b>Read the full story</b> about how we helped red_medellin deploy Althea on Medium.</p>
+          <p style="max-width: 240px"><b>Read the full story</b> about how we helped red_medellin deploy Althea on Medium.</p>
           <div class="d-sm-none mb-4">
             <i class="material-icons arrow">arrow_forward</i>
             <hr class="m-0" />
@@ -172,7 +174,7 @@ permalink: /medellin
         </div>
         <div class="col-sm-3">
           <i class="material-icons mb-2">open_in_new</i><br />
-          <p><b>Visit the red_medellin website</b> for regular updates on their progress and more information.</p>
+          <p style="max-width: 248px"><b>Visit the red_medellin website</b> for regular updates on their progress and more information.</p>
           <div class="d-sm-none mb-4">
             <i class="material-icons arrow">arrow_forward</i>
             <hr class="m-0" />
@@ -180,7 +182,7 @@ permalink: /medellin
         </div>
         <div class="col-sm-3">
           <i class="material-icons mb-2">send</i><br />
-          <p><b>Send us a message</b> with any questions or to get connected with the red_medellin subnet.</p>
+          <p style="max-width: 248px"><b>Send us a message</b> with any questions or to get connected with the red_medellin subnet.</p>
           <div class="d-sm-none mb-4">
             <i class="material-icons arrow">arrow_forward</i>
             <hr class="m-0" />
@@ -188,7 +190,7 @@ permalink: /medellin
         </div>
         <div class="col-sm-3">
           <i class="material-icons mb-2">school</i><br />
-          <p><b>Check out the How it Works page</b> to find out more about the Althea ecosystem.</p>
+          <p style="max-width: 250px"><b>Check out the How it Works page</b> to find out more about the Althea ecosystem.</p>
           <div class="d-sm-none">
             <i class="material-icons arrow">arrow_forward</i>
             <hr class="m-0" />
@@ -216,10 +218,10 @@ permalink: /medellin
     </div>
   </div>
 
-  <div class="container section top-section">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-sm-6" style="overflow: visible">
-        <div class="d-flex flex-column justify-content-center h-100">
+        <div class="d-flex flex-column justify-content-center h-100 pl-2">
           <div class="h-100 d-flex flex-column justify-content-end">
             <img src="{{ '/images/location.jpg' | relative_url }}" class="location" />
             <div class="subheading"><span class="next" >Next</span> &nbsp; Case Study &mdash; 02</div>
@@ -234,8 +236,7 @@ permalink: /medellin
         <hr class="stretchy" />
       </div>
       <div class="col-12 col-sm-6 px-0">
-        <div class="d-none d-sm-block clatskanie"></div>
-        {% include responsive-image.html class="w-100" image="clatskanie" ext="jpg" alt="Clatskanie" %}
+        <div class="d-none d-sm-block bleed-right offgrid"></div>
       </div>
     </div>
   </div>

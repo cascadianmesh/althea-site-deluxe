@@ -123,10 +123,15 @@
   .red-medellin {
     p {
       max-width: 576px;
+      padding-top: 15px;
     } 
 
-    h1 {
+    h2 {
       max-width: 350px;
     } 
   }  
+
+  .case-study .category {
+    font-size: 20px;
+  } 
 }
