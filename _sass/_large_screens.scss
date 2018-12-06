@@ -1,4 +1,8 @@
 @include media-breakpoint-up(lg) {
+  h2 {
+    letter-spacing: 1px;
+  } 
+
   .lead {
     .container {
       padding-top: 73px;
@@ -68,7 +72,8 @@
 
   iframe {
     height: 323px;
-    width: 622px;
+    width: 602px;
+    padding-right: 20px;
   } 
 
   .core-tech {
@@ -81,5 +86,10 @@
 
   .select-a-role {
     max-width: 464px;
+  } 
+
+  .core-tech .btn {
+    font-size: 16px;
+    letter-spacing: 1px;
   } 
 }
