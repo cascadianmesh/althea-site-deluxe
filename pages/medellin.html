@@ -5,26 +5,38 @@ permalink: /medellin
 ---
 
 <script src="{{ '/assets/gallery-nav.js' | relative_url }}"></script>
+<style>
+@media (max-width: 768px) {
+  .navbar {
+    background: white !important;
+  } 
+}
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .navbar {
+    background: #FCFAF6 !important;
+  } 
+}
+</style>
 
 <div class="case-study">
-  <div class="container pt-sm-4 pt-lg-0">
+  <div class="skinny container pt-sm-4 pt-lg-0">
     <div class="row">
-      <div class="col-12 col-lg-6 d-flex flex-column pl-0" style="overflow: visible">
+      <div class="col-12 col-lg-6 d-flex flex-column pl-sm-0" style="overflow: visible">
         <div class="d-flex flex-column justify-content-center h-100">
           <div class="h-100 d-flex flex-column justify-content-end">
             <img src="{{ '/images/location.jpg' | relative_url }}" class="location" />
             <div class="subheading pb-2">Case Study &mdash; 01</div>
           </div>
-          <h1 class="lead-header">Medellin <span class="follow-header">Colombia</span></h1> 
+          <h1 class="lead-header pl-0">Medellin <span class="follow-header">Colombia</span></h1> 
           <div class="d-none d-lg-block h-100"></div>
         </div>
         <hr class="stretchy" />
       </div>
-      <div class="col-12 col-lg-6 px-0" style="height: 670px">
+      <div class="col-12 col-lg-6 px-0 bleed">
         <div class="d-none d-sm-block casamarado"></div>
       </div>
     </div>
-    <div class="row">
+    <div class="d-none d-sm-block row">
       <div class="col-12 col-lg-6 offset-lg-6">
         <figcaption class="tiny-caption text-right underline py-2">
           A long-range antenna connects a node to the backhaul in Communa 13.
@@ -33,9 +45,11 @@ permalink: /medellin
     </div>
   </div>
 
-  <div class="container section top-section slow-bandwidth">
+  <div class="d-sm-none casamarado"></div>
+
+  <div class="skinny container section top-section slow-bandwidth">
     <div class="row">
-      <h2 class="col-12 col-lg-5 pt-sm-4 pt-lg-0 pb-2">Legacy ISP: Slow or No Bandwidth</h2>
+      <h2 class="col-12 col-lg-5 pt-sm-4 pt-lg-0 pb-sm-2">Legacy ISP: Slow or No Bandwidth</h2>
       <div class="col-12 col-lg-6">
         In many parts of Medellin, internet connections are spotty, slow, expensive, or non-existent. The subnet organizers at <a href="https://www.redmedellin.com/">red_medellin</a> are deploying their first Althea network in the hillside community neighborhood Communa 13, where a small number of high-speed, line-of-sight connections can bring better bandwidth to homes, schools, and businesses. Read our <a href="https://medium.com/althea-mesh/althea-in-medellin-c39f1416913e">blog post</a> about helping them deploy Althea in Medellin.
       </div>
@@ -60,7 +74,7 @@ permalink: /medellin
     </div>
   </div>
 
-  <div class="container section red-medellin">
+  <div class="skinny container section red-medellin">
     <div class="row">
       <div class="col-12 col-lg-6 px-0 pb-2">
         <h2>Althea: Faster, Cheaper Internet &mdash; Owned by the people using it</h2>
@@ -78,7 +92,7 @@ permalink: /medellin
   </div>
 
   <div class="w-100 text-center">
-    <h4 class="mb-4">Technology &amp; Topology</h4>
+    <h4 class="mb-2 mb-sm-4">Technology &amp; Topology</h4>
   </div>
 
   <img class="d-none d-sm-block d-lg-none" src="{{ '/images/medellin_gateway-768.jpg' | relative_url }}" style="width: 966px" />
@@ -93,7 +107,7 @@ permalink: /medellin
 
         <div class="map-details col-12 col-lg-7 pl-lg-5 pt-lg-3">
           <div class="arrow d-none d-lg-block"></div>
-          <h4 class="d-none d-lg-block select-node pt-4 text-center text-md-left">Select Node Type:</h4>
+          <h4 class="d-sm-none d-lg-block select-node pt-sm-4 text-center text-md-left">Select Node Type:</h4>
           <div class="pt-sm-4 pt-lg-0">
             <div class="w-100 my-4 d-none d-md-flex nav">
               <div href="#gateway" class="flex-fill active category" data-toggle="tab" role="tab" aria-controls="gateway" aria-selected="true">Gateway Node</div>
@@ -102,11 +116,11 @@ permalink: /medellin
             </div>
             <div class="d-flex d-md-none justify-content-center active category text-center mb-2">
               <div>
-                <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_back</i>
+                <i class="material-icons mb-2 gallery-nav">arrow_back</i>
               </div>
               <h3 class="flex-fill">Gateway Node</h3>
               <div class="ml-auto">
-                <i class="material-icons mb-2 font-size-14 gallery-nav">arrow_forward</i>
+                <i class="material-icons mb-2 gallery-nav">arrow_forward</i>
               </div>
             </div>
 
@@ -166,7 +180,7 @@ permalink: /medellin
     <div class="container">
       <h2 class="mb-sm-5">Learn More</h2>
       <div class="row">
-        <div class="col-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <img class="mb-2" src="{{ '/images/book-open-variant.svg' | relative_url }}" />
           <p class="lm-1"><b>Read the full story</b> about how we helped red_medellin deploy Althea on Medium.</p>
           <div class="d-lg-none mb-4">
@@ -174,7 +188,7 @@ permalink: /medellin
             <hr class="m-0" />
           </div>
         </div>
-        <div class="col-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <i class="material-icons mb-2">open_in_new</i><br />
           <p class="lm-2"><b>Visit the red_medellin website</b> for regular updates on their progress and more information.</p>
           <div class="d-lg-none mb-4">
@@ -182,7 +196,7 @@ permalink: /medellin
             <hr class="m-0" />
           </div>
         </div>
-        <div class="col-6 col-lg-3 mt-sm-4 mt-lg-0">
+        <div class="col-12 col-sm-6 col-lg-3 mt-sm-4 mt-lg-0">
           <i class="material-icons mb-2">send</i><br />
           <p class="lm-3"><b>Send us a message</b> with any questions or to get connected with the red_medellin subnet.</p>
           <div class="d-lg-none mb-4">
@@ -190,7 +204,7 @@ permalink: /medellin
             <hr class="m-0" />
           </div>
         </div>
-        <div class="col-6 col-lg-3 mt-sm-4 mt-lg-0">
+        <div class="col-12 col-sm-6 col-lg-3 mt-sm-4 mt-lg-0">
           <i class="material-icons mb-2">school</i><br />
           <p class="lm-4"><b>Check out the How it Works page</b> to find out more about the Althea ecosystem.</p>
           <div class="d-lg-none">
@@ -220,24 +234,26 @@ permalink: /medellin
     </div>
   </div>
 
-  <div class="container clatskanie-next">
+  <div class="skinny container clatskanie-next mt-4 mt-sm-0">
     <div class="row">
       <div class="col-12 col-lg-6 d-flex flex-column pl-0" style="overflow: visible">
         <div class="d-flex flex-column justify-content-center h-100">
           <div class="h-100 d-flex flex-column justify-content-end">
-            <img src="{{ '/images/location.jpg' | relative_url }}" class="location" />
-            <div class="subheading pb-2"><span class="next" >Next</span> &nbsp; Case Study &mdash; 02</div>
+            <img src="{{ '/images/clatskanie_location.jpg' | relative_url }}" class="location" />
+            <div class="subheading pb-2"><span class="d-none d-sm-inline next">Next</span> &nbsp; Case Study &mdash; 02</div>
           </div>
           <h1 class="lead-header">Clatskanie <span class="follow-header">Oregon</span></h1> 
-          <div class="h-100">
+          <div class="d-none d-sm-block h-100">
             <button class="view-case-study px-3 py-2 mt-2">View Case Study</button>
           </div>
         </div>
         <hr class="stretchy" />
       </div>
-      <div class="col-12 col-lg-6 px-0" style="height: 670px">
+      <div class="col-12 col-lg-6 px-0 bleed">
         <div class="d-none d-sm-block offgrid"></div>
       </div>
     </div>
   </div>
+
+  <div class="d-sm-none offgrid"></div>
 </div>

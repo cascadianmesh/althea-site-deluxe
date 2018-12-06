@@ -11,10 +11,23 @@
 
   h2 {
     font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0px;
   } 
 
   h3 {
     font-size: 20px;
+  } 
+
+  .lead-header, .follow-header {
+    font-size: 42px;
+  } 
+
+  .subheading {
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-family: "LL Akkurat Bold Web";
+    font-size: 16px;
   } 
 
   .lead {
@@ -55,7 +68,6 @@
 
   .skinny {
     padding: 35px;
-    padding-top: 0;
   } 
 
   .gallery {
@@ -130,5 +142,81 @@
 
   .select-a-role {
     max-width: 380px;
+  } 
+
+  .case-study {
+    background: white;
+  } 
+
+  hr.stretchy {
+    top: 120px;
+  } 
+
+  .bleed {
+    display: none;
+  } 
+
+  .casamarado {
+    background-image: url(../images/casamarado-400.jpg);
+    height: 302px;
+    width: 400px;
+    position: relative;
+  } 
+
+  .offgrid {
+    background-image: url(../images/clatskanie_next-400.jpg);
+    height: 299px;
+    width: 400px;
+    position: relative;
+  } 
+
+  .slow-bandwidth {
+    h2 {
+      max-width: 260px;
+    } 
+  } 
+
+  .red-medellin {
+    padding-top: 15px;
+  } 
+
+  .category {
+    padding-bottom: 0;
+  } 
+
+  .active.category {
+    border-bottom: 4px solid $red;
+  } 
+
+  .gallery-nav {
+    color: $yellow;
+  } 
+
+  .map-details {
+    h4 {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    } 
+  } 
+
+  #case-studies .container {
+    padding-bottom: 0;
+  } 
+
+  .learn-more {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .arrow {
+      font-size: 24px;
+    } 
+
+    p {
+      margin-bottom: 8px;
+    } 
+  } 
+
+  .clatskanie-next {
+    padding-bottom: 0;
   } 
 }
