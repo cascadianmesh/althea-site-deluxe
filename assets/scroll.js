@@ -12,6 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $('.container img').css('visibility', 'hidden')
     
     if (pos > start && pos < end) {
+      let norm = ((1 - (end - pos) / (end - start)) * 8) + 0.1
+      for (let i = 1; i < 8; i++) {
+        let opacity = norm - i
+        if (opacity >= 0 && (opacity % 1) > 0.5) opacity = 1
+        $(`#img${i+1}`).css('opacity', opacity)
+      } 
+
       $('#images').show()
       $('#images').css('position', 'fixed')
       $('#images').css('top', wh / 2 - ih / 2)
@@ -24,10 +31,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       $('#images').hide()
     } 
 
-    let norm = (1 - (end - pos) / (end -start)) * 8
-    for (let i = 1; i < 8; i++) {
-      $(`#img${i+1}`).css('opacity', norm - i)
-    } 
   })
 
   $('#img1').css('opacity', 1)
