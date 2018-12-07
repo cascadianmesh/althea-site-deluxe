@@ -1,0 +1,202 @@
+@include media-breakpoint-only(md) {
+  .btn {
+    letter-spacing: 0.5px;
+  } 
+
+  .section {
+    padding-bottom: 50px;
+  } 
+
+  .top-section {
+    padding-top: 50px;
+  } 
+
+  .lead-header, .follow-header {
+    font-size: 56px;
+    line-height: 56px;
+  } 
+
+  .subheading {
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-family: "LL Akkurat Bold Web";
+    font-size: 18px;
+  } 
+
+  hr.stretchy {
+    right: 100%;
+    top: 122px;
+    margin-right: 20px;
+  } 
+
+  .clatskanie {
+    width: 100%;
+    height: 450px;
+  }
+
+  .learn-more {
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    h2 {
+      font-family: "LL Akkurat Bold Web";
+    } 
+  } 
+
+  .map {
+    background-position: right;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+  } 
+
+  h3 {
+    font-size: 32px;
+  } 
+
+  .lead {
+    padding-top: 43px;
+    padding-bottom: 50px;
+
+    p {
+      max-width: 351px;
+    } 
+
+    img {
+      width: 388px;
+      position: absolute;
+      left: 500px;
+      bottom: -68px;
+      padding-bottom: 68px;
+      margin-bottom: -68px;
+    } 
+
+    a.btn-primary {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 20px;
+      font-family: "LL Akkurat Light Web";
+      margin-top: 30px;
+    } 
+  } 
+
+  .tabs h3 {
+    font-size: 32px;
+  } 
+
+  .gallery .tab-content {
+    p {
+      margin-top: 60px;
+      max-width: 481px;
+    } 
+  } 
+
+  .tab-pane {
+    min-height: 250px;
+  } 
+
+  .gallery-nav {
+    width: 535px;
+  } 
+
+  .gallery-item {
+    margin-right: 25px;
+    width: 555px;
+
+    img {
+      width: 560px;
+    } 
+  } 
+
+  #case-studies {
+    min-height: 900px;
+  } 
+
+  .the-tech {
+    p {
+      max-width: 270px;
+    } 
+
+    .card {
+      min-height: 270px;
+    } 
+  } 
+
+  iframe {
+    height: 323px;
+    width: 695px;
+  } 
+
+  .core-tech {
+    .btn {
+      padding: 25px 45px;
+      letter-spacing: 0.5px;
+    } 
+
+    .btn-primary {
+      padding: 25px 80px;
+      margin-left: 30px;
+    } 
+
+    .btn-secondary {
+      border: 2px solid #333;
+    } 
+  } 
+
+  .core-tech p {
+    max-width: 598px;
+  } 
+
+  .select-a-role {
+    max-width: 400px;
+  } 
+
+  .althea-deployments {
+    max-width: 598px;
+  } 
+
+  .get-involved {
+    .category {
+      width: 400px;
+    } 
+  } 
+
+  button[type="submit"] {
+    padding: 20px 80px;
+  } 
+
+  .tabs {
+    max-width: 620px;
+  } 
+
+  .casamarado, .offgrid {
+    width: 843px;
+  } 
+
+  .offgrid {
+    background-image: url(../images/clatskanie_next-720.jpg);
+    height: 670px;
+  } 
+
+  .slow-bandwidth h2 {
+    max-width: 431px;
+  } 
+
+  .red-medellin h2 {
+    max-width: 600px;
+  } 
+
+  .lm-1 { max-width: 331px; }
+  .lm-2 { max-width: 332px; }
+  .lm-3 { max-width: 331px; }
+  .lm-4 { max-width: 334px; }
+
+  .clatskanie-next {
+    padding-top: 150px;
+  } 
+
+  #start img {
+    height: 481px;
+  } 
+}

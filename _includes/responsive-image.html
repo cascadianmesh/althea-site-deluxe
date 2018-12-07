@@ -1,0 +1,13 @@
+<picture>
+  <source media="(max-width: 768px)" srcset="{{ '/images/' | append: include.image | append: '-640.webp' | relative_url }}" type="image/webp">
+  <source media="(min-width: 1024px)" srcset="{{ '/images/' | append: include.image | append: '-1024.webp' | relative_url }}" type="image/webp">
+  <source media="(min-width: 1366px)" srcset="{{ '/images/' | append: include.image | append: '-1366.webp' | relative_url }}" type="image/webp">
+  <source media="(min-width: 1600px)" srcset="{{ '/images/' | append: include.image | append: '-1600.webp' | relative_url }}" type="image/webp">
+  <source media="(min-width: 1920px)" srcset="{{ '/images/' | append: include.image | append: '-1920.webp' | relative_url }}" type="image/webp">
+  <source media="(max-width: 768px)" srcset="{{ '/images/' | append: include.image | append: '-640.' | append: include.ext | relative_url }}" type="image/{{ include.ext }}">
+  <source media="(min-width: 1024px)" srcset="{{ '/images/' | append: include.image | append: '-1024.' | append: include.ext | relative_url }}" type="image/{{ include.ext }}">
+  <source media="(min-width: 1366px)" srcset="{{ '/images/' | append: include.image | append: '-1366.' | append: include.ext | relative_url }}" type="image/{{ include.ext }}">
+  <source media="(min-width: 1600px)" srcset="{{ '/images/' | append: include.image | append: '-1600.' | append: include.ext | relative_url }}" type="image/{{ include.ext }}">
+  <source media="(min-width: 1920px)" srcset="{{ '/images/' | append: include.image | append: '-1920.' | append: include.ext | relative_url }}" type="image/{{ include.ext }}">
+  <img class="{{ include.class }}" src="{{ '/images/' | append: include.image | append: '-640.' | append: include.ext | relative_url }}" alt="{{ include.alt }}" />
+</picture>

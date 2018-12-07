@@ -1,52 +1,91 @@
-<div class="row section pb-4">
-    <div class="col-12">
-        <h1>The Technology</h1>
+<div class="the-tech container top-section">
+  <div class="row">
+    <div class="w-100 text-center mt-2 mb-sm-4">
+      <h2>The Technology</h2>
     </div>
-
-    <div class="col-12">
-        <picture>
-          <source media="(max-width: 768px)" srcset="/images/basic-diagram-640.webp" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="/images/basic-diagram-1024.webp" type="image/webp">
-          <source media="(min-width: 1366px)" srcset="/images/basic-diagram-1366.webp" type="image/webp">
-          <source media="(min-width: 1600px)" srcset="/images/basic-diagram-1600.webp" type="image/webp">
-          <source media="(min-width: 1920px)" srcset="/images/basic-diagram-1920.webp" type="image/webp">
-          <source media="(max-width: 768px)" srcset="/images/basic-diagram-640.png" type="image/png">
-          <source media="(min-width: 1024px)" srcset="/images/basic-diagram-1024.png" type="image/png">
-          <source media="(min-width: 1366px)" srcset="/images/basic-diagram-1366.png" type="image/png">
-          <source media="(min-width: 1600px)" srcset="/images/basic-diagram-1600.png" type="image/png">
-          <source media="(min-width: 1920px)" srcset="/images/basic-diagram-1920.png" type="image/png">
-          <img class="img-fluid" src="/images/basic-diagram-640.png" alt="Basic diagram" />
-        </picture>
-    </div>
-
-    <div class="col-12 col-sm-4 mt-3">
-        <h2>1</h2> End users load up their device or wifi router with blockchain tokens to pay for internet access.
-    </div>
-    <div class="col-12 col-sm-4 mt-3">
-        <h2>2</h2> A mesh of rooftop transmitters forward packets. They earn tokens and compete to provide service.
-    </div>
-    <div class="col-12 col-sm-4 mt-3">
-        <h2>3</h2> Uplinks act as gateways to the internet, also earning tokens, competing with other uplinks in the area.
-    </div>
-</div>
-
-<div class="row section">
-    <div class="col-12 col-sm-6 mb-3 pr-lg-5">
-        <div class="rounded bg-secondary">
-            <div class="embed-responsive embed-responsive-4by3">
-                <iframe title="Althea Mesh Demo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube-nocookie.com/embed/IyFEYEcHJyA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="row mx-md-3 mx-lg-0 d-none">
+    <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+      <div class="card h-100 rounded bg-yellow border-0 py-2 pt-lg-4 px-lg-2">
+        <div class="card-body row text-sm-left text-lg-center d-flex d-lg-block">
+          <div class="d-flex flex-column col-5 col-lg-12 p-0 tech-img">
+            <picture class="m-auto">
+              <source media="(max-width: 768px)" srcset="{{ '/images/tech-01-400.jpg' | relative_url }}" type="image/jpg">
+              <source media="(max-width: 1200px)" srcset="{{ '/images/tech-01-768.jpg' | relative_url }}" type="image/jpg">
+              <img src="{{ '/images/tech-01.jpg' | relative_url }}" alt="Setting Up Connections" />
+            </picture>
+          </div>
+          <div class="col-7 col-lg-12 pl-3 px-sm-4 px-lg-0 d-flex flex-column">
+            <div class="m-auto py-lg-3">
+              <h3 class="card-title">01</h3>
+              <p class="card-text">End users load up their device or wifi router with blockchain tokens to pay for internet access.</p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="col-12 col-sm-6 mb-3">
-        <p class="">The core technology behind Althea is a price-aware routing protocol and blockchain-based payment system that debits and credits cryptocurrency based on a router’s bandwidth usage. The price-aware routing protocol is demonstrated on early prototypes in this video.</p>
-        <div class="d-none d-md-block">
-            <a class="btn shadow btn-light align-self-end mr-2 mb-2" href="{{ '/whitepaper' | relative_url }}" role="button">Read the whitepaper</a>
-            <a class="btn shadow btn-primary align-self-end mb-2" href="{{ '/how-it-works' | relative_url }}" role="button">Learn More</a>
+    <div class="col-12 col-lg-4 px-lg-1 mb-3 mb-lg-0">
+      <div class="card h-100 rounded bg-yellow border-0 py-2 pt-lg-4">
+        <div class="card-body text-sm-left text-lg-center d-flex d-lg-block">
+          <div class="d-flex flex-column col-5 col-lg-12 p-0 tech-img">
+            <picture class="m-auto">
+              <source media="(max-width: 768px)" srcset="{{ '/images/tech-01-400.jpg' | relative_url }}" type="image/jpg">
+              <source media="(max-width: 1200px)" srcset="{{ '/images/tech-02-768.jpg' | relative_url }}" type="image/jpg">
+              <img class="ma-auto" src="{{ '/images/tech-02.jpg' | relative_url }}" alt="Setting Up Connections" />
+            </picture>
+          </div>
+          <div class="col-7 col-lg-12 pl-3 px-sm-4 px-lg-0 d-flex flex-column">
+            <div class="m-auto py-lg-3">
+              <h3 class="card-title">02</h3>
+              <p class="card-text">A mesh of rooftop transmitters forward packets. They earn tokens and compete to provide service.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="col-12 d-md-none">
-        <a class="btn shadow btn-light align-self-end mr-2 mb-2" href="{{ '/whitepaper' | relative_url }}" role="button">Read the whitepaper</a>
-        <a class="btn shadow btn-primary align-self-end mb-2" href="{{ '/how-it-works' | relative_url }}" role="button">Learn More</a>
+    <div class="col-12 col-lg-4 px-lg-1">
+      <div class="card h-100 rounded bg-yellow border-0 py-2 pt-lg-4">
+        <div class="card-body text-sm-left text-lg-center d-flex d-lg-block px-0">
+          <div class="d-flex flex-column col-5 col-lg-12 tech-img">
+            <picture class="m-auto">
+              <source media="(max-width: 768px)" srcset="{{ '/images/tech-01-400.jpg' | relative_url }}" type="image/jpg">
+              <source media="(max-width: 1200px)" srcset="{{ '/images/tech-03-768.jpg' | relative_url }}" type="image/jpg">
+              <img class="ma-auto" src="{{ '/images/tech-03.jpg' | relative_url }}" alt="Setting Up Connections" />
+            </picture>
+          </div>
+          <div class="col-7 col-lg-12 pl-3 px-sm-4 px-lg-0 d-flex flex-column">
+            <div class="m-auto py-lg-3">
+              <h3 class="card-title">03</h3>
+              <p class="card-text">Uplinks act as gateways to the internet, also earning tokens, competing with other uplinks in the area.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
+
+<div class="container section d-none">
+  <hr class="light-yellow my-0" />
+</div>
+
+<div class="w-100">
+<iframe class="d-sm-none" title="Althea Mesh Demo" src="https://www.youtube-nocookie.com/embed/IyFEYEcHJyA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div class="container section">
+  <div class="d-flex flex-wrap flex-lg-nowrap">
+    <div>
+      <iframe class="d-none d-sm-block" title="Althea Mesh Demo" class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/IyFEYEcHJyA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="d-flex core-tech mx-sm-auto pt-sm-4 pt-lg-0 my-lg-auto">
+      <div class="d-flex flex-wrap mx-auto">
+        <p class="ml-2 ml-sm-0 pb-sm-2 pb-lg-0">The core technology behind Althea is a price-aware routing protocol and blockchain-based payment system that debits and credits cryptocurrency based on a router’s bandwidth usage. The price-aware routing protocol is demonstrated on early prototypes in this video.</p>
+        <div class="mx-auto">
+          <a class="btn btn-secondary" href="{{ '/clatskanie' | relative_url }}" role="button">Read The Whitepaper</a>
+          <a class="btn btn-primary" href="{{ '/clatskanie' | relative_url }}" role="button">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

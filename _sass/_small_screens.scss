@@ -1,0 +1,229 @@
+@include media-breakpoint-down(sm) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 45px;
+    padding-left: 10px; /* text spills out the left side of its container without this for some reason */
+  } 
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0px;
+  } 
+
+  h3 {
+    font-size: 20px;
+  } 
+
+  .lead-header, .follow-header {
+    font-size: 42px;
+  } 
+
+  .subheading {
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-family: "LL Akkurat Bold Web";
+    font-size: 16px;
+  } 
+
+  .lead {
+    position: relative;
+    font-size: 16px;
+
+    img {
+      position: absolute; 
+      bottom: -120px; 
+      right: 0; 
+    } 
+  } 
+
+  .btn {
+    font-size: 16px;
+  } 
+
+  .btn-secondary {
+    border-width: 2px;
+  } 
+
+  .card-text {
+    font-size: 16px;
+  } 
+
+  .forward-link {
+    font-size: 16px;
+  } 
+
+  .container {
+    padding: 15px;
+  } 
+
+  .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    padding: 35px;
+  } 
+
+  .navbar {
+    padding: 0;
+  } 
+
+  .skinny {
+    padding: 35px;
+  } 
+
+  .gallery {
+    width: 600px;
+  } 
+
+  .map-details {
+    height: 560px;
+    padding: 30px;
+    padding-top: 10px;
+  } 
+
+  .get-involved p {
+    max-width: 360px;
+  } 
+
+  .gallery-item img {
+    margin-right: 25px;
+    width: 283px;
+    height: 176px;
+  } 
+
+  .tiny-caption {
+    font-size: 14px;
+  } 
+
+  .tab-content {
+    min-height: 230px;
+  } 
+
+  iframe {
+    width: 100%;
+    height: 350px;
+  } 
+
+  .core-tech {
+    .btn {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    } 
+
+    .btn-primary {
+      padding: 8px 40px;
+      margin-left: 10px;
+    } 
+
+    .btn-secondary {
+      padding: 8px 20px;
+      border: 1px solid #666;
+    } 
+
+    p {
+      max-width: 333px;
+    } 
+  } 
+
+  .footer {
+    li {
+      margin: 10px 0;
+    } 
+
+    .footer-label {
+      margin-bottom: 20px !important;
+    } 
+  } 
+
+  .get-involved {
+    .category {
+      width: 240px;
+    } 
+  } 
+
+  .select-a-role {
+    max-width: 380px;
+  } 
+
+  .case-study {
+    background: white;
+  } 
+
+  hr.stretchy {
+    top: 120px;
+  } 
+
+  .bleed {
+    display: none;
+  } 
+
+  .casamarado {
+    background-image: url(../images/casamarado-400.jpg);
+    height: 302px;
+    width: 400px;
+    position: relative;
+  } 
+
+  .offgrid {
+    background-image: url(../images/clatskanie_next-400.jpg);
+    height: 299px;
+    width: 400px;
+    position: relative;
+  } 
+
+  .slow-bandwidth {
+    h2 {
+      max-width: 260px;
+    } 
+  } 
+
+  .red-medellin {
+    padding-top: 15px;
+  } 
+
+  .category {
+    padding-bottom: 0;
+  } 
+
+  .active.category {
+    border-bottom: 4px solid $red;
+  } 
+
+  .gallery-nav {
+    color: $yellow;
+  } 
+
+  .map-details {
+    h4 {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    } 
+  } 
+
+  #case-studies .container {
+    padding-bottom: 0;
+  } 
+
+  .learn-more {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .arrow {
+      font-size: 24px;
+    } 
+
+    p {
+      margin-bottom: 8px;
+    } 
+  } 
+
+  .clatskanie-next {
+    padding-bottom: 0;
+  } 
+
+  #start img {
+    height: 231px;
+  } 
+}

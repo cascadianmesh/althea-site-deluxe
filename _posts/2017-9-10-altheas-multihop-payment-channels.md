@@ -2,6 +2,8 @@
 layout: plain-page
 title:      Althea's multihop payment channels
 summary:    "Althea's payment channels are key to how it works, but they are also one of the simpler parts to implement and explain. Payment channels allow payments to be made with a minimum of overhead. In the simple case, a payment can be made between two neighbors in the network with only one packet."
+author: Jehan Tremback
+image: clatskanie-blog.jpg
 ---
 
 This is an article about our payment channel library, [Guac](https://github.com/althea-mesh/guac) on github.

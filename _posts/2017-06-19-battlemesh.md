@@ -1,8 +1,9 @@
 ---
 layout: plain-page
 title:      Battlemesh
-author: Jehan Tremback
 summary:    "Last week I went to Battlemesh in Vienna. Battlemesh is a conference and competition that is held in a different location in Europe about once a year. Its original purpose is to test all the routing protocols against each other, hence \"battle\". It's evolved into a great meeting of community network activists and enthusiasts from around Europe and around the world."
+author: Jehan Tremback
+image: casamarado-blog.jpg
 ---
 
 Last week I went to Battlemesh in Vienna. Battlemesh is a conference and competition that is held in a different location in Europe about once a year. Its original purpose is to test all the routing protocols against each other, hence "battle". It's evolved into a great meeting of community network activists and enthusiasts from around Europe and around the world. In addition to the setup of the testbed, there are talks going on all week. I presented Althea there, you can see the video [here](https://www.youtube.com/watch?v=f21KCNw7EWw&list=PL3bvPCw5QCLJ-VJPamVeQx-UPNBVyaopj&index=4&ab_channel=AdjyLeak). I was hoping for a lot of tough questions after the talk, but I got a lot of the questions later, in one on one conversations with participants. But more on that later. 
