@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $('#images').removeClass('d-none')
     
     if (pos > start && pos < end) {
-      let norm = ((1 - (end - pos) / (end - start)) * 8) + 0.1
-      for (let i = 1; i < 8; i++) {
+      let norm = ((1 - (end - pos) / (end - start)) * 7) + 0.1
+      for (let i = 1; i < 7; i++) {
         let opacity = norm - i
         if (opacity >= 0 && (opacity % 1) > 0.5) opacity = 1
         $(`#img${i+1}`).css('opacity', opacity)
@@ -39,7 +39,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   $('#img1').css('opacity', 1)
   $(window).scroll()
-  $(window).resize(function () {
-    $(window).scroll()
-  })
+  $(window).resize($(window).scroll)
 });
