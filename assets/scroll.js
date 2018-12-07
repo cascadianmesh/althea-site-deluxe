@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
   $(window).scroll(() => {
+    if ($(window).width() < 1150) return
+
     let pos = $(window).scrollTop()
 
     let wh = $(window).height()
@@ -10,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     let offset = $('.container').offset()
     $('.container img').css('visibility', 'hidden')
+
+    $('#images').removeClass('d-none')
     
     if (pos > start && pos < end) {
       let norm = ((1 - (end - pos) / (end - start)) * 8) + 0.1
